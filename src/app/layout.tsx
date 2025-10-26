@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import Footer from "@/components/landing-page/footer";
+import { ThemeProvider } from "@/providers/theme-provider";
+import Navbar from "@/components/landing-page/hero-section/nav-bar";
+import { MusicToggleButton } from "@/components/cool-stuff/music-player";
+import { ModeToggle } from "@/components/cool-stuff/light-dark";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -23,11 +23,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={`${montserrat.className} antialiased  `}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children} <Footer />{" "}
+          <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 ">
+            <ModeToggle />
+            <MusicToggleButton />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
