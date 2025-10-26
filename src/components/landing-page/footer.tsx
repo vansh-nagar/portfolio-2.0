@@ -1,11 +1,10 @@
 "use client";
 
 import ArrowButton from "../ui/arrow-button";
-import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
-    <footer className="h-[50vh] px-[5vw] py-12 flex flex-col justify-between relative overflow-hidden max-sm:items-center max-sm:text-center">
+    <footer className="h-[50vh] px-[5vw] py-12 flex flex-col border-t  justify-between relative overflow-hidden max-sm:items-center max-sm:text-center">
       <div className="flex items-start gap-4 max-sm:flex-col max-sm:items-center max-sm:mb-10">
         <img className="w-14 opacity-75" src="/logo/NVfOku01.svg" alt="Logo" />
         <div className="flex flex-col items-start max-sm:items-center">

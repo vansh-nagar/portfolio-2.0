@@ -1,7 +1,13 @@
 "use client";
 
-import { FileText, Github, Instagram, Linkedin, Twitter } from "lucide-react";
-import React, { useEffect, useRef } from "react";
+import {
+  FileText,
+  Github,
+  Instagram,
+  LucideLinkedin,
+  Twitter,
+} from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
   const lastScroll = useRef<number | null>(null);
@@ -38,10 +44,10 @@ const Navbar = () => {
   return (
     <div
       ref={navBar}
-      className=" z-50 fixed top-0 bg-background   right-0 left-0  h-[90px] flex justify-between items-center  px-[5vw]   transition-transform duration-300 bg-main"
+      className=" z-50 fixed top-0 bg-background/10 backdrop-blur-lg   right-0 left-0  h-[70px] flex justify-between items-center  px-[100px]   transition-transform duration-300 bg-main"
     >
       <div className="flex items-center mix-blend-darken ">
-        <img src="/logo/NVfOku01.svg" alt="" className="    w-12" />
+        <img src="/logo/NVfOku01.svg" alt="" className="    w-10" />
       </div>
       <div className="flex   gap-6 max-sm:gap-4 ">
         <a
@@ -50,10 +56,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <Github
-            className="hover:text-[#8fa9fa] w-6 h-6 transition-all duration-200 "
-            strokeWidth={1.5}
-          />
+          <Github strokeWidth={1.5} />
         </a>
         <a
           href="https://www.linkedin.com/in/vansh-nagar-469648346/"
@@ -61,16 +64,10 @@ const Navbar = () => {
           rel="noopener noreferrer"
           title="LinkedIn"
         >
-          <Linkedin
-            strokeWidth={1.5}
-            className="hover:text-[#a6c9a9] w-6 h-6 transition-all duration-200 "
-          />
+          <LucideLinkedin strokeWidth={1.5} />
         </a>
         <a href="" target="_blank" rel="noopener noreferrer" title="Twitter/X">
-          <Twitter
-            strokeWidth={1.5}
-            className="hover:text-[#8fa9fa] w-6 h-6 transition-all duration-200 "
-          />
+          <Twitter strokeWidth={1.5} />
         </a>
         <a
           href="https://www.instagram.com/epitome0.0/?hl=en"
@@ -78,10 +75,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           title="Instagram"
         >
-          <Instagram
-            strokeWidth={1.5}
-            className="hover:text-[#a6c9a9] w-6 h-6 transition-all duration-200 "
-          />
+          <Instagram strokeWidth={1.5} />
         </a>
         <a
           href="https://www.arclabs.space/dashboard/generate-resume/page2/cmh6l8y3d0001i904uso7c3ux"
@@ -89,10 +83,7 @@ const Navbar = () => {
           title="Resume"
           target="_blank"
         >
-          <FileText
-            strokeWidth={1.5}
-            className="hover:text-[#8fa9fa] w-6 h-6 transition-all duration-200 "
-          />
+          <FileText strokeWidth={1.5} />
         </a>
       </div>
     </div>

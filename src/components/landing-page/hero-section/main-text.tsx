@@ -1,7 +1,5 @@
 "use client";
 import ArrowButton from "@/components/ui/arrow-button";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const HeroContent = () => {
   return (
@@ -18,16 +16,16 @@ const HeroContent = () => {
         className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent z-0 max-sm:-z-10"
         style={{ transform: "rotateY(180deg)" }}
       />
-      <div className="font-Montserrat text-center  text-2xl sm:text-2xl lg:text-3xl xl:text-4xl lg:leading-normal xl:leading-relaxed  max-sm:w-[95vw]  z-20 px-2">
+      <div className="font-Montserrat text-center text-3xl leading-12">
         Vansh Nagar is a <br className="sm:hidden" />
         <span className="italic font-medium">web & app developer</span> from
         BIT Mesra. <br /> Driven by ✱
         <span className="italic font-medium">crafting tomorrow’s tech,</span>✧
-        engineering <br className="max-sm:hidden" /> systems, and ꕤ sparking
+        engineering <br className="max-sm:hidden" /> systems and ꕤ sparking
         creative communities.
       </div>
 
-      <div className="font-Montserrat text-muted-foreground text-sm mt-6 md:text-lg flex flex-col sm:flex-row justify-center items-center gap-4 text-center z-20">
+      <div className="font-Montserrat text-muted-foreground text-xl  mt-6  flex flex-col sm:flex-row justify-center items-center gap-2 text-center ">
         <span>Previously crafting experience with</span>
         <div className="flex justify-center items-center gap-4">
           <a
