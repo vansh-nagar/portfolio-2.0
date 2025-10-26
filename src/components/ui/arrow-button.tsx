@@ -8,7 +8,7 @@ export default function ArrowButton({ link, placeholder, color }: any) {
   return (
     <Button
       variant="arrow"
-      onClick={() => router.push(`/${link}`)}
+      onClick={() => router.push(`${link}`)}
       className={`${color ? "border-[#a6c9a9]" : "border-[#8da7ff]"} `}
     >
       {placeholder}

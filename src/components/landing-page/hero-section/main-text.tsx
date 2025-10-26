@@ -13,6 +13,28 @@ import gsap from "gsap";
 import { useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "GraphQL",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Git",
+  "Docker",
+  "AWS",
+  "Figma",
+  "Adobe XD",
+  "premiere Pro",
+  "After Effects",
+];
 
 const HeroContent = () => {
   gsap.registerPlugin(MotionPathPlugin);
@@ -57,6 +79,7 @@ const HeroContent = () => {
 
       <div className="  bg-background  flex justify-between items-center  w-full ">
         <svg
+          className=""
           width="50"
           height="50"
           viewBox="0 0 199 171"
@@ -109,7 +132,7 @@ const HeroContent = () => {
       </div>
 
       <div className="text-4xl mt-10">Hi, I'm Vansh Nagar 👋</div>
-      <div className=" text-3xl  mt-4 ">
+      <div className=" text-xl  mt-4 ">
         <span className="italic font-medium">web & app developer.</span> Driven
         by ✱
         <span className="italic font-medium">crafting tomorrow’s tech,</span>✧
@@ -118,21 +141,80 @@ const HeroContent = () => {
 
       <div className="flex flex-wrap justify-center gap-2 mt-6 z-20">
         <ArrowButton
-          link="designs"
+          link="/designs"
           placeholder="See my designs"
           color={false}
         />
+        <ArrowButton link="" placeholder="Pick Your Petal" color={true} />
         <ArrowButton
-          link="designs"
-          placeholder="Pick Your Petal"
-          color={true}
-        />
-        <ArrowButton
-          link="designs"
+          link="threejs"
           placeholder="Three.js Journey"
           color={false}
         />
       </div>
+
+      <section className=" mt-4">
+        <header className=" font-bold text-xl">About</header>
+        <p className="text-sm">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nihil
+          quibusdam fuga id quos dolore, earum error sit quis eum dolores
+          exercitationem, facere possimus, maxime minus. Sint inventore veniam
+          ut.
+        </p>
+      </section>
+      <section className=" my-5  w-full">
+        <header className="font-bold text-xl">Work Experience</header>
+        <div className="mt-2  ">
+          <div className="flex    gap-4 items-center   ">
+            <img
+              src="https://i.pinimg.com/1200x/30/3b/a6/303ba6dc7ff9966490089b379a02c5f1.jpg"
+              alt=""
+              className="rounded-full h-14"
+            />
+            <div className="  w-full">
+              <div className="font-semibold">nameeee</div>
+              <div className="text-xs">Role.....</div>
+            </div>
+            <div className="  font-semibold text-sm text-muted-foreground text-nowrap">
+              May 2021 - Oct 2022
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className=" my-5  w-full">
+        <header className="font-bold text-xl">Education</header>
+        <div className="mt-2  ">
+          <div className="flex    gap-4 items-center   ">
+            <img
+              src="https://i.pinimg.com/1200x/30/3b/a6/303ba6dc7ff9966490089b379a02c5f1.jpg"
+              alt=""
+              className="rounded-full h-14"
+            />
+            <div className="  w-full">
+              <div className="font-semibold">sanstha</div>
+              <div className="text-xs">Course</div>
+            </div>
+            <div className="  font-semibold text-sm text-muted-foreground text-nowrap">
+              2021 - 2022
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className=" my-5  w-full ">
+        <header className="font-bold text-xl">Skills</header>
+
+        <div className=" flex flex-wrap gap-1 mt-2">
+          {skills.map((techItem, techIndex) => (
+            <Badge
+              className=" rounded-sm border-dashed mb-1 "
+              variant={"outline"}
+              key={techIndex}
+            >
+              {techItem}
+            </Badge>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

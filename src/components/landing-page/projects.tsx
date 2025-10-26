@@ -94,8 +94,8 @@ const Projects = () => {
     <div className=" flex justify-center my-10 p-2">
       <div className="  grid  grid-cols-1 md:grid-cols-2   w-[95vw] sm:w-[50vw]  gap-3 max-sm:gap-[6vw] hover:caret-white ">
         {ProjectsArr.map((project, index) => (
-          <div key={index} className=" flex  flex-col gap-10 ">
-            <section className=" flex flex-col  gap-2 ">
+          <div key={index} className=" flex  flex-col gap-10">
+            <section className=" flex flex-col  gap-2  ">
               {project.image ? (
                 <div>
                   <a
@@ -129,11 +129,11 @@ const Projects = () => {
                 <div className="text-sm text-nowrap">Jan 2024 - Jan 2024</div>
               </div>
 
-              <div className="  text-sm text-muted-foreground text-justify ">
+              <div className="  text-sm text-muted-foreground  ">
                 {project.Description}
               </div>
 
-              <div className="  flex gap-2 flex-wrap ">
+              <div className="  flex gap-1 flex-wrap ">
                 {project.tech.map((techItem, techIndex) => (
                   <Badge
                     className=" rounded-sm border-dashed border-acfo "
@@ -146,7 +146,7 @@ const Projects = () => {
               </div>
             </section>
 
-            <div className="flex  gap-2 items-center justify-end mt-4   max-sm:flex-wrap">
+            <div className="flex  gap-2 items-center justify-end    max-sm:flex-wrap">
               {project.figmaFile && (
                 <Link href={project.figmaFile} target="_blank">
                   <Button className="rounded-md" variant="outline" size={"sm"}>
