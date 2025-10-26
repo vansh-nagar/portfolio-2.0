@@ -32,7 +32,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           {children} <Footer />{" "}
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 ">
             <ModeToggle />
