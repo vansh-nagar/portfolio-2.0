@@ -6,7 +6,6 @@ const page = () => {
     <>
       <HeroSection />
       <Projects />
- 
     </>
   );
 };
