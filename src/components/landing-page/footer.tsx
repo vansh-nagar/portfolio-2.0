@@ -1,5 +1,6 @@
 "use client";
 
+import ArrowButton from "../ui/arrow-button";
 import { Button } from "../ui/button";
 
 export default function Footer() {
@@ -15,8 +16,8 @@ export default function Footer() {
             <span className="italic">experiences</span>✧.
           </h2>
           <div className="flex gap-4 mt-4">
-            <Button>Hire me</Button>
-            <Button>Contact me</Button>
+            <ArrowButton link="designs" placeholder="Hire me" color={false} />
+            <ArrowButton link="designs" placeholder="Contact me" color={true} />
           </div>
         </div>
       </div>

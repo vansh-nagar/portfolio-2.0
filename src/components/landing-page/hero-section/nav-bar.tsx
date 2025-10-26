@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="flex items-center mix-blend-darken ">
         <img src="/logo/NVfOku01.svg" alt="" className="    w-12" />
       </div>
-      <div className="flex   gap-6 max-sm:gap-4 text-gray-700">
+      <div className="flex   gap-6 max-sm:gap-4 ">
         <a
           href="https://github.com/vansh-nagar"
           target="_blank"

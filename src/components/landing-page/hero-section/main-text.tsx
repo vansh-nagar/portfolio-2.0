@@ -1,5 +1,7 @@
 "use client";
+import ArrowButton from "@/components/ui/arrow-button";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const HeroContent = () => {
   return (
@@ -25,7 +27,7 @@ const HeroContent = () => {
         creative communities.
       </div>
 
-      <div className="font-Montserrat text-zinc-500 text-sm mt-6 md:text-lg flex flex-col sm:flex-row justify-center items-center gap-4 text-center z-20">
+      <div className="font-Montserrat text-muted-foreground text-sm mt-6 md:text-lg flex flex-col sm:flex-row justify-center items-center gap-4 text-center z-20">
         <span>Previously crafting experience with</span>
         <div className="flex justify-center items-center gap-4">
           <a
@@ -63,9 +65,21 @@ const HeroContent = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center gap-4 mt-8 z-20">
-        <Button>See My Design</Button>
-        <Button>Pick Your Petal</Button>
-        <Button>Three.js Journey</Button>
+        <ArrowButton
+          link="designs"
+          placeholder="See my designs"
+          color={false}
+        />
+        <ArrowButton
+          link="designs"
+          placeholder="Pick Your Petal"
+          color={true}
+        />
+        <ArrowButton
+          link="designs"
+          placeholder="Three.js Journey"
+          color={false}
+        />
       </div>
     </div>
   );
