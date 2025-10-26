@@ -67,6 +67,19 @@ const ProjectsArr = [
     status: "In Progress",
   },
   {
+    name: "UI Library",
+    link: "https://example.com/ui-library",
+    image: "",
+    github: "https://github.com/vansh-nagar/ui-library",
+    demo: "",
+    figmaFile: "",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Storybook"],
+    timeLine: "Feb 2024 - Present",
+    Description:
+      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
+    status: "In Progress",
+  },
+  {
     name: "NEXTBrain",
     link: "https://next-brain-i432.vercel.app/",
     image:
