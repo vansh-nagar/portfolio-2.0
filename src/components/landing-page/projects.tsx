@@ -50,9 +50,9 @@ const ProjectsArr = [
 const Projects = () => {
   return (
     <div className=" flex justify-center mb-20">
-      <div className="  grid  grid-cols-2 w-[80vw]   gap-[10vh] max-sm:gap-[6vw] hover:caret-white font-Montserrat -mt-[18vh] max-sm:m-0 ">
+      <div className="  grid  grid-cols-2 w-[70vw]   gap-5 max-sm:gap-[6vw] hover:caret-white font-Montserrat -mt-[18vh] max-sm:m-0 ">
         {ProjectsArr.map((project, index) => (
-          <div key={index} className=" gap-4 ">
+          <div key={index} className=" gap-4 mb-4 ">
             <div>
               <a
                 className=" hover:cursor-crosshair"
@@ -90,7 +90,7 @@ const Projects = () => {
                 )}
                 <Link href={project.demo} target="_blank">
                   <RainbowButton
-                    className=" rounded-md "
+                    className=" rounded-md  "
                     variant="outline"
                     size={"sm"}
                   >

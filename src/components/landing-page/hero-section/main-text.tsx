@@ -16,7 +16,7 @@ const HeroContent = () => {
         className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent z-0 max-sm:-z-10"
         style={{ transform: "rotateY(180deg)" }}
       />
-      <div className="font-Montserrat text-center text-3xl leading-12">
+      <div className="font-Montserrat text-center text-[35px] leading-12">
         Vansh Nagar is a <br className="sm:hidden" />
         <span className="italic font-medium">web & app developer</span> from
         BIT Mesra. <br /> Driven by ✱

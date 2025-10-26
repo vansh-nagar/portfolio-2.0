@@ -1,3 +1,4 @@
+import { Particles } from "../ui/particles";
 import HeroContent from "./hero-section/main-text";
 import NavBar from "./hero-section/nav-bar";
 
