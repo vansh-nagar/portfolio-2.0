@@ -91,92 +91,99 @@ const ProjectsArr = [
 
 const Projects = () => {
   return (
-    <div className=" flex justify-center my-10 p-2">
-      <div className="  grid  grid-cols-1 md:grid-cols-2   w-[95vw] sm:w-[50vw]  gap-3 max-sm:gap-[6vw] hover:caret-white ">
-        {ProjectsArr.map((project, index) => (
-          <div key={index} className=" flex  flex-col gap-10">
-            <section className=" flex flex-col  gap-2  ">
-              {project.image ? (
-                <div>
-                  <a
-                    className=" hover:cursor-crosshair"
-                    href={project.link}
-                    target="_blank"
-                  >
-                    <img
-                      src={project.image}
-                      alt=""
-                      className=" rounded-md  aspect-video "
-                    />
-                  </a>
-                </div>
-              ) : (
-                <div className=" w-full  aspect-video  bg-muted rounded-xl flex items-center justify-center ">
-                  <SparklesText className=" text-2xl text-center px-4 ">
-                    Coming Soon...
-                  </SparklesText>
-                </div>
-              )}
-
-              <div className="flex justify-between items-center  max-sm:flex-wrap ">
-                <div className=" block  font-semibold text-2xl  ">
-                  {project.name} <br />{" "}
-                  <div className="text-xs font-normal">
-                    {" "}
-                    {project.status}...
+    <div className=" flex justify-center my-5 p-2">
+      <div>
+        <header className="font-bold text-xl">Projects</header>
+        <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2  w-[95vw] sm:w-[50vw]  gap-3 max-sm:gap-[6vw] hover:caret-white ">
+          {ProjectsArr.map((project, index) => (
+            <div key={index} className=" flex  flex-col gap-10">
+              <section className=" flex flex-col  gap-2  ">
+                {project.image ? (
+                  <div>
+                    <a
+                      className=" hover:cursor-crosshair"
+                      href={project.link}
+                      target="_blank"
+                    >
+                      <img
+                        src={project.image}
+                        alt=""
+                        className=" rounded-md  aspect-video "
+                      />
+                    </a>
                   </div>
-                </div>{" "}
-                <div className="text-sm text-nowrap">Jan 2024 - Jan 2024</div>
-              </div>
+                ) : (
+                  <div className=" w-full  aspect-video  bg-muted rounded-xl flex items-center justify-center ">
+                    <SparklesText className=" text-2xl text-center px-4 ">
+                      Coming Soon...
+                    </SparklesText>
+                  </div>
+                )}
 
-              <div className="  text-sm text-muted-foreground  ">
-                {project.Description}
-              </div>
+                <div className="flex justify-between items-center  max-sm:flex-wrap ">
+                  <div className=" block  font-semibold text-2xl  ">
+                    {project.name} <br />{" "}
+                    <div className="text-xs font-normal">
+                      {" "}
+                      {project.status}...
+                    </div>
+                  </div>{" "}
+                  <div className="text-sm text-nowrap">Jan 2024 - Jan 2024</div>
+                </div>
 
-              <div className="  flex gap-1 flex-wrap ">
-                {project.tech.map((techItem, techIndex) => (
-                  <Badge
-                    className=" rounded-sm border-dashed border-acfo "
-                    variant={"outline"}
-                    key={techIndex}
+                <div className="  text-sm text-muted-foreground  ">
+                  {project.Description}
+                </div>
+
+                <div className="  flex gap-1 flex-wrap ">
+                  {project.tech.map((techItem, techIndex) => (
+                    <Badge
+                      className=" rounded-sm border-dashed border-acfo "
+                      variant={"outline"}
+                      key={techIndex}
+                    >
+                      {techItem}
+                    </Badge>
+                  ))}
+                </div>
+              </section>
+
+              <div className="flex  gap-2 items-center justify-end    max-sm:flex-wrap">
+                {project.figmaFile && (
+                  <Link href={project.figmaFile} target="_blank">
+                    <Button
+                      className="rounded-md"
+                      variant="outline"
+                      size={"sm"}
+                    >
+                      <Figma />
+                      Figma File
+                    </Button>
+                  </Link>
+                )}
+                {project.github && (
+                  <Link href={project.github} target="_blank">
+                    <Button size={"sm"}>
+                      <Github />
+                      GitHub
+                    </Button>
+                  </Link>
+                )}
+                <Link href={project.demo} target="_blank">
+                  <RainbowButton
+                    className=" rounded-md  "
+                    variant="outline"
+                    size={"sm"}
                   >
-                    {techItem}
-                  </Badge>
-                ))}
+                    <Link2 />
+                    Live Demo
+                  </RainbowButton>
+                </Link>
               </div>
-            </section>
-
-            <div className="flex  gap-2 items-center justify-end    max-sm:flex-wrap">
-              {project.figmaFile && (
-                <Link href={project.figmaFile} target="_blank">
-                  <Button className="rounded-md" variant="outline" size={"sm"}>
-                    <Figma />
-                    Figma File
-                  </Button>
-                </Link>
-              )}
-              {project.github && (
-                <Link href={project.github} target="_blank">
-                  <Button size={"sm"}>
-                    <Github />
-                    GitHub
-                  </Button>
-                </Link>
-              )}
-              <Link href={project.demo} target="_blank">
-                <RainbowButton
-                  className=" rounded-md  "
-                  variant="outline"
-                  size={"sm"}
-                >
-                  <Link2 />
-                  Live Demo
-                </RainbowButton>
-              </Link>
             </div>
-          </div>
-        ))}
-      </div>{" "}
+          ))}
+        </div>{" "}
+      </div>
     </div>
   );
 };
