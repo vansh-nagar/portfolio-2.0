@@ -36,7 +36,7 @@ const ProjectsArr = [
       "React Query",
       "Zod",
     ],
-    timeLine: "Jan 2024 - Present",
+    timeLine: "Jan 2025 - Present",
     Description:
       "Land your dream job with AI-powered tools for resumes, interviews, jobs and more....",
     status: "In Progress",
@@ -59,7 +59,7 @@ const ProjectsArr = [
     timeLine: "Oct 2024 - present",
     Description:
       "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
-    status: "Not Started",
+    status: "In Progress",
   },
   {
     name: "Zip",
