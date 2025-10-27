@@ -5,8 +5,7 @@ import Footer from "@/components/landing-page/footer";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { MusicToggleButton } from "@/components/cool-stuff/music-player";
 import { ModeToggle } from "@/components/cool-stuff/light-dark";
-import { Button } from "@/components/ui/button";
-import { BotMessageSquare } from "lucide-react";
+import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -81,10 +80,7 @@ export default function RootLayout({
           {children} <Footer />{" "}
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 ">
             <ModeToggle />
-            <Button variant={"outline"} size={"icon"}>
-              {" "}
-              <BotMessageSquare />
-            </Button>
+            <ChatWithAi />
             <MusicToggleButton />
           </div>
         </ThemeProvider>
