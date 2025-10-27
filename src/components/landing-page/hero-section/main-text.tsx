@@ -105,7 +105,7 @@ const HeroContent = () => {
 
       <div className="  bg-background  flex justify-between items-center  w-full ">
         <svg
-          className=""
+          className="block dark:hidden"
           width="50"
           height="50"
           viewBox="0 0 199 171"
@@ -115,6 +115,21 @@ const HeroContent = () => {
           <path
             d="M3 56.4999L84.5 5.9999C16.1 106.4 39.5 159.5 63.5 165.5C87.5 171.5 141.269 117.309 155 56.4999C158.5 40.9999 157.5 17.5 144.5 8.5C131.416 -0.558286 117.5 11.9999 119 26.9999C120.5 41.9999 148.5 75.4999 195.5 46.4999"
             stroke="black"
+            strokeWidth="15"
+            ref={path}
+          />
+        </svg>
+        <svg
+          className=" dark:block hidden"
+          width="50"
+          height="50"
+          viewBox="0 0 199 171"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 56.4999L84.5 5.9999C16.1 106.4 39.5 159.5 63.5 165.5C87.5 171.5 141.269 117.309 155 56.4999C158.5 40.9999 157.5 17.5 144.5 8.5C131.416 -0.558286 117.5 11.9999 119 26.9999C120.5 41.9999 148.5 75.4999 195.5 46.4999"
+            stroke="white"
             strokeWidth="15"
             ref={path}
           />

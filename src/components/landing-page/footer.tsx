@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-right text-[15px] text-muted-foreground ">
-          <div>Made with ♡ using Next.js & TailwindCSS</div>
+          <div>Made with ♡ using Next.js</div>
           <div className="text-xs text-muted-foreground">
             © 2025 Vansh Nagar
           </div>

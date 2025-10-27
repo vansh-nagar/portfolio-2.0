@@ -6,15 +6,15 @@ import { useGLTF } from "@react-three/drei";
 import { Badge } from "@/components/ui/badge";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import Link from "next/link";
-import { Link2 } from "lucide-react";
 
 const Projects = [
   {
     name: "Prep Cabin AI",
-    link: "https://prep-cabin-ai-demo.com", // replace with your live demo link
-    image: "https://ik.imagekit.io/ijuiklevk/image.png?updatedAt=1756954867658", // replace with your project screenshot
+    link: "https://www.arclabs.space/dashboard/simulate-interview/page1", // replace with your live demo link
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1754493608/j4u5hwkkmkv9zrgmiidz.png", // replace with your project screenshot
     github: "https://github.com/your-username/prep-cabin-ai", // replace with your repo link
-    demo: "https://prep-cabin-ai-demo.com", // same as live demo
+    demo: "https://www.arclabs.space/dashboard/simulate-interview/page1", // same as live demo
     figmaFile: "https://www.figma.com/file/your-file-id/Prep-Cabin-AI", // optional
     tech: ["Next.js", "TypeScript"],
     Description:
@@ -54,6 +54,19 @@ const page = () => {
   };
   return (
     <div className=" flex  justify-center py-10 p-2 ">
+      <img
+        src="/logo/leaf.svg"
+        alt=""
+        className="w-[11vw] max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 "
+        style={{ transform: "rotateX(180deg)" }}
+      />
+      <img
+        src="/logo/leaf.svg"
+        alt=""
+        className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent z-0 max-sm:-z-10"
+        style={{ transform: "rotateY(180deg)" }}
+      />
+
       <div className="   w-[95vw] sm:w-[50vw] ">
         <div className="  border rounded-xl  mb-3  ">
           <Canvas>
