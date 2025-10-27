@@ -32,7 +32,6 @@ const skills = [
   "CI/CD",
 
   // 🧠 AI & Automation
-  "OpenAI API",
   "LangChain",
   "Python",
 
@@ -44,7 +43,6 @@ const skills = [
   // 🎬 Media & Editing
   "Premiere Pro",
   "After Effects",
-  "Photoshop",
 ];
 
 const Skills = () => {
