@@ -1,4 +1,12 @@
-import { Figma, Github, Link2 } from "lucide-react";
+import {
+  BadgeCheck,
+  BadgeX,
+  CheckCircle,
+  Figma,
+  Github,
+  Link2,
+  Star,
+} from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { RainbowButton } from "../ui/rainbow-button";
@@ -34,7 +42,7 @@ const ProjectsArr = [
     status: "In Progress",
   },
   {
-    name: "n8n",
+    name: "Orcha",
     link: "https://next-brain-i432.vercel.app/",
     image: "",
     github: "https://github.com/vansh-nagar/LittleLemon",
@@ -48,7 +56,7 @@ const ProjectsArr = [
       "Express",
       "MongoDB",
     ],
-    timeLine: "Dec 2023 - Jan 2024",
+    timeLine: "Oct 2024 - present",
     Description:
       "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
     status: "Not Started",
@@ -64,7 +72,7 @@ const ProjectsArr = [
     timeLine: "Feb 2024 - Present",
     Description:
       "Desktop productivity app, a modern tool that makes your life easy and gets your work actually done.",
-    status: "In Progress",
+    status: "Not Started",
   },
   {
     name: "UI Library",
@@ -77,36 +85,36 @@ const ProjectsArr = [
     timeLine: "Feb 2024 - Present",
     Description:
       "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
-    status: "In Progress",
+    status: "Not Started",
   },
-  {
-    name: "NEXTBrain",
-    link: "https://next-brain-i432.vercel.app/",
-    image:
-      "http://res.cloudinary.com/dz12pywzs/image/upload/v1751201965/scvwjaz25rwxtpazozvo.png",
-    github: "https://github.com/vansh-nagar/NEXTBrain",
-    demo: "https://next-brain-i432.vercel.app/",
-    figmaFile: "",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Pinecone", "OpenAI"],
-    timeLine: "Jan 2024 - Present",
-    Description:
-      "A smart bookmarking app that lets you save and preview links, with AI-powered search using vector DB to optimize context and reduce token usage.",
-    status: "Completed",
-  },
-  {
-    name: "Little Lemon",
-    link: "https://next-brain-i432.vercel.app/",
-    image:
-      "http://res.cloudinary.com/dz12pywzs/image/upload/v1751520950/o7dtqqrll3vadqbtbmes.png",
-    github: "https://github.com/vansh-nagar/LittleLemon",
-    demo: "",
-    figmaFile: "",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    timeLine: "Dec 2023 - Jan 2024",
-    Description:
-      "Little Lemon is a mobile food ordering app for a local restaurant. It lets users browse dishes, view details, and manage orders with ease.",
-    status: "Completed",
-  },
+  // {
+  //   name: "NEXTBrain",
+  //   link: "https://next-brain-i432.vercel.app/",
+  //   image:
+  //     "http://res.cloudinary.com/dz12pywzs/image/upload/v1751201965/scvwjaz25rwxtpazozvo.png",
+  //   github: "https://github.com/vansh-nagar/NEXTBrain",
+  //   demo: "https://next-brain-i432.vercel.app/",
+  //   figmaFile: "",
+  //   tech: ["Next.js", "TypeScript", "Tailwind CSS", "Pinecone", "OpenAI"],
+  //   timeLine: "Jan 2024 - Present",
+  //   Description:
+  //     "A smart bookmarking app that lets you save and preview links, with AI-powered search using vector DB to optimize context and reduce token usage.",
+  //   status: "Completed",
+  // },
+  // {
+  //   name: "Little Lemon",
+  //   link: "https://next-brain-i432.vercel.app/",
+  //   image:
+  //     "http://res.cloudinary.com/dz12pywzs/image/upload/v1751520950/o7dtqqrll3vadqbtbmes.png",
+  //   github: "https://github.com/vansh-nagar/LittleLemon",
+  //   demo: "",
+  //   figmaFile: "",
+  //   tech: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+  //   timeLine: "Dec 2023 - Jan 2024",
+  //   Description:
+  //     "Little Lemon is a mobile food ordering app for a local restaurant. It lets users browse dishes, view details, and manage orders with ease.",
+  //   status: "Completed",
+  // },
 ];
 
 const Projects = () => {
@@ -142,8 +150,21 @@ const Projects = () => {
               <div className="flex justify-between items-center  max-sm:flex-wrap ">
                 <div className=" block  font-semibold text-2xl  ">
                   {project.name} <br />{" "}
-                  <div className="text-xs font-normal">
-                    {" "}
+                  <div className="text-xs font-normal flex items-center gap-1">
+                    {project.status === "In Progress" ||
+                    project.status === "Completed" ? (
+                      <BadgeCheck
+                        size={16}
+                        strokeWidth={1}
+                        className=" text-green-500"
+                      />
+                    ) : (
+                      <BadgeX
+                        size={16}
+                        strokeWidth={1}
+                        className="text-destructive"
+                      />
+                    )}{" "}
                     {project.status}...
                   </div>
                 </div>{" "}
