@@ -39,10 +39,10 @@ const HeroContent = () => {
       <Projects />
       <GithubActivity />
 
+      {/* <Socials /> */}
       <CallDotCom />
 
       <ScrollProgress />
-      <Socials />
     </div>
   );
 };
