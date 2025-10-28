@@ -24,7 +24,7 @@ const About = () => {
           </span>
           , blending <span className="text-foreground/80">creativity</span> with{" "}
           <span className="text-foreground/80">technology</span> to bring ideas
-          to life ✨
+          to life ✧
         </p>
       </section>
     </>
