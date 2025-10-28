@@ -119,7 +119,7 @@ const ProjectsArr = [
 
 const Projects = () => {
   return (
-    <div className=" flex justify-center my-5 p-2">
+    <div className=" flex justify-center my-5">
       <div>
         <header className="font-bold text-xl">Projects</header>
         <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2   gap-3  hover:caret-white ">
