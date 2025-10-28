@@ -125,7 +125,11 @@ const Intro = () => {
           placeholder="See my designs"
           color={false}
         />
-        <ArrowButton link="" placeholder="Pick Your Petal" color={true} />
+        <ArrowButton
+          link="/pick-your-petal"
+          placeholder="Pick Your Petal"
+          color={true}
+        />
         <ArrowButton
           link="threejs"
           placeholder="Three.js Journey"

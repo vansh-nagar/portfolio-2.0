@@ -122,7 +122,7 @@ const Projects = () => {
     <div className=" flex justify-center my-5 p-2">
       <div>
         <header className="font-bold text-xl">Projects</header>
-        <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2  w-[95vw] sm:w-[50vw]  gap-3 max-sm:gap-[6vw] hover:caret-white ">
+        <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2   gap-3  hover:caret-white ">
           {ProjectsArr.map((project, index) => (
             <div key={index} className=" flex  flex-col gap-2">
               {project.image ? (

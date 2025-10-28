@@ -55,15 +55,19 @@
       background-position: 200%;
     }
   }
-  --animate-shine: shine var(--duration) infinite linear
-;
+  --animate-shine: shine var(--duration) infinite linear;
   @keyframes shine {
-  0% {
-    background-position: 0% 0%;}
-  50% {
-    background-position: 100% 100%;}
-  to {
-    background-position: 0% 0%;}}}
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
+}
 
 :root {
   --radius: 0.625rem;
@@ -154,7 +158,7 @@
 }
 
 /* Decrease scrollbar size for Webkit browsers */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 6px;
   height: 2px;
 }
@@ -171,4 +175,13 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #b0c1fa transparent;
+} */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+* {
+  scrollbar-width: none;
 }

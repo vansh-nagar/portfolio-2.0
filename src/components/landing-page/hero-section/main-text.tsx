@@ -5,6 +5,9 @@ import About from "../about";
 import Education from "../education";
 import Skills from "../skills";
 import Intro from "../intro";
+import GithubActivity from "../github-activity";
+import Projects from "../projects";
+import CallDotCom from "../call-com";
 
 const HeroContent = () => {
   return (
@@ -30,6 +33,11 @@ const HeroContent = () => {
       <Education />
 
       <Skills />
+
+      <Projects />
+      <GithubActivity />
+
+      <CallDotCom />
     </div>
   );
 };
