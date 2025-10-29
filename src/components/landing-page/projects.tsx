@@ -65,7 +65,7 @@ const ProjectsArr = [
     github: "https://github.com/vansh-nagar/Zip",
     demo: "",
     figmaFile: "",
-    tech: ["Electron", "React", "TypeScript", "Tailwind CSS", "SQLite"],
+    tech: ["??", "??", "??", "??", "??"],
     timeLine: "Feb 2024 - Present",
     Description:
       "A beautifully crafted design and prototyping tool inspired by Lovable and Sketch — built to create, preview, and refine stunning user interfaces with precision and ease.",

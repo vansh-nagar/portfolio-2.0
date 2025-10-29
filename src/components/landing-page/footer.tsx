@@ -14,14 +14,6 @@ export default function Footer() {
               <span className="underline">app</span>&nbsp;
               <span className="italic">experiences</span>✧.
             </h2>
-            <div className="flex gap-4 mt-4">
-              <ArrowButton link="designs" placeholder="Hire me" color={false} />
-              <ArrowButton
-                link="designs"
-                placeholder="Contact me"
-                color={true}
-              />
-            </div>
           </div>
         </div>
         <div className="text-right text-[15px] text-muted-foreground ">
