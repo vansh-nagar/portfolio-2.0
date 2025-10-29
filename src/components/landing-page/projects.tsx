@@ -1,12 +1,4 @@
-import {
-  BadgeCheck,
-  BadgeX,
-  CheckCircle,
-  Figma,
-  Github,
-  Link2,
-  Star,
-} from "lucide-react";
+import { BadgeCheck, BadgeX, Figma, Github, Link2 } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { RainbowButton } from "../ui/rainbow-button";

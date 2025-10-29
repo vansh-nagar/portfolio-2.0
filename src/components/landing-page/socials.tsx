@@ -14,13 +14,13 @@ const Socials = () => {
             <p className=" dark:hidden block border border-dashed rounded-md ">
               <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&bar_color=000000&bar_color_cover=false&mode=light" />
             </p>
-            <p className="dark:block hidden rounded-md border border-dashed rounded-md">
+            <p className="dark:block hidden rounded-md">
               <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&mode=dark&bar_color=ffffff&bar_color_cover=false" />
             </p>
           </div>
           <div
             onClick={() => window.open("https://github.com/vansh-nagar")}
-            className=" flex items-center justify-center flex-1 relative group  cursor-pointer border border-dashed rounded-md pt-2 "
+            className=" flex items-center justify-center flex-1 relative group  cursor-pointer  rounded-md pt-2 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

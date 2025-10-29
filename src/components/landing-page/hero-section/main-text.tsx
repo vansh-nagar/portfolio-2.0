@@ -28,20 +28,18 @@ const HeroContent = () => {
       />
 
       <Intro />
-
-      <About />
-
       <WorkExperience />
-      <Education />
-
       <Skills />
-
       <Projects />
+
+      {/* <About /> */}
+
       <GithubActivity />
 
-      {/* <Socials /> */}
-      <CallDotCom />
+      <Socials />
 
+      <Education />
+      <CallDotCom />
       <ScrollProgress />
     </div>
   );
