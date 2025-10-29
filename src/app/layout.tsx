@@ -78,7 +78,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children} <Footer />{" "}
-          <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 ">
+          <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
             <ChatWithAi />
             <MusicToggleButton />

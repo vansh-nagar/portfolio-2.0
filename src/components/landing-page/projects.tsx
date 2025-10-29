@@ -59,6 +59,19 @@ const ProjectsArr = [
     status: "In Progress",
   },
   {
+    name: "Lovable + Sketch",
+    link: "https://example.com/zip",
+    image: "",
+    github: "https://github.com/vansh-nagar/Zip",
+    demo: "",
+    figmaFile: "",
+    tech: ["Electron", "React", "TypeScript", "Tailwind CSS", "SQLite"],
+    timeLine: "Feb 2024 - Present",
+    Description:
+      "A beautifully crafted design and prototyping tool inspired by Lovable and Sketch — built to create, preview, and refine stunning user interfaces with precision and ease.",
+    status: "In Progress",
+  },
+  {
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
@@ -71,6 +84,7 @@ const ProjectsArr = [
       "Desktop productivity app, a modern tool that makes your life easy and gets your work actually done.",
     status: "Not Started",
   },
+
   {
     name: "UI Library",
     link: "https://example.com/ui-library",
@@ -82,7 +96,7 @@ const ProjectsArr = [
     timeLine: "Feb 2024 - Present",
     Description:
       "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
-    status: "Not Started",
+    status: "In Progress",
   },
   // {
   //   name: "NEXTBrain",
@@ -144,9 +158,16 @@ const Projects = () => {
                 </div>
               )}
 
-              <div className="flex justify-between items-center  max-sm:flex-wrap ">
-                <div className=" block  font-semibold text-2xl  ">
-                  {project.name} <br />{" "}
+              <div className="flex flex-col   max-sm:flex-wrap ">
+                <div className=" flex justify-between items-end ">
+                  <div className=" block  font-semibold text-2xl  ">
+                    {project.name}
+                  </div>{" "}
+                  <div className=" text-nowrap text-xs">
+                    Jan 2024 - Jan 2024
+                  </div>
+                </div>
+                <div>
                   <div className="text-xs font-normal flex items-center gap-1">
                     {project.status === "In Progress" ||
                     project.status === "Completed" ? (
@@ -165,7 +186,6 @@ const Projects = () => {
                     {project.status}...
                   </div>
                 </div>{" "}
-                <div className="text-sm text-nowrap">Jan 2024 - Jan 2024</div>
               </div>
 
               <div className="  text-sm text-muted-foreground  ">

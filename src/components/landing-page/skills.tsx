@@ -13,36 +13,17 @@ const skills = [
   "MongoDB",
   "PostgreSQL",
   "Prisma",
-  "REST APIs",
-  "GraphQL",
 
-  // 🎨 Frontend & Design
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "Framer Motion",
-  "GSAP",
   "Figma",
+  "GSAP",
 
   // ☁️ DevOps & Deployment
   "Git",
   "Docker",
-  "AWS",
-  "Vercel",
-  "CI/CD",
 
-  // 🧠 AI & Automation
-  "LangChain",
-  "Python",
-
-  // 🕹️ 3D & Creative
-  "Three.js",
+  "React Native",
   "React Three Fiber",
-  "Blender",
-
-  // 🎬 Media & Editing
-  "Premiere Pro",
-  "After Effects",
+  "Three.js",
 ];
 
 const Skills = () => {

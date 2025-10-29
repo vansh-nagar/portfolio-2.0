@@ -119,7 +119,7 @@ const Intro = () => {
         engineering systems and ꕤ sparking creative communities.
       </div>
 
-      <div className="flex flex-wrap  gap-2 mt-6 z-20">
+      <div className="flex flex-wrap  gap-2 mt-6 z-20 mb-4">
         <ArrowButton
           link="/designs"
           placeholder="See my designs"

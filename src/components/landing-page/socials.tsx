@@ -9,18 +9,18 @@ const Socials = () => {
       <section className=" my-5  w-full ">
         <header className="font-bold text-xl">Socials</header>
 
-        <div className=" w-full mt-2 flex gap-3">
+        <div className=" w-full mt-2 flex gap-3 dark:bg-[#181818] rounded-md border border-dashed">
           <div>
-            <p className=" dark:hidden block border border-dashed rounded-md ">
+            <p className=" dark:hidden block  ">
               <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&bar_color=000000&bar_color_cover=false&mode=light" />
             </p>
-            <p className="dark:block hidden rounded-md">
+            <p className="dark:block hidden ">
               <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&mode=dark&bar_color=ffffff&bar_color_cover=false" />
             </p>
           </div>
           <div
             onClick={() => window.open("https://github.com/vansh-nagar")}
-            className=" flex items-center justify-center flex-1 relative group  cursor-pointer  rounded-md pt-2 "
+            className=" flex items-center  justify-center flex-1 relative group  cursor-pointer  rounded-md pt-2 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +38,9 @@ const Socials = () => {
               </g>
             </svg>
             <FlickeringGrid
-              color="#a6c9a9"
-              maxOpacity={1}
-              className=" absolute"
-              style={{
-                maskImage:
-                  "radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 70%)",
-              }}
+              color="#8da7ff"
+              maxOpacity={0.2}
+              className=" absolute mask-r-from-50% mask-l-from-50%"
             />
           </div>
         </div>
