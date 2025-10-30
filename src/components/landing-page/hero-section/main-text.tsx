@@ -37,7 +37,7 @@ const HeroContent = () => {
       <WorkExperience />
 
       <Education />
-      <Socials />
+      {/* <Socials /> */}
 
       <CallDotCom />
       <ScrollProgress />

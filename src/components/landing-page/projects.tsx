@@ -163,9 +163,7 @@ const Projects = () => {
                   <div className=" block  font-semibold text-2xl  ">
                     {project.name}
                   </div>{" "}
-                  <div className=" text-nowrap text-xs">
-                    Jan 2024 - Jan 2024
-                  </div>
+                  <div className=" text-nowrap text-xs">{project.timeLine}</div>
                 </div>
                 <div>
                   <div className="text-xs font-normal flex items-center gap-1">
