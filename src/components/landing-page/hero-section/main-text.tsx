@@ -17,7 +17,7 @@ const HeroContent = () => {
       <img
         src="/logo/leaf.svg"
         alt=""
-        className="w-[11vw] max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 "
+        className="w-[11vw] max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] "
         style={{ transform: "rotateX(180deg)" }}
       />
       <img
