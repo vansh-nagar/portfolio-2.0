@@ -43,10 +43,10 @@ const Education = () => {
             <div key={index} className="flex gap-4 items-center">
               <img src={edu.img} alt={edu.alt} className={edu.className} />
               <div className="w-full">
-                <div className="font-semibold">{edu.name}</div>
-                <div className="text-xs">{edu.degree}</div>
+                <div className="font-semibold line-clamp-2">{edu.name}</div>
+                <div className="text-xs line-clamp-1">{edu.degree}</div>
               </div>
-              <div className="font-semibold text-sm text-muted-foreground text-nowrap">
+              <div className="font-semibold text-sm text-muted-foreground sm:text-nowrap">
                 {edu.dates}
               </div>
             </div>

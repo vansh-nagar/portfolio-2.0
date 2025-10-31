@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { MusicToggleButton } from "@/components/cool-stuff/music-player";
 import { ModeToggle } from "@/components/cool-stuff/light-dark";
 import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
+import { Particles } from "@/components/ui/particles";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

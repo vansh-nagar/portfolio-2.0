@@ -23,12 +23,12 @@ export default function Booking() {
         <img
           src="/logo/leaf.svg"
           alt=""
-          className="w-20 mask-r-from-90% absolute right-0"
+          className="w-20 sm:mask-r-from-90% absolute right-0 max-sm:blur-[2px] max-sm:hidden  "
           style={{ transform: "rotateX(180deg)" }}
         />
         <header className="font-bold text-xl">Book a Call</header>
 
-        <div className=" flex flex-col gap-3 ">
+        <div className=" flex flex-col gap-3  ">
           <div className="text-sm  text-muted-foreground">
             Want to collaborate or discuss a project? Let’s connect on a quick
             call. connect!

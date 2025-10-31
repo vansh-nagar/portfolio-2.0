@@ -96,7 +96,7 @@ const ProjectsArr = [
     timeLine: "",
     Description:
       "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
-    status: "In Progress",
+    status: "Not Started",
   },
   // {
   //   name: "NEXTBrain",
@@ -135,7 +135,7 @@ const Projects = () => {
         <header className="font-bold text-xl">Projects</header>
         <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2   gap-3  hover:caret-white ">
           {ProjectsArr.map((project, index) => (
-            <div key={index} className=" flex  flex-col gap-2">
+            <div key={index} className=" flex  flex-col gap-2 ">
               {project.image ? (
                 <div>
                   <a
@@ -146,7 +146,7 @@ const Projects = () => {
                     <img
                       src={project.image}
                       alt=""
-                      className=" rounded-md  aspect-video "
+                      className=" rounded-md   object-cover aspect-video w-full"
                     />
                   </a>
                 </div>

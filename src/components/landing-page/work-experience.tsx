@@ -30,10 +30,12 @@ const WorkExperience = () => {
                 className="rounded-full h-14 w-14 object-cover"
               />
               <div className="w-full">
-                <div className="font-semibold">{experience.title}</div>
+                <div className="font-semibold line-clamp-2 ">
+                  {experience.title}
+                </div>
                 <div className="text-xs">{experience.role}</div>
               </div>
-              <div className="font-semibold text-sm text-muted-foreground text-nowrap">
+              <div className="font-semibold text-sm text-muted-foreground  sm:text-nowrap">
                 {experience.date}
               </div>
             </div>

@@ -9,6 +9,7 @@ import GithubActivity from "../github-activity";
 import Projects from "../projects";
 import CallDotCom from "../call-com";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { motion } from "framer-motion";
 
 const HeroContent = () => {
   return (
@@ -16,13 +17,14 @@ const HeroContent = () => {
       <img
         src="/logo/leaf.svg"
         alt=""
-        className="w-[11vw] max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] "
+        className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] "
         style={{ transform: "rotateX(180deg)" }}
       />
+
       <img
         src="/logo/leaf.svg"
         alt=""
-        className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent z-0 max-sm:-z-10"
+        className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent max-sm:blur-[2px] z-0 max-sm:-z-10"
         style={{ transform: "rotateY(180deg)" }}
       />
 

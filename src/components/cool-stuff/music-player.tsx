@@ -67,7 +67,7 @@ export const MusicToggleButton = () => {
       <motion.div
         onClick={handleClick}
         key="audio"
-        className="bg-background border cursor-pointer rounded-md px-2 py-2.5"
+        className=" border cursor-pointer rounded-md px-2 py-2.5 dark:bg-transparent  bg-background"
       >
         <motion.div
           initial={{ opacity: 0, filter: "blur(4px)" }}
