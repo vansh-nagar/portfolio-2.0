@@ -13,54 +13,54 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  icons: {
-    icon: "/vite.svg",
-  },
-  title: "Vansh Nagar | Full Stack Developer & Designer",
-  description:
-    "Official portfolio of Vansh Nagar — Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer. Explore projects, skills, and contact details.",
-  keywords: [
-    "Vansh Nagar",
-    "Vansh portfolio",
-    "Full Stack Developer India",
-    "Next.js Developer",
-    "MERN Stack Portfolio",
-    "TypeScript Developer",
-    "UI UX Designer",
-    "Frontend Developer",
-    "Web Developer Portfolio",
-  ],
-  authors: [{ name: "Vansh Nagar", url: "https://vanshnagar.me" }],
-  creator: "Vansh Nagar",
-  publisher: "Vansh Nagar",
-  metadataBase: new URL("https://vanshnagar.me"),
-  robots: "index, follow",
-  themeColor: "#000000",
-  openGraph: {
-    title: "Vansh Nagar | Full Stack Developer & Designer",
-    description:
-      "Portfolio showcasing projects, skills, and experience of Vansh Nagar — a modern full stack developer and designer.",
-    url: "https://vanshnagar.me",
-    siteName: "Vansh Nagar Portfolio",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/seoImage.png",
-        width: 1200,
-        height: 630,
-        alt: "Vansh Nagar Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Vansh Nagar | Full Stack Developer & Designer",
-    description:
-      "Explore the portfolio of Vansh Nagar — projects, UI/UX, and dev tools.",
-    creator: "@vansh1029", // replace or remove
-    images: ["/og.jpg"],
-  },
+  // icons: {
+  //   icon: "/vite.svg",
+  // },
+  // title: "Vansh Nagar | Full Stack Developer & Designer",
+  // description:
+  //   "Official portfolio of Vansh Nagar — Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer. Explore projects, skills, and contact details.",
+  // keywords: [
+  //   "Vansh Nagar",
+  //   "Vansh portfolio",
+  //   "Full Stack Developer India",
+  //   "Next.js Developer",
+  //   "MERN Stack Portfolio",
+  //   "TypeScript Developer",
+  //   "UI UX Designer",
+  //   "Frontend Developer",
+  //   "Web Developer Portfolio",
+  // ],
+  // authors: [{ name: "Vansh Nagar", url: "https://vanshnagar.me" }],
+  // creator: "Vansh Nagar",
+  // publisher: "Vansh Nagar",
+  // metadataBase: new URL("https://vanshnagar.me"),
+  // robots: "index, follow",
+  // themeColor: "#000000",
+  // openGraph: {
+  //   title: "Vansh Nagar | Full Stack Developer & Designer",
+  //   description:
+  //     "Portfolio showcasing projects, skills, and experience of Vansh Nagar — a modern full stack developer and designer.",
+  //   url: "https://vanshnagar.me",
+  //   siteName: "Vansh Nagar Portfolio",
+  //   locale: "en_US",
+  //   type: "website",
+  //   images: [
+  //     {
+  //       url: "/seoImage.png",
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "Vansh Nagar Portfolio",
+  //     },
+  //   ],
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Vansh Nagar | Full Stack Developer & Designer",
+  //   description:
+  //     "Explore the portfolio of Vansh Nagar — projects, UI/UX, and dev tools.",
+  //   creator: "@vansh1029", // replace or remove
+  //   images: ["/og.jpg"],
+  // },
 };
 
 export default function RootLayout({

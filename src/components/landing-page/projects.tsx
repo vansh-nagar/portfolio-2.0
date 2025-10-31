@@ -38,7 +38,7 @@ const ProjectsArr = [
     name: "Orcha",
     link: "https://next-brain-i432.vercel.app/",
     image: "",
-    github: "https://github.com/vansh-nagar/LittleLemon",
+    github: "https://github.com/vansh-nagar/orcha",
     demo: "",
     figmaFile: "",
     tech: [
@@ -53,20 +53,20 @@ const ProjectsArr = [
       "Code rabbit",
       "Sentry",
     ],
-    timeLine: "Oct 2024 - present",
+    timeLine: "Oct 2025 - present",
     Description:
       "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
     status: "In Progress",
   },
   {
-    name: "Lovable + Sketch",
+    name: "DraftX",
     link: "https://example.com/zip",
     image: "",
-    github: "https://github.com/vansh-nagar/Zip",
+    github: "https://github.com/vansh-nagar/draft",
     demo: "",
     figmaFile: "",
     tech: ["??", "??", "??", "??", "??"],
-    timeLine: "Feb 2024 - Present",
+    timeLine: "Oct 2025 - Present",
     Description:
       "A beautifully crafted design and prototyping tool inspired by Lovable and Sketch — built to create, preview, and refine stunning user interfaces with precision and ease.",
     status: "In Progress",
@@ -75,11 +75,11 @@ const ProjectsArr = [
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
-    github: "https://github.com/vansh-nagar/Zip",
+    github: "",
     demo: "",
     figmaFile: "",
     tech: ["Electron", "React", "TypeScript", "Tailwind CSS", "SQLite"],
-    timeLine: "Feb 2024 - Present",
+    timeLine: "",
     Description:
       "Desktop productivity app, a modern tool that makes your life easy and gets your work actually done.",
     status: "Not Started",
@@ -89,11 +89,11 @@ const ProjectsArr = [
     name: "UI Library",
     link: "https://example.com/ui-library",
     image: "",
-    github: "https://github.com/vansh-nagar/ui-library",
+    github: "",
     demo: "",
     figmaFile: "",
     tech: ["??", "??", "??", "??"],
-    timeLine: "Feb 2024 - Present",
+    timeLine: "",
     Description:
       "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
     status: "In Progress",
@@ -223,16 +223,18 @@ const Projects = () => {
                     </Button>
                   </Link>
                 )}
-                <Link href={project.demo} target="_blank">
-                  <RainbowButton
-                    className=" rounded-md  "
-                    variant="outline"
-                    size={"sm"}
-                  >
-                    <Link2 />
-                    Live Demo
-                  </RainbowButton>
-                </Link>
+                {project.demo && (
+                  <Link href={project.demo} target="_blank">
+                    <RainbowButton
+                      className=" rounded-md  "
+                      variant="outline"
+                      size={"sm"}
+                    >
+                      <Link2 />
+                      Live Demo
+                    </RainbowButton>
+                  </Link>
+                )}
               </div>
             </div>
           ))}
