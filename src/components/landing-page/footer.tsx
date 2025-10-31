@@ -12,7 +12,7 @@ export default function Footer() {
             <h2 className="  text-muted-foreground">
               Building modern <span className="underline">web</span> &{" "}
               <span className="underline">app</span>&nbsp;
-              <span className="italic">experiences</span>✧.
+              <span className="italic">experiences</span> ✧.
             </h2>
           </div>
         </div>

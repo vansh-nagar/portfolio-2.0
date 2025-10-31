@@ -1,22 +1,19 @@
-"use client";
+import React from "react";
+
 import { BadgeCheck, BadgeX, Figma, Github, Link2 } from "lucide-react";
-import { Button } from "../ui/button";
 import Link from "next/link";
-import { RainbowButton } from "../ui/rainbow-button";
-import { Badge } from "../ui/badge";
-import { SparklesText } from "../ui/sparkles-text";
-import { useRouter } from "next/navigation";
+import { SparklesText } from "@/components/ui/sparkles-text";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 import { ProjectsArr } from "@/data/projects";
-import { ShinyButton } from "../ui/shiny-button";
 
 const Projects = () => {
-  const router = useRouter();
   return (
-    <div className=" flex justify-center my-5">
-      <div>
-        <header className="font-bold text-xl">Projects</header>
+    <div className="flex  justify-center">
+      <div className="flex flex-col  mt-5 items-start w-[95vw] sm:w-[50vw] my-5 ">
         <div className="  grid  grid-cols-1 md:grid-cols-2  mt-2   gap-3  hover:caret-white ">
-          {ProjectsArr.slice(0, 4).map((project, index) => (
+          {ProjectsArr.map((project, index) => (
             <div key={index} className=" flex  flex-col gap-2 ">
               {project.image ? (
                 <div>
@@ -42,7 +39,7 @@ const Projects = () => {
 
               <div className="flex flex-col   max-sm:flex-wrap ">
                 <div className=" flex justify-between items-center ">
-                  <div className=" block  font-semibold text-lg  ">
+                  <div className=" block  font-semibold text-2xl  ">
                     {project.name}
                   </div>{" "}
                   <div className=" text-nowrap text-xs">{project.timeLine}</div>
@@ -120,15 +117,6 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>{" "}
-        <div className=" flex justify-center mt-10">
-          <ShinyButton
-            onClick={() => {
-              router.push("/projects");
-            }}
-          >
-            Show all projects
-          </ShinyButton>
         </div>
       </div>
     </div>

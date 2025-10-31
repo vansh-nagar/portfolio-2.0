@@ -1,10 +1,6 @@
-import {
-  FileText,
-  Github,
-  Instagram,
-  LucideLinkedin,
-  Twitter,
-} from "lucide-react";
+import { FileText } from "lucide-react";
+import { SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
+
 import ArrowButton from "@/components/ui/arrow-button";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -79,22 +75,22 @@ const Intro = () => {
             {
               href: "https://github.com/vansh-nagar",
               title: "GitHub",
-              icon: Github,
+              icon: SiGithub,
             },
             {
               href: "https://www.linkedin.com/in/vansh-nagar-469648346/",
               title: "LinkedIn",
-              icon: LucideLinkedin,
+              icon: SiLinkedin,
             },
             {
               href: "",
               title: "Twitter/X",
-              icon: Twitter,
+              icon: SiX,
             },
             {
               href: "https://www.instagram.com/epitome0.0/?hl=en",
               title: "Instagram",
-              icon: Instagram,
+              icon: SiInstagram,
             },
             {
               href: "https://www.arclabs.space/dashboard/generate-resume/page2/cmh6l8y3d0001i904uso7c3ux",
@@ -104,7 +100,7 @@ const Intro = () => {
           ].map(({ href, title, icon: Icon }, key) => (
             <Link href={href} key={key} target="_blank">
               <Button size={"icon"} variant="outline">
-                <Icon size={20} />
+                <Icon />
               </Button>
             </Link>
           ))}

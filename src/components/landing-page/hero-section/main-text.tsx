@@ -1,7 +1,6 @@
 "use client";
 
 import WorkExperience from "../work-experience";
-import About from "../about";
 import Education from "../education";
 import Skills from "../skills";
 import Intro from "../intro";
@@ -9,11 +8,10 @@ import GithubActivity from "../github-activity";
 import Projects from "../projects";
 import CallDotCom from "../call-com";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
-import { motion } from "framer-motion";
 
 const HeroContent = () => {
   return (
-    <div className="flex flex-col  mt-5 sm:mt-20 items-start w-[95vw] sm:w-[50vw] ">
+    <div className="flex flex-col mt-5 sm:mt-20 items-start w-[95vw] sm:w-[50vw]  ">
       <img
         src="/logo/leaf.svg"
         alt=""

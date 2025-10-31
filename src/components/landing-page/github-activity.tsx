@@ -5,7 +5,8 @@ const GithubActivity = () => {
     <>
       <section className=" my-5  w-full ">
         <header className="font-bold text-xl">
-          Github Activity <span className="text-destructive">(Private)</span>
+          Github Activity
+          {/* <span className="text-destructive">(Private)</span> */}
         </header>
 
         <div className=" flex flex-wrap gap-1 mt-2">

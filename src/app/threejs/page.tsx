@@ -16,7 +16,7 @@ const Projects = [
     github: "https://github.com/your-username/prep-cabin-ai", // replace with your repo link
     demo: "https://www.arclabs.space/dashboard/simulate-interview/page1", // same as live demo
     figmaFile: "https://www.figma.com/file/your-file-id/Prep-Cabin-AI", // optional
-    tech: ["Next.js", "TypeScript"],
+    tech: ["Next.js", "TypeScript", "React", "Tailwind CSS", "OpenAI API"],
     Description:
       "Prep Cabin AI is an AI-driven interview preparation platform where users upload their résumé, select a job title, and get an instant mock interview.",
   },
@@ -29,7 +29,13 @@ const Projects = [
     github: "https://github.com/vansh-nagar/Portal-p1",
     demo: "https://portal-p1.vercel.app/",
     figmaFile: "",
-    tech: ["Next.js", "TypeScript"],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React Three Fiber",
+      "three.js",
+      "Tailwind CSS",
+    ],
     Description:
       "A playful low-poly 3D scene featuring stylized props and lighting, designed to showcase visual storytelling and environment design.",
   },
@@ -41,7 +47,25 @@ const Projects = [
     github: "https://github.com/vansh-nagar/3D-Laptop",
     demo: "https://3-d-laptop-sooty.vercel.app/",
     figmaFile: "",
-    tech: ["Next.js", "TypeScript"],
+    tech: [
+      "React Three Fiber",
+      "drei",
+      "react-spring",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+    Description:
+      "A sleek 3D laptop portfolio built with React Three Fiber, Spring, and Drei.",
+  },
+  {
+    name: "Porsche experience center",
+    link: "https://3-d-laptop-sooty.vercel.app/",
+    image: "",
+    github: "https://github.com/vansh-nagar/3D-Laptop",
+    demo: "https://3-d-laptop-sooty.vercel.app/",
+    figmaFile: "",
+    tech: ["Three.js", "GLTF", "React Three Fiber", "TypeScript", "Next.js"],
     Description:
       "A sleek 3D laptop portfolio built with React Three Fiber, Spring, and Drei.",
   },
@@ -84,29 +108,19 @@ const page = () => {
           {Projects.map((project, index) => (
             <div key={index} className="flex flex-col gap-2">
               <div>
-                <img
-                  src={project.image}
-                  alt=""
-                  className=" rounded-md  aspect-video  "
-                />
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt=""
+                    className=" rounded-md  aspect-video  "
+                  />
+                )}
               </div>
               <div className="flex flex-col ">
-                <div
-                  className=" flex  justify-between
-                "
-                >
+                <div>
                   <div className=" block  font-semibold text-2xl  ">
                     {project.name} <br />{" "}
                   </div>{" "}
-                  <Link href={project.demo} target="_blank">
-                    <RainbowButton
-                      className=" rounded-md  "
-                      variant="outline"
-                      size={"sm"}
-                    >
-                      Live Demo
-                    </RainbowButton>
-                  </Link>
                 </div>
 
                 <div className="  text-sm text-muted-foreground  ">
@@ -124,6 +138,15 @@ const page = () => {
                   </Badge>
                 ))}
               </div>
+              <Link href={project.demo} target="_blank">
+                <RainbowButton
+                  className=" rounded-md  "
+                  variant="outline"
+                  size={"sm"}
+                >
+                  Live Demo
+                </RainbowButton>
+              </Link>
             </div>
           ))}
         </div>
