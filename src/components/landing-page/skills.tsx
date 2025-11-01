@@ -64,7 +64,7 @@ const Skills = () => {
         {skills.map(({ name, icon: Icon, color }) => (
           <Badge
             key={name}
-            className="rounded-sm border-dashed mb-1 flex items-center gap-1 text-sm hover:scale-105 transition-transform"
+            className="rounded-sm shadow-inner border-dashed  flex items-center gap-2  cursor-pointer text-sm hover:scale-105 transition-transform"
             variant="outline"
           >
             <Icon className={`w-4 h-4 ${color}`} />
