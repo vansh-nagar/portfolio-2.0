@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { BadgeCheck, BadgeX, Figma, Github, Link2 } from "lucide-react";
 import Link from "next/link";
@@ -23,11 +24,15 @@ const Projects = () => {
                       href={project.link}
                       target="_blank"
                     >
-                      <img
-                        src={project.image}
-                        alt=""
-                        className=" rounded-md   object-cover aspect-video w-full"
-                      />
+                      <div className="relative w-full aspect-video">
+                        <Image
+                          src={project.image}
+                          alt={`${project.name} screenshot`}
+                          fill
+                          className="rounded-md object-cover"
+                          sizes="(max-width: 1024px) 95vw, 50vw"
+                        />
+                      </div>
                     </a>
                   </div>
                 ) : (

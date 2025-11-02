@@ -10,23 +10,32 @@ import CallDotCom from "../call-com";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import About from "../about";
 import Socials from "../socials";
+import Image from "next/image";
 
 const HeroContent = () => {
   return (
     <div className="flex flex-col mt-5 sm:mt-20 items-start w-[95vw] sm:w-[50vw]  ">
-      <img
-        src="/logo/leaf.svg"
-        alt=""
-        className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] "
-        style={{ transform: "rotateX(180deg)" }}
-      />
+      <div className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] ">
+        <Image
+          src="/logo/leaf.svg"
+          alt="Decorative leaf"
+          width={200}
+          height={200}
+          style={{ transform: "rotateX(180deg)" }}
+          priority={false}
+        />
+      </div>
 
-      <img
-        src="/logo/leaf.svg"
-        alt=""
-        className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent max-sm:blur-[2px] z-0 max-sm:-z-10"
-        style={{ transform: "rotateY(180deg)" }}
-      />
+      <div className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent max-sm:blur-[2px] z-0 max-sm:-z-10">
+        <Image
+          src="/logo/leaf.svg"
+          alt="Decorative leaf"
+          width={200}
+          height={200}
+          style={{ transform: "rotateY(180deg)" }}
+          priority={false}
+        />
+      </div>
 
       <Intro />
       <Skills />
@@ -34,7 +43,6 @@ const HeroContent = () => {
 
       {/* <About /> */}
 
-      {/* <Socials /> */}
       <GithubActivity />
       <WorkExperience />
 

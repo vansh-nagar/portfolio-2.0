@@ -7,13 +7,14 @@ import { MusicToggleButton } from "@/components/cool-stuff/music-player";
 import { ModeToggle } from "@/components/cool-stuff/light-dark";
 import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
 import { Particles } from "@/components/ui/particles";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   icons: {
     icon: "/leaf.svg",
   },
@@ -37,6 +38,9 @@ export const metadata = {
   metadataBase: new URL("https://vanshnagar.me"),
   robots: "index, follow",
   themeColor: "#000000",
+  alternates: {
+    canonical: "https://vanshnagar.me/",
+  },
   openGraph: {
     title: "Vansh Nagar | Full Stack Developer & Designer",
     description:
@@ -71,7 +75,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${montserrat.className} antialiased  `}>
+      <body className={`${montserrat.className} antialiased `}>
+        <Script
+          id="ld-person"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Vansh Nagar",
+              jobTitle: "Full Stack Developer & Designer",
+              url: "https://vanshnagar.me",
+              image: "https://vanshnagar.me/seoImage.png",
+              sameAs: [
+                "https://github.com/vansh1029",
+                "https://www.linkedin.com/in/vansh-nagar/",
+              ],
+              description:
+                "Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer.",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "IN",
+              },
+            }),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
