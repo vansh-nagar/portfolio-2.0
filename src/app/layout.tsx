@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://vanshnagar.me"),
   robots: "index, follow",
   themeColor: "#000000",
+  verification: {
+    google: "tz6j6P-RKJ8gKkK34Fek_se07VIEbIriv3fg-EAW8OI",
+  },
   alternates: {
     canonical: "https://vanshnagar.me/",
   },
