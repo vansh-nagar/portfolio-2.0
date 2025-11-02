@@ -9,7 +9,9 @@ const Tools = () => {
       <section className=" my-5  w-full  ">
         <header className="font-bold text-xl">Tools</header>
 
-        <div className=" w-full mt-2 flex gap-3  ">TOOLS</div>
+        <div className=" w-full mt-2 flex gap-3  ">
+          
+        </div>
       </section>
     </>
   );
