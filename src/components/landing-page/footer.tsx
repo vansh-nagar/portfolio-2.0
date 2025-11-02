@@ -8,7 +8,7 @@ export default function Footer() {
       <footer className="  pb-12 pt-5 flex flex-col  border-t  border-dashed  justify-between relative overflow-hidden gap-15  w-[95vw] sm:w-[50vw]">
         <div className="flex items-start gap-4  ">
           <div className="flex flex-col items-start ">
-            <h1 className="text-3xl  ">Vansh Nagar</h1>
+            <h1 className="text-2xl  ">Vansh Nagar</h1>
             <h2 className="  text-muted-foreground">
               Building modern <span className="underline">web</span> &{" "}
               <span className="underline">app</span>&nbsp;

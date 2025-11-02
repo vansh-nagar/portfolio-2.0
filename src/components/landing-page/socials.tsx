@@ -20,7 +20,7 @@ const Socials = () => {
           </div>
           <div
             onClick={() => window.open("https://github.com/vansh-nagar")}
-            className=" flex items-center  justify-center flex-1 relative group  cursor-pointer  rounded-md pt-2 "
+            className=" flex items-center  justify-center flex-1 relative group  max-md:hidden cursor-pointer  rounded-md pt-2 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

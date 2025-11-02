@@ -99,7 +99,7 @@ const Intro = () => {
             },
           ].map(({ href, title, icon: Icon }, key) => (
             <Link href={href} key={key} target="_blank">
-              <Button size={"icon"} variant="outline">
+              <Button size={"icon"} variant="outline" className=" shadow ">
                 <Icon />
               </Button>
             </Link>

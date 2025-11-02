@@ -122,7 +122,7 @@ const Projects = () => {
             </div>
           ))}
         </div>{" "}
-        <div className=" flex justify-center mt-10">
+        <div className=" flex justify-center mt-5">
           <ShinyButton
             onClick={() => {
               router.push("/projects");

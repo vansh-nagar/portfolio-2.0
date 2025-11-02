@@ -62,7 +62,7 @@ export const ProjectsArr = [
     timeLine: "Oct 2025 - Present",
     Description:
       "A beautifully crafted design and prototyping tool inspired by Lovable and Sketch — built to create, preview, and refine stunning user interfaces with precision and ease.",
-    status: "In Progress",
+    status: "Not Started",
   },
   {
     name: "Zip",

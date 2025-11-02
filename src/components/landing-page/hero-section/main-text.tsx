@@ -8,6 +8,8 @@ import GithubActivity from "../github-activity";
 import Projects from "../projects";
 import CallDotCom from "../call-com";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
+import About from "../about";
+import Socials from "../socials";
 
 const HeroContent = () => {
   return (
@@ -32,11 +34,11 @@ const HeroContent = () => {
 
       {/* <About /> */}
 
+      {/* <Socials /> */}
       <GithubActivity />
       <WorkExperience />
 
       <Education />
-      {/* <Socials /> */}
 
       <CallDotCom />
       <ScrollProgress />
