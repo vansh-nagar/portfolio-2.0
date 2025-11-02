@@ -75,12 +75,10 @@ const page = () => {
             className="group max-sm:w-[95vw] gap-4 flex flex-col"
           >
             <div className="relative w-full" style={{ aspectRatio: "16 / 9" }}>
-              <Image
+              <img
                 src={img.imageUrl}
                 alt={`Design shot #${index + 1}`}
-                fill
                 className="rounded-xl object-cover group-hover:scale-95 transition-all duration-300 group-hover:opacity-90 shadow-md"
-                sizes="(max-width: 640px) 95vw, 50vw"
               />
             </div>
           </div>

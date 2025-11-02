@@ -27,8 +27,8 @@ const Intro = () => {
 
       gsap.to(svgPath, {
         strokeDashoffset: 0,
-        duration: 1.5,
-        ease: "power1.in",
+        duration: 2,
+        ease: "easeInOut",
       });
     };
 

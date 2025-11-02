@@ -43,7 +43,6 @@ export const ProjectsArr = [
       "Better auth",
       "Inngest",
       "React flow",
-      "Code rabbit",
       "Sentry",
     ],
     timeLine: "Oct 2025 - present",

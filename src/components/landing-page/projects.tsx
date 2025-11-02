@@ -29,12 +29,12 @@ const Projects = () => {
                       <img
                         src={project.image}
                         alt=""
-                        className=" rounded-md   object-cover aspect-video w-full"
+                        className=" rounded-md shadow   object-cover aspect-video w-full"
                       />
                     </a>
                   </div>
                 ) : (
-                  <div className=" w-full  aspect-video  bg-muted rounded-md flex items-center justify-center ">
+                  <div className=" w-full shadow  aspect-video  bg-muted rounded-md flex items-center justify-center ">
                     <SparklesText className=" text-2xl text-center px-4 ">
                       Coming Soon...
                     </SparklesText>

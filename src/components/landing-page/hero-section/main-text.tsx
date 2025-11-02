@@ -41,7 +41,8 @@ const HeroContent = () => {
       <Skills />
       <Projects />
 
-      {/* <About /> */}
+      <About />
+      <Socials />
 
       <GithubActivity />
       <WorkExperience />

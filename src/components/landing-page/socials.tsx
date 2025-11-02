@@ -6,7 +6,7 @@ import Link from "next/link";
 const Socials = () => {
   return (
     <>
-      <section className=" my-5  w-full ">
+      <section className=" my-5  w-full  ">
         <header className="font-bold text-xl">Socials</header>
 
         <div className=" w-full mt-2 flex gap-3 dark:bg-[#181818] rounded-md border border-dashed">
@@ -43,6 +43,13 @@ const Socials = () => {
               className=" absolute mask-r-from-50% mask-l-from-50%"
             />
           </div>
+        </div>
+        <div className=" mt-3">
+          <img
+            src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762102619/Untitled_sur84c.png"
+            alt=""
+            className=" rounded-md  border border-dashed  h-40 w-full object-cover object-bottom "
+          />
         </div>
       </section>
     </>
