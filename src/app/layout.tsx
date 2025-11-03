@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/leaf.svg",
   },
-  title: "Vansh Nagar | Full Stack Developer & Designer",
+  title: "Vansh Nagar",
   description:
     "Official portfolio of Vansh Nagar — Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer. Explore projects, skills, and contact details.",
   keywords: [

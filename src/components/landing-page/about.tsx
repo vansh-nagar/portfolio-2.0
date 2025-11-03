@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section className=" mt-4">
+      <section className=" my-5">
         <header className=" font-bold text-xl">About</header>
         <p className="text-sm leading-relaxed text-muted-foreground ">
           I began as a{" "}
