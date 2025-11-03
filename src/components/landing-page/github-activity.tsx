@@ -11,7 +11,7 @@ const GithubActivity = () => {
 
         <div className=" flex flex-wrap gap-1 mt-2">
           {" "}
-          <div className="hidden dark:block overflow-hidden  mask-r-from-99%  no-scrollbar">
+          <div className="hidden dark:block overflow-hidden   no-scrollbar">
             <GitHubCalendar
               username="hkirat"
               colorScheme="dark"
@@ -20,7 +20,7 @@ const GithubActivity = () => {
               fontSize={14}
             />
           </div>
-          <div className="dark:hidden block  overflow-hidden mask-r-from-99%  no-scrollbar">
+          <div className="dark:hidden block  overflow-hidden   no-scrollbar">
             <GitHubCalendar
               username="hkirat"
               // username="vansh-nagar"
