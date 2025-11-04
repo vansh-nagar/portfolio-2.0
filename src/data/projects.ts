@@ -29,11 +29,11 @@ export const ProjectsArr = [
   },
   {
     name: "Orcha",
-    link: "https://orcha-qbylsg9us-vansh-nagars-projects-657b6c87.vercel.app/",
+    link: "http://orcha.site/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1762146870/Copy_of_Webinar_Keynote_Presentation_1_ucqgh3.jpg",
     github: "https://github.com/vansh-nagar/orcha",
-    demo: "",
+    demo: "http://orcha.site/",
     figmaFile: "",
     tech: [
       "Next.js",
