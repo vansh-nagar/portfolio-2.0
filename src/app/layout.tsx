@@ -6,8 +6,14 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { MusicToggleButton } from "@/components/cool-stuff/music-player";
 import { ModeToggle } from "@/components/cool-stuff/light-dark";
 import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
-import { Particles } from "@/components/ui/particles";
 import Script from "next/script";
+import { Button } from "@/components/ui/button";
+import { CalendarCheckIcon } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -112,7 +118,16 @@ export default function RootLayout({
           {children} <Footer />{" "}
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
+
             <ChatWithAi />
+            <Button
+              data-cal-link="vansh-nagar"
+              data-cal-config='{"layout":"month_view"}'
+              size={"icon"}
+              variant={"outline"}
+            >
+              <CalendarCheckIcon />
+            </Button>
             <MusicToggleButton />
           </div>
         </ThemeProvider>

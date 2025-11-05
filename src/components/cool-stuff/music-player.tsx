@@ -67,7 +67,7 @@ export const MusicToggleButton = () => {
       <motion.div
         onClick={handleClick}
         key="audio"
-        className=" border cursor-pointer rounded-md px-2 py-2.5 dark:bg-transparent  bg-background"
+        className=" border cursor-pointer rounded-md px-2 py-2.5  dark:bg-transparent  bg-background"
       >
         <motion.div
           initial={{ opacity: 0, filter: "blur(4px)" }}
@@ -77,7 +77,7 @@ export const MusicToggleButton = () => {
           }}
           exit={{ opacity: 0, filter: "blur(4px)" }}
           transition={{ type: "spring", bounce: 0.35 }}
-          className="flex h-[18px] w-full items-center gap-1 rounded-full"
+          className="flex h-[18px] w-full items-center gap-1 rounded-full "
         >
           {/* Waveform visualization */}
           {heights.map((height, index) => (
