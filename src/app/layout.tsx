@@ -8,12 +8,13 @@ import { ModeToggle } from "@/components/cool-stuff/light-dark";
 import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
-import { CalendarCheckIcon } from "lucide-react";
+import { CalendarCheckIcon, Laptop } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -128,6 +129,15 @@ export default function RootLayout({
             >
               <CalendarCheckIcon />
             </Button>
+            <Link
+              href="https://3-d-laptop-sooty.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button size={"icon"} variant={"outline"}>
+                <Laptop />
+              </Button>
+            </Link>
             <MusicToggleButton />
           </div>
         </ThemeProvider>
