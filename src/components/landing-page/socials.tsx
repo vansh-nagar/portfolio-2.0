@@ -9,8 +9,8 @@ const Socials = () => {
       <section className=" my-5  w-full  ">
         <header className="font-bold text-xl">Socials</header>
 
-        <div className=" w-full mt-2 flex gap-3 dark:bg-[#181818] rounded-md border border-dashed">
-          <div>
+        <div className=" w-full mt-2 flex gap-3  ">
+          <div className=" border rounded-md border-dashed  ">
             <p className=" dark:hidden block  ">
               <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&bar_color=000000&bar_color_cover=false&mode=light" />
             </p>
@@ -20,7 +20,7 @@ const Socials = () => {
           </div>
           <div
             onClick={() => window.open("https://github.com/vansh-nagar")}
-            className=" flex items-center  justify-center flex-1 relative group  max-md:hidden cursor-pointer  rounded-md pt-2 "
+            className=" flex items-center  justify-center  shadow-inner flex-1 relative group  max-md:hidden cursor-pointer  rounded-md pt-2 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +44,16 @@ const Socials = () => {
             />
           </div>
         </div>
-        <div className=" mt-3">
+        <div className=" mt-3 flex  max-sm:flex-col gap-3  overflow-hidden  rounded-md ">
+          <img
+            src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762336185/Gemini_Generated_Image_qxos2hqxos2hqxos_rlosmn.png"
+            alt=""
+            className=" aspect-square  shadow   max-sm:h-full h-40 object-cover object-top  rounded-md"
+          />
           <img
             src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762102619/Untitled_sur84c.png"
             alt=""
-            className=" rounded-md  border border-dashed  h-40 w-full object-cover object-bottom "
+            className=" rounded-md h-40 max-sm:h-full shadow   object-cover object-bottom "
           />
         </div>
       </section>

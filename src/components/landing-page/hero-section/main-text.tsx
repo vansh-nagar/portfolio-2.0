@@ -12,6 +12,7 @@ import About from "../about";
 import Socials from "../socials";
 import Image from "next/image";
 import Tools from "../tools";
+import WaterSimulation from "@/components/cool-stuff/water-shader";
 
 const HeroContent = () => {
   return (
@@ -51,7 +52,6 @@ const HeroContent = () => {
       <Education />
       {/* <Tools /> */}
 
-      <CallDotCom />
       <ScrollProgress />
     </div>
   );

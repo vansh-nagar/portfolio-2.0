@@ -1,4 +1,4 @@
-import { FileText } from "lucide-react";
+import { FileText, LinkedinIcon } from "lucide-react";
 import { SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
 
 import ArrowButton from "@/components/ui/arrow-button";
@@ -80,7 +80,7 @@ const Intro = () => {
             {
               href: "https://www.linkedin.com/in/vansh-nagar-469648346/",
               title: "LinkedIn",
-              icon: SiLinkedin,
+              icon: LinkedinIcon,
             },
             {
               href: "",

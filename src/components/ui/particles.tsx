@@ -84,7 +84,7 @@ export const Particles: React.FC<ParticlesProps> = ({
   ease = 50,
   size = 0.4,
   refresh = false,
-  color = "#ffffff",
+  color = "#8da7ff",
   vx = 0,
   vy = 0,
   ...props
@@ -308,7 +308,7 @@ export const Particles: React.FC<ParticlesProps> = ({
       aria-hidden="true"
       {...props}
     >
-      <canvas ref={canvasRef} className=" h-full" />
+      <canvas ref={canvasRef} className="  fixed  inset-0" />
     </div>
   );
 };
