@@ -31,7 +31,7 @@ export const ProjectsArr = [
     name: "Orcha",
     link: "http://orcha.site/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762448012/Copy_of_Webinar_Keynote_Presentation_1_rtllsv.jpg",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762450441/Copy_of_Webinar_Keynote_Presentation_2_wfovb1.jpg",
     github: "https://github.com/vansh-nagar/orcha",
     demo: "http://orcha.site/",
     figmaFile: "",
@@ -52,6 +52,26 @@ export const ProjectsArr = [
     status: "In Progress",
   },
   {
+    name: "UI Library",
+    link: "https://pixel-perfect-01.vercel.app/",
+    image: "",
+    github: "https://github.com/vansh-nagar/Pixel-Perfect",
+    demo: "https://pixel-perfect-01.vercel.app/",
+    figmaFile: "",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "TypeScript",
+      "Shadcn UI",
+    ],
+    timeLine: "",
+    Description:
+      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
+    status: "In Progress",
+  },
+  {
     name: "DraftX",
     link: "https://example.com/zip",
     image: "",
@@ -62,19 +82,6 @@ export const ProjectsArr = [
     timeLine: "Oct 2025 - Present",
     Description:
       "A beautifully crafted design and prototyping tool inspired by Lovable and Sketch — built to create, preview, and refine stunning user interfaces with precision and ease.",
-    status: "Not Started",
-  },
-  {
-    name: "UI Library",
-    link: "https://example.com/ui-library",
-    image: "",
-    github: "https://github.com/vansh-nagar/UI---Library",
-    demo: "",
-    figmaFile: "",
-    tech: ["??", "??", "??", "??"],
-    timeLine: "",
-    Description:
-      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
     status: "Not Started",
   },
   {
