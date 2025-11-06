@@ -65,6 +65,19 @@ export const ProjectsArr = [
     status: "Not Started",
   },
   {
+    name: "UI Library",
+    link: "https://example.com/ui-library",
+    image: "",
+    github: "https://github.com/vansh-nagar/UI---Library",
+    demo: "",
+    figmaFile: "",
+    tech: ["??", "??", "??", "??"],
+    timeLine: "",
+    Description:
+      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
+    status: "Not Started",
+  },
+  {
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
@@ -78,19 +91,6 @@ export const ProjectsArr = [
     status: "Not Started",
   },
 
-  {
-    name: "UI Library",
-    link: "https://example.com/ui-library",
-    image: "",
-    github: "",
-    demo: "",
-    figmaFile: "",
-    tech: ["??", "??", "??", "??"],
-    timeLine: "",
-    Description:
-      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
-    status: "Not Started",
-  },
   // {
   //   name: "NEXTBrain",
   //   link: "https://next-brain-i432.vercel.app/",
