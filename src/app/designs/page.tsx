@@ -20,6 +20,14 @@ const Images = [
   },
   {
     imageUrl:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762412771/screencapture-localhost-3001-2025-11-06-12_29_47_wj3jhk.png",
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762411859/screencapture-arclabs-space-2025-11-06-12_20_42_rgb0os.png",
+  },
+  {
+    imageUrl:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1752239335/mfotnb0dpp7vkogxth6v.png",
   },
   {
