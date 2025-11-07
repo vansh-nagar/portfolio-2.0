@@ -71,7 +71,7 @@ const Projects = () => {
                     </div>
                   </div>{" "}
                 </div>
-                <div className="  text-sm text-muted-foreground  ">
+                <div className="  text-sm text-muted-foreground   ">
                   {project.Description}
                 </div>
                 <div className="  flex gap-1 flex-wrap ">
