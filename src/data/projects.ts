@@ -52,7 +52,7 @@ export const ProjectsArr = [
     status: "In Progress",
   },
   {
-    name: "PiPixel Perfect",
+    name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
     image: "",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",

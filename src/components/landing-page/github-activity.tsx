@@ -9,7 +9,7 @@ const GithubActivity = () => {
           {/* <span className="text-destructive">(Private)</span> */}
         </header>
 
-        <div className=" flex flex-wrap gap-1 mt-2">
+        <div className=" flex flex-wrap gap-1 mt-2 mask-r-from-99%">
           {" "}
           <div className="hidden dark:block overflow-hidden   no-scrollbar">
             <GitHubCalendar
