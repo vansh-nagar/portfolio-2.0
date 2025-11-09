@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/seoImage.png",
+        url: "https://res.cloudinary.com/dz12pywzs/image/upload/v1762708371/edbcd24c-e4d6-439c-81bc-5fad1872a6c6.png",
         width: 1200,
         height: 630,
         alt: "Vansh Nagar Portfolio",
