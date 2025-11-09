@@ -16,7 +16,7 @@ import AnoAI from "@/components/animated-shader-background";
 const HeroContent = () => {
   return (
     <div className="flex flex-col mt-5 sm:mt-20 items-start w-[95vw] sm:w-[50vw] z-20  ">
-      <div className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] ">
+      <div className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px]  dark:hidden block">
         <Image
           src="/logo/leaf.svg"
           alt="Decorative leaf"
@@ -27,7 +27,7 @@ const HeroContent = () => {
         />
       </div>
 
-      <div className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent max-sm:blur-[2px] z-0 max-sm:-z-10">
+      <div className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent max-sm:blur-[2px] z-0 max-sm:-z-10  dark:hidden block">
         <Image
           src="/logo/leaf.svg"
           alt="Decorative leaf"

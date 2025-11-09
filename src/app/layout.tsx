@@ -9,12 +9,8 @@ import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { CalendarCheckIcon, Laptop } from "lucide-react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import Link from "next/link";
+import { ShaderAnimation } from "@/components/shader-animation";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -116,7 +112,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children} <Footer />{" "}
+          {children} <Footer />
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
 

@@ -8,7 +8,7 @@ export default function Footer() {
         <img
           src="/logo/leaf.svg"
           alt=""
-          className="w-32 sm:mask-r-from-90% absolute right-0 max-sm:blur-[2px] max-sm:hidden  "
+          className="w-32 sm:mask-r-from-90% absolute right-0 max-sm:blur-[2px] max-sm:hidden dark:hidden block  "
           style={{ transform: "rotateX(180deg)" }}
         />
         <div className="flex items-start gap-4  ">

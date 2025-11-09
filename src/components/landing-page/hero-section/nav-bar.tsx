@@ -45,7 +45,7 @@ const Navbar = () => {
     <div className=" fixed top-0  right-1/2 translate-x-1/2">
       <div
         ref={navBar}
-        className="  bg-background  h-[80px] flex justify-between items-center   w-[95vw] sm:w-[70vw]   transition-transform duration-300 bg-main"
+        className="    h-[80px] flex justify-between items-center   w-[95vw] sm:w-[70vw]   transition-transform duration-300"
       >
         <div className="flex items-center mix-blend-darken ">
           <img src="/logo/NVfOku01.svg" alt="" className="    w-10" />
