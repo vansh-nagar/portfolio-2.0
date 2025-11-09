@@ -37,7 +37,7 @@
     "**/*.mts",
     ".next\\dev/types/**/*.ts",
     ".next\\dev/types/**/*.ts"
-  ],
+, "src/components/animated-shader-background.jsx"  ],
   "exclude": [
     "node_modules"
   ]
