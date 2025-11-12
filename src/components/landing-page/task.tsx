@@ -36,16 +36,15 @@ const Task = () => {
     <div className=" w-full">
       {" "}
       {/* Tasks Section - Fetched from Notion via API */}
-      {!isLoading && tasks.length > 0 && (
-        <div className=" flex justify-center my-5">
-          <div className="  w-full">
-            <header className="font-bold text-xl">What's Cooking</header>
-
+      <div className=" flex justify-center my-5">
+        <div className="  w-full">
+          <header className="font-bold text-xl">What's Cooking</header>
+          {!isLoading && tasks.length > 0 && (
             <div className="mt-2 ">
               {tasks.map((task) => (
                 <div key={task.id} className="   w-full justify-between">
                   <div className="flex flex-wrap items-center justify-between w-full">
-                    <p className=" text-accent-foreground underline decoration-dashed   underline-offset-2">
+                    <p className=" text-accent-foreground underline decoration-muted-foreground underline-offset-2">
                       {task.name}
                     </p>
                     <div className="flex items-center gap-2 mt-2">
@@ -98,14 +97,14 @@ const Task = () => {
                 </div>
               ))}
             </div>
-          </div>
+          )}{" "}
+          {!isLoading && tasks.length === 0 && (
+            <div className=" mt-2">
+              <p className="text-muted-foreground">No tasks available</p>
+            </div>
+          )}
         </div>
-      )}
-      {!isLoading && tasks.length === 0 && (
-        <div className="mt-8 p-4 rounded-lg border border-gray-500/20 bg-gray-500/5 dark:bg-gray-900/10">
-          <p className="text-muted-foreground">No tasks available</p>
-        </div>
-      )}
+      </div>
     </div>
   );
 };
