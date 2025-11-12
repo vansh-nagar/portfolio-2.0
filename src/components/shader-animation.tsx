@@ -133,7 +133,7 @@ export function ShaderAnimation() {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen  fixed inset-0 dark:block hidden "
+      className="w-full h-screen  fixed inset-0 dark:block hidden"
       style={{
         background: "",
         overflow: "hidden",

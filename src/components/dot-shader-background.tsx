@@ -116,8 +116,8 @@ function Scene() {
         };
       case "light":
         return {
-          dotColor: "#e1e1e1",
-          bgColor: "#F4F5F5",
+          dotColor: "#8da7ff",
+          bgColor: "#a6c9a9",
           dotOpacity: 0.15,
         };
       default:
