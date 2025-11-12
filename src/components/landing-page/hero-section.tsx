@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div className="    flex justify-center  items-center  ">
       <HeroContent />
-      {/* <DotScreenShader /> */}
+      <DotScreenShader  />
       <ShaderAnimation />
       {/* <AnoAI /> */}
     </div>
