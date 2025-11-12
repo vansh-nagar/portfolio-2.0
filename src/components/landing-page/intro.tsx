@@ -1,5 +1,5 @@
 import { FileText, LinkedinIcon } from "lucide-react";
-import { SiGithub, SiInstagram, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiInstagram, SiX } from "react-icons/si";
 
 import ArrowButton from "@/components/ui/arrow-button";
 import Link from "next/link";
@@ -107,11 +107,11 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="text-4xl mt-10">Hi, I'm Vansh Nagar</div>
+      <div className="text-4xl mt-10">Hi, I'm Vansh Nagar</div>
       <div className=" text-xl  mt-4 ">
-        <span className="italic font-medium">web & app developer.</span> Driven
+        <span className="italic font-medium">web & app developer.</span> Driven
         by ✱
-        <span className="italic font-medium">crafting tomorrow’s tech,</span>✧
+        <span className="italic font-medium">crafting tomorrow's tech,</span>✧
         engineering systems and ꕤ sparking creative communities.
       </div>
 
