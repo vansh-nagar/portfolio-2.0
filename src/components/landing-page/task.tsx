@@ -39,7 +39,7 @@ const Task = () => {
       {!isLoading && tasks.length > 0 && (
         <div className=" flex justify-center my-5">
           <div className="  w-full">
-            <header className="font-bold text-xl">Projects</header>
+            <header className="font-bold text-xl">What's Cooking</header>
 
             <div className="mt-2 ">
               {tasks.map((task) => (
