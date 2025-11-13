@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { CheckCircle2, Circle, BadgeCheck } from "lucide-react";
 import { ShineBorder } from "../ui/shine-border";
+import { Highlighter } from "../ui/highlighter";
 
 interface Task {
   id: string;
   name: string;
   status: string;
   checked: boolean;
+  selected: string | null;
 }
 
 const Task = () => {
@@ -43,9 +45,25 @@ const Task = () => {
             <div className="mt-2 ">
               {tasks.map((task) => (
                 <div key={task.id} className="   w-full justify-between">
-                  <div className="flex flex-wrap items-center justify-between w-full">
-                    <p className=" text-accent-foreground underline decoration-muted-foreground underline-offset-2">
-                      {task.name}
+                  <div className="flex flex-wrap items-center justify-between gap-2 w-full">
+                    <p
+                      className={` ${
+                        task.checked ? " text-muted-foreground blur-[1px]" : ""
+                      } text-accent-foreground ${
+                        task.selected === "Private" ? "italic" : ""
+                      }`}
+                    >
+                      {task.checked ? (
+                        <Highlighter action="strike-through">
+                          {task.selected === "Private"
+                            ? "Shhh… classified task "
+                            : task.name}
+                        </Highlighter>
+                      ) : task.selected === "Private" ? (
+                        "Shhh… classified task "
+                      ) : (
+                        task.name
+                      )}
                     </p>
                     <div className="flex items-center gap-2 mt-2">
                       <span
@@ -78,19 +96,6 @@ const Task = () => {
                           />
                         </div>
                         <span className="text-nowrap">{task.status}</span>
-                      </span>
-                      <span
-                        className={`text-xs relative font-semibold px-2.5 py-1 rounded-full flex items-center gap-1   text-nowrap ${
-                          task.checked
-                            ? "bg-blue-500/20 text-blue-700 dark:text-blue-400 border border-blue-500/30"
-                            : "bg-gray-500/20 text-gray-700 dark:text-gray-400 border border-gray-500/30"
-                        }`}
-                      >
-                        <CheckCircle2 className={`w-3 h-3 `} />
-                        {task.checked ? "Checked" : "Not Checked"}
-                        {task.checked && (
-                          <ShineBorder className="hidden dark:block" />
-                        )}
                       </span>
                     </div>
                   </div>

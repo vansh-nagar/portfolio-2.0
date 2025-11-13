@@ -68,22 +68,32 @@
     }
   }
   @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+    0%,
+    100% {
+      transform: translateY(0px);
     }
-  50% {
-    transform: translateY(-10px);
+    50% {
+      transform: translateY(-10px);
     }
   }
   @keyframes shine {
-  0% {
-    background-position: 0% 0%;
+    0% {
+      background-position: 0% 0%;
     }
-  50% {
-    background-position: 100% 100%;
+    50% {
+      background-position: 100% 100%;
     }
-  to {
-    background-position: 0% 0%;
+    to {
+      background-position: 0% 0%;
+    }
+  }
+  --animate-line-shadow: line-shadow 15s linear infinite;
+  @keyframes line-shadow {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% -100%;
     }
   }
 }
@@ -203,4 +213,16 @@
 
 * {
   scrollbar-width: none;
+}
+
+/* Change text highlight color */
+::selection {
+  background-color: #a6c9a9; /* highlight background */
+  color: #000000; /* text color */
+}
+
+/* For Firefox (optional, since modern browsers support ::selection) */
+::-moz-selection {
+  background-color: #a6c9a9;
+  color: #000000;
 }

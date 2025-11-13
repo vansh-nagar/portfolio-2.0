@@ -11,7 +11,6 @@ import { ScrollProgress } from "@/components/ui/scroll-progress";
 import About from "../about";
 import Socials from "../socials";
 import Image from "next/image";
-import AnoAI from "@/components/animated-shader-background";
 import Task from "../task";
 
 const HeroContent = () => {
