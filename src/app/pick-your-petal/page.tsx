@@ -1,3 +1,4 @@
+import Shaders from "@/components/smart-one/shaders";
 import { BadgeCheck, Check, CheckCircle, CheckLine } from "lucide-react";
 
 const SproutFeatures = [
@@ -31,7 +32,8 @@ const BloomFeatures = [
 const page = () => {
   return (
     <div className=" flex justify-center ">
-      <div className="w-[95vw] sm:w-[50vw] grid  sm:grid-cols-2  grid-cols-1 gap-3 my-8  mb-8 mt-3">
+      <Shaders />
+      <div className="w-[95vw] sm:w-[50vw] grid  sm:grid-cols-2  grid-cols-1 gap-3 my-8  mb-8 mt-3 z-50">
         <div className="  bg-[#acdab0] w-auto  max-sm:w-full rounded-xl relative flex items-center flex-col px-6 py-12 shadow-md hover:scale-[1.01] hover:shadow-2xl transition-all duration-200 overflow-hidden group  group-hover:opacity-40 hover:!opacity-100 ">
           <h1 className=" text-5xl ">$49</h1>
           <h3 className="">Sprout</h3>

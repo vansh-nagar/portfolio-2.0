@@ -92,7 +92,7 @@ const Task = () => {
                               task.status === "In progress"
                                 ? "animate-ping fill-yellow-500 text-yellow-500"
                                 : task.status === "Done"
-                                ? "animate-ping fill-green-500 text-green-500"
+                                ? " fill-green-500 text-green-500"
                                 : " text-gray-500 "
                             }`}
                           />

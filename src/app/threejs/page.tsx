@@ -6,6 +6,7 @@ import { useGLTF } from "@react-three/drei";
 import { Badge } from "@/components/ui/badge";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import Link from "next/link";
+import Shaders from "@/components/smart-one/shaders";
 
 const Projects = [
   {
@@ -91,7 +92,9 @@ const page = () => {
         style={{ transform: "rotateY(180deg)" }}
       />
 
-      <div className="   w-[95vw] sm:w-[50vw] ">
+      <Shaders />
+
+      <div className="   w-[95vw] sm:w-[50vw] z-50 ">
         <div className="  border rounded-xl  mb-3  ">
           <Canvas>
             {/* Add a light */}

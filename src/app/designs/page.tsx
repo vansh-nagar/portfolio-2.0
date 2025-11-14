@@ -1,4 +1,4 @@
-import React from "react";
+import Shaders from "@/components/smart-one/shaders";
 import Image from "next/image";
 
 const Images = [
@@ -55,7 +55,8 @@ const Images = [
 const page = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[11vw]  max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] ">
+      <Shaders />
+      <div className="w-[11vw]   max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 max-sm:blur-[2px] ">
         <Image
           src="/logo/leaf.svg"
           alt="Decorative leaf"
@@ -86,7 +87,7 @@ const page = () => {
               <img
                 src={img.imageUrl}
                 alt={`Design shot #${index + 1}`}
-                className="rounded-xl object-cover group-hover:scale-95 transition-all duration-300 group-hover:opacity-90 shadow-md"
+                className="rounded-xl object-cover group-hover:scale-[0.99] transition-all duration-300 group-hover:opacity-90 shadow-md"
               />
             </div>
           </div>

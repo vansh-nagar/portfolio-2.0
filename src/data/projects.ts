@@ -1,5 +1,6 @@
-export const ProjectsArr = [
+export const WebProjectsArr = [
   {
+    id: 1,
     name: "Arc Labs",
     link: "https://www.arclabs.space/",
     image:
@@ -28,6 +29,7 @@ export const ProjectsArr = [
     status: "In Progress",
   },
   {
+    id: 2,
     name: "Orcha",
     link: "http://orcha.site/",
     image:
@@ -52,6 +54,7 @@ export const ProjectsArr = [
     status: "In Progress",
   },
   {
+    id: 3,
     name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
     image: "",
@@ -72,6 +75,7 @@ export const ProjectsArr = [
     status: "In Progress",
   },
   {
+    id: 4,
     name: "DraftX",
     link: "https://example.com/zip",
     image: "",
@@ -85,6 +89,7 @@ export const ProjectsArr = [
     status: "Not Started",
   },
   {
+    id: 5,
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
