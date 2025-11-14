@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CheckCircle2, Circle, BadgeCheck } from "lucide-react";
 import { ShineBorder } from "../ui/shine-border";
 import { Highlighter } from "../ui/highlighter";
+import { SparklesText } from "../ui/sparkles-text";
 
 interface Task {
   id: string;
@@ -16,7 +17,6 @@ const Task = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch all tasks from API route
     const fetchTasks = async () => {
       try {
         const response = await fetch("/api/notion-task");
@@ -36,11 +36,28 @@ const Task = () => {
   }, []);
   return (
     <div className=" w-full">
-      {" "}
-      {/* Tasks Section - Fetched from Notion via API */}
       <div className=" flex justify-center my-5">
         <div className="  w-full">
-          <header className="font-bold text-xl">What's Cooking</header>
+          <header className="font-bold text-xl text-nowrap">
+            What's Cooking{" - "}
+            {tasks.filter((task) => !task.checked).length ? (
+              <span>
+                <SparklesText
+                  sparklesCount={4}
+                  className=" text-xl    inline font-medium"
+                >
+                  Busy
+                </SparklesText>
+              </span>
+            ) : (
+              <SparklesText
+                sparklesCount={4}
+                className=" text-xl    inline font-medium"
+              >
+                Chilling
+              </SparklesText>
+            )}
+          </header>
           {!isLoading && tasks.length > 0 && (
             <div className="mt-2 ">
               {tasks.map((task) => (
