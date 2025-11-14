@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { WebProjectsArr } from "@/data/projects";
+import { AIProjectsArr, ExtensionsArr, WebProjectsArr } from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
 import Shaders from "@/components/smart-one/shaders";
 
@@ -14,18 +14,26 @@ const Projects = () => {
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
             <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
           </TabsList>
-          <TabsContent value="web-projects" className="mt-2">
+          <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {WebProjectsArr.map((project) => (
                 <ProjectsComponent project={project} index={project.id} />
               ))}
             </div>{" "}
           </TabsContent>
-          <TabsContent value="extensions" className="mt-2">
-            no extensions yet
+          <TabsContent value="extensions">
+            <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
+              {ExtensionsArr.slice(0, 4).map((project) => (
+                <ProjectsComponent project={project} index={project.id} />
+              ))}
+            </div>
           </TabsContent>
-          <TabsContent value="ai-projects" className="mt-2">
-            no ai projects yet
+          <TabsContent value="ai-projects">
+            <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
+              {AIProjectsArr.slice(0, 4).map((project) => (
+                <ProjectsComponent project={project} index={project.id} />
+              ))}
+            </div>
           </TabsContent>
         </Tabs>
       </div>
