@@ -5,7 +5,6 @@ import { SparklesText } from "@/components/ui/sparkles-text";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { RainbowButton } from "@/components/ui/rainbow-button";
-import { useId } from "react";
 
 const ProjectsComponent = ({
   project,
@@ -44,7 +43,7 @@ const ProjectsComponent = ({
         )}
         <div className="flex flex-col   max-sm:flex-wrap ">
           <div className=" flex justify-between items-center ">
-            <div className=" block  font-semibold text-lg  ">
+            <div className=" block  font-semibold text-lg line-clamp-1  truncate  ">
               {project.name}
             </div>{" "}
             <div className=" text-nowrap text-xs">{project.timeLine}</div>

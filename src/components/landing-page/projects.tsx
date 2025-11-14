@@ -3,7 +3,12 @@ import { useRouter } from "next/navigation";
 import { ShinyButton } from "../ui/shiny-button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ProjectsComponent from "../smart-one/projects";
-import { AIProjectsArr, ExtensionsArr, WebProjectsArr } from "@/data/projects";
+import {
+  AIProjectsArr,
+  ExtensionsArr,
+  WebProjectsArr,
+  IoTProjectsArr,
+} from "@/data/projects";
 
 const Projects = () => {
   const router = useRouter();
@@ -16,6 +21,7 @@ const Projects = () => {
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
             <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
+            <TabsTrigger value="iot-projects">IoT & Embedded</TabsTrigger>
           </TabsList>
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
@@ -34,6 +40,13 @@ const Projects = () => {
           <TabsContent value="ai-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {AIProjectsArr.slice(0, 4).map((project) => (
+                <ProjectsComponent project={project} index={project.id} />
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="iot-projects" className="mt-2">
+            <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
+              {IoTProjectsArr.slice(0, 4).map((project) => (
                 <ProjectsComponent project={project} index={project.id} />
               ))}
             </div>
