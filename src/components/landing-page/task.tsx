@@ -45,9 +45,9 @@ const Task = () => {
             <div className="mt-2 ">
               {tasks.map((task) => (
                 <div key={task.id} className="   w-full justify-between">
-                  <div className="flex flex-wrap items-center justify-between gap-2 w-full">
+                  <div className="flex  items-center justify-between gap-2 w-full">
                     <p
-                      className={` ${
+                      className={` truncate line-clamp-1 ${
                         task.checked ? " text-muted-foreground blur-[1px]" : ""
                       } text-accent-foreground ${
                         task.selected === "Private" ? "italic" : ""
