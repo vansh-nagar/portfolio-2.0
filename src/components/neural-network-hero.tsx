@@ -145,7 +145,8 @@ const fragmentShader = `
     + vec4(-1.5468478, -3.6171484, 0.24762098, 0.0);
 
     buf[0] = sigmoid(buf[0]);
-    return vec4(buf[0].x , buf[0].y , buf[0].z, 1.0);
+    vec3 targetColor = vec3(0.5529, 0.6549, 1.0); // #8da7ff
+    return vec4(buf[0].x * targetColor.r, buf[0].y * targetColor.g, buf[0].z * targetColor.b, 1.0);
   }
   
   void main() {
@@ -219,7 +220,7 @@ export function ShaderBackground() {
   return (
     <div
       ref={canvasRef}
-      className=" fixed inset-0 -z-10 w-full h-full hidden dark:block"
+      className=" fixed inset-0 -z-10 w-full h-full hidden dark:block inverted"
       aria-hidden
     >
       <Canvas

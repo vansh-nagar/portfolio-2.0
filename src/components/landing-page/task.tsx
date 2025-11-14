@@ -60,7 +60,9 @@ const Task = () => {
                             : task.name}
                         </Highlighter>
                       ) : task.selected === "Private" ? (
-                        "Shhh… classified task "
+                        <span className=" blur-[1px]">
+                          Shhh… classified task :)
+                        </span>
                       ) : (
                         task.name
                       )}

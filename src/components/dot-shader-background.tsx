@@ -104,7 +104,7 @@ function Scene() {
   const { theme } = useTheme();
 
   const rotation = 0;
-  const gridSize = 100;
+  const gridSize = 120;
 
   const getThemeColors = () => {
     switch (theme) {

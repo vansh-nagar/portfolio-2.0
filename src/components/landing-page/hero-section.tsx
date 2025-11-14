@@ -8,8 +8,8 @@ const HeroSection = () => {
     <div className="    flex justify-center  items-center  ">
       <HeroContent />
       <DotScreenShader />
-      <ShaderAnimation />
-      {/* <ShaderBackground /> */}
+      {/* <ShaderAnimation /> */}
+      <ShaderBackground />
     </div>
   );
 };

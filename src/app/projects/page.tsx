@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { BadgeCheck, BadgeX, Figma, Github, Link2 } from "lucide-react";
 import Link from "next/link";
@@ -13,117 +13,135 @@ const Projects = () => {
   return (
     <div className="flex  justify-center">
       <div className="flex flex-col  mt-5 items-start w-[95vw] sm:w-[50vw] my-5 ">
-        <div className="  grid  grid-cols-1 lg:grid-cols-2  mt-2   gap-3  hover:caret-white ">
-          {ProjectsArr.map((project, index) => (
-            <div key={index} className=" flex  flex-col justify-between gap-2 ">
-              <div className=" flex flex-col gap-2">
-                {project.image ? (
-                  <div>
-                    <a
-                      className=" hover:cursor-crosshair"
-                      href={project.link}
-                      target="_blank"
-                    >
-                      <div className="relative w-full aspect-video">
-                        <Image
-                          src={project.image}
-                          alt={`${project.name} screenshot`}
-                          fill
-                          className="rounded-md object-cover"
-                          sizes="(max-width: 1024px) 95vw, 50vw"
-                        />
+        <Tabs defaultValue="web-projects">
+          <TabsList>
+            <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
+            <TabsTrigger value="extensions">Extensions</TabsTrigger>
+            <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
+          </TabsList>
+          <TabsContent value="web-projects" className="mt-2">
+            <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
+              {ProjectsArr.map((project, index) => (
+                <div
+                  key={index}
+                  className=" flex  flex-col justify-between gap-2 "
+                >
+                  <div className=" flex flex-col gap-2">
+                    {project.image ? (
+                      <div>
+                        <a
+                          className=" hover:cursor-crosshair"
+                          href={project.link}
+                          target="_blank"
+                        >
+                          <div className="relative w-full aspect-video">
+                            <Image
+                              src={project.image}
+                              alt={`${project.name} screenshot`}
+                              fill
+                              className="rounded-md object-cover"
+                              sizes="(max-width: 1024px) 95vw, 50vw"
+                            />
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                ) : (
-                  <div className=" w-full  aspect-video  bg-muted rounded-md flex items-center justify-center ">
-                    <SparklesText className=" text-2xl text-center px-4 ">
-                      Coming Soon...
-                    </SparklesText>
-                  </div>
-                )}
-                <div className="flex flex-col   max-sm:flex-wrap ">
-                  <div className=" flex justify-between items-center ">
-                    <div className=" block  font-semibold text-lg  ">
-                      {project.name}
+                    ) : (
+                      <div className=" w-full  aspect-video  bg-muted rounded-md flex items-center justify-center ">
+                        <SparklesText className=" text-2xl text-center px-4 ">
+                          Coming Soon...
+                        </SparklesText>
+                      </div>
+                    )}
+                    <div className="flex flex-col   max-sm:flex-wrap ">
+                      <div className=" flex justify-between items-center ">
+                        <div className=" block  font-semibold text-lg  ">
+                          {project.name}
+                        </div>{" "}
+                        <div className=" text-nowrap text-xs">
+                          {project.timeLine}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="text-xs font-normal flex items-center gap-1">
+                          {project.status === "In Progress" ||
+                          project.status === "Completed" ? (
+                            <BadgeCheck
+                              size={16}
+                              strokeWidth={1}
+                              className=" text-green-500"
+                            />
+                          ) : (
+                            <BadgeX
+                              size={16}
+                              strokeWidth={1}
+                              className="text-destructive"
+                            />
+                          )}{" "}
+                          {project.status}...
+                        </div>
+                      </div>{" "}
+                    </div>
+                    <div className="  text-sm text-muted-foreground   ">
+                      {project.Description}
+                    </div>
+                    <div className="  flex gap-1 flex-wrap ">
+                      {project.tech.map((techItem, techIndex) => (
+                        <Badge
+                          className=" rounded-sm border-dashed border-acfo "
+                          variant={"outline"}
+                          key={techIndex}
+                        >
+                          {techItem}
+                        </Badge>
+                      ))}
                     </div>{" "}
-                    <div className=" text-nowrap text-xs">
-                      {project.timeLine}
-                    </div>
                   </div>
-                  <div>
-                    <div className="text-xs font-normal flex items-center gap-1">
-                      {project.status === "In Progress" ||
-                      project.status === "Completed" ? (
-                        <BadgeCheck
-                          size={16}
-                          strokeWidth={1}
-                          className=" text-green-500"
-                        />
-                      ) : (
-                        <BadgeX
-                          size={16}
-                          strokeWidth={1}
-                          className="text-destructive"
-                        />
-                      )}{" "}
-                      {project.status}...
-                    </div>
-                  </div>{" "}
-                </div>
-                <div className="  text-sm text-muted-foreground   ">
-                  {project.Description}
-                </div>
-                <div className="  flex gap-1 flex-wrap ">
-                  {project.tech.map((techItem, techIndex) => (
-                    <Badge
-                      className=" rounded-sm border-dashed border-acfo "
-                      variant={"outline"}
-                      key={techIndex}
-                    >
-                      {techItem}
-                    </Badge>
-                  ))}
-                </div>{" "}
-              </div>
 
-              <div className="flex  gap-2  mt-2  max-sm:flex-wrap">
-                {project.figmaFile && (
-                  <Link href={project.figmaFile} target="_blank">
-                    <Button
-                      className="rounded-md"
-                      variant="outline"
-                      size={"sm"}
-                    >
-                      <Figma />
-                      Figma File
-                    </Button>
-                  </Link>
-                )}
-                {project.github && (
-                  <Link href={project.github} target="_blank">
-                    <Button size={"sm"}>
-                      <Github />
-                      GitHub
-                    </Button>
-                  </Link>
-                )}
-                {project.demo && (
-                  <Link href={project.demo} target="_blank">
-                    <RainbowButton
-                      className=" rounded-md  "
-                      variant="outline"
-                      size={"sm"}
-                    >
-                      <Link2 />
-                      Live Demo
-                    </RainbowButton>
-                  </Link>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>{" "}
+                  <div className="flex  gap-2  mt-2  max-sm:flex-wrap">
+                    {project.figmaFile && (
+                      <Link href={project.figmaFile} target="_blank">
+                        <Button
+                          className="rounded-md"
+                          variant="outline"
+                          size={"sm"}
+                        >
+                          <Figma />
+                          Figma File
+                        </Button>
+                      </Link>
+                    )}
+                    {project.github && (
+                      <Link href={project.github} target="_blank">
+                        <Button size={"sm"}>
+                          <Github />
+                          GitHub
+                        </Button>
+                      </Link>
+                    )}
+                    {project.demo && (
+                      <Link href={project.demo} target="_blank">
+                        <RainbowButton
+                          className=" rounded-md  "
+                          variant="outline"
+                          size={"sm"}
+                        >
+                          <Link2 />
+                          Live Demo
+                        </RainbowButton>
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>{" "}
+          </TabsContent>
+          <TabsContent value="extensions" className="mt-2">
+            extension
+          </TabsContent>
+          <TabsContent value="ai-projects" className="mt-2">
+            ai-projects
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
