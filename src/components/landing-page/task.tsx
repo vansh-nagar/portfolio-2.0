@@ -23,8 +23,7 @@ const Task = () => {
         if (response.ok) {
           const data = await response.json();
           console.log(data);
-          // setTasks(Array.isArray(data) ? data : []);
-          setTasks([]);
+          setTasks(Array.isArray(data) ? data : []);
         }
       } catch (error) {
         console.error("Failed to fetch tasks:", error);
