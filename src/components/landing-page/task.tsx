@@ -73,11 +73,11 @@ const Task = () => {
                       {task.checked ? (
                         <Highlighter action="strike-through">
                           {task.selected === "Private"
-                            ? "Shhh… classified task "
+                            ? "Shhh… classified task :)"
                             : task.name}
                         </Highlighter>
                       ) : task.selected === "Private" ? (
-                        <span className=" blur-[1px]">
+                        <span className=" blur-[1px] pr-1">
                           Shhh… classified task :)
                         </span>
                       ) : (
