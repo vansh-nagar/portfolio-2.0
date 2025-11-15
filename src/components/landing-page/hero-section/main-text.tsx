@@ -12,6 +12,7 @@ import About from "../about";
 import Socials from "../socials";
 import Image from "next/image";
 import Task from "../task";
+import Butterfly from "@/components/smart-one/butterfly";
 
 const HeroContent = () => {
   return (
