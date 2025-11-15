@@ -79,14 +79,14 @@ export const WebProjectsArr = [
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
-    github: "",
+    github: "https://github.com/vansh-nagar/zip",
     demo: "",
     figmaFile: "",
     tech: ["Electron", "React", "TypeScript", "Tailwind CSS", "SQLite"],
     timeLine: "",
     Description:
       "Desktop productivity app, a modern tool that makes your life easy and gets your work actually done.",
-    status: "Not Started",
+    status: "In Progress",
   },
   {
     id: 9,
@@ -108,7 +108,7 @@ export const WebProjectsArr = [
     ],
     timeLine: "Oct 2025 - Present",
     Description: "Something mysterious is being crafted here... Stay tuned.",
-    status: "In Progress",
+    status: "Not Started",
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ export const WebProjectsArr = [
     ],
     timeLine: "Mar 2025 - Prototype",
     Description: "Something mysterious is being crafted here... Stay tuned.",
-    status: "Prototype",
+    status: "Not Started",
   },
   {
     id: 7,
@@ -173,7 +173,7 @@ export const WebProjectsArr = [
     tech: ["WebTorrent", "WebRTC", "Tor", "Node.js", "Onion routing"],
     timeLine: "Apr 2025 - Experimental",
     Description: "Something mysterious is being crafted here... Stay tuned.",
-    status: "Experimental",
+    status: "Not Started",
   },
 
   // {
@@ -352,6 +352,6 @@ export const IoTProjectsArr = [
     timeLine: "",
     Description:
       "Custom calculator with LLM features. ESP32 sends text to GPT API and returns responses.",
-    status: "In Progress",
+    status: "Planned",
   },
 ];
