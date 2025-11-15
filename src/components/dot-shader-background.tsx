@@ -110,9 +110,9 @@ function Scene() {
     switch (theme) {
       case "dark":
         return {
-          dotColor: "#FFFFFF",
-          bgColor: "#121212",
-          dotOpacity: 0.025,
+          dotColor: "#a6c9a9",
+          bgColor: "#000000",
+          dotOpacity: 0.1,
         };
       case "light":
         return {
@@ -184,7 +184,7 @@ function Scene() {
 
 export const DotScreenShader = () => {
   return (
-    <div className=" inset-0 fixed dark:hidden block pointer-events-none">
+    <div className=" inset-0 fixed  pointer-events-none">
       <Canvas
         gl={{
           antialias: true,

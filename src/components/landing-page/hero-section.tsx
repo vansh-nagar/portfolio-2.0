@@ -1,13 +1,11 @@
-import { DotScreenShader } from "../dot-shader-background";
-import { ShaderAnimation } from "../shader-animation";
+import Shaders from "../smart-one/shaders";
 import HeroContent from "./hero-section/main-text";
 
 const HeroSection = () => {
   return (
     <div className="    flex justify-center  items-center  ">
       <HeroContent />
-      <DotScreenShader />
-      <ShaderAnimation />
+      <Shaders />
     </div>
   );
 };

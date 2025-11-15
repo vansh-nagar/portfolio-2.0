@@ -44,7 +44,7 @@ const Projects = () => {
               ))}
             </div>
           </TabsContent>
-          <TabsContent value="iot-projects" className="mt-2">
+          <TabsContent value="iot-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {IoTProjectsArr.slice(0, 4).map((project) => (
                 <ProjectsComponent project={project} index={project.id} />

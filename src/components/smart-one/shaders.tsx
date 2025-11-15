@@ -5,7 +5,7 @@ const Shaders = () => {
   return (
     <>
       <DotScreenShader />
-      <ShaderAnimation />
+      {/* <ShaderAnimation /> */}
     </>
   );
 };
