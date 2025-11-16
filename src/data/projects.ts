@@ -57,7 +57,8 @@ export const WebProjectsArr = [
     id: 3,
     name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1763285218/Copy_of_Copy_of_Webinar_Keynote_Presentation_iyooqm.jpg",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
     demo: "https://pixel-perfect-01.vercel.app/",
     figmaFile: "",
@@ -71,7 +72,7 @@ export const WebProjectsArr = [
     ],
     timeLine: "",
     Description:
-      "A reusable UI component library built with React and TypeScript, providing customizable components for modern web applications.",
+      "Build beautiful, responsive interfaces in minutes. A pixel-perfect React component library for modern web apps.",
     status: "In Progress",
   },
   {
