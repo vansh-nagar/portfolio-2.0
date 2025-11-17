@@ -25,8 +25,8 @@ const ProjectsTabs = ({
           <TabsList>
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
             <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
-            <TabsTrigger value="iot-projects">IoT & Embedded</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
+            <TabsTrigger value="iot-projects">IoT & Embedded</TabsTrigger>
           </TabsList>
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">

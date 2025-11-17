@@ -1,6 +1,5 @@
 export const WebProjectsArr = [
   {
-    id: 1,
     name: "Arc Labs",
     link: "https://www.arclabs.space/",
     image:
@@ -29,7 +28,6 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 2,
     name: "Orcha",
     link: "http://orcha.site/",
     image:
@@ -54,11 +52,10 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 3,
     name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1763285218/Copy_of_Copy_of_Webinar_Keynote_Presentation_iyooqm.jpg",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1763353240/Copy_of_Copy_of_Webinar_Keynote_Presentation_1_prklcu.jpg",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
     demo: "https://pixel-perfect-01.vercel.app/",
     figmaFile: "",
@@ -76,7 +73,6 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 4,
     name: "Zip",
     link: "https://example.com/zip",
     image: "",
@@ -90,7 +86,6 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 9,
     name: "CanvasMeet – Auto-Summary Whiteboard Assistant",
     link: "",
     image: "",
@@ -112,7 +107,6 @@ export const WebProjectsArr = [
     status: "Not Started",
   },
   {
-    id: 5,
     name: "DraftX",
     link: "https://example.com/zip",
     image: "",
@@ -125,7 +119,6 @@ export const WebProjectsArr = [
     status: "Not Started",
   },
   {
-    id: 6,
     name: "Browser-Based Linux OS",
     link: "",
     image: "",
@@ -145,7 +138,6 @@ export const WebProjectsArr = [
     status: "Not Started",
   },
   {
-    id: 7,
     name: "Proof of People",
     link: "",
     image: "",
@@ -164,7 +156,6 @@ export const WebProjectsArr = [
     status: "Not Started",
   },
   {
-    id: 8,
     name: "BitTorrent-over-Tor Demo",
     link: "",
     image: "",
@@ -209,20 +200,31 @@ export const WebProjectsArr = [
 
 export const ExtensionsArr = [
   {
-    id: 1,
     name: "Kyu nahi ho rahi padhai extension",
     link: "",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1763351772/Copy_of_Copy_of_Copy_of_Webinar_Keynote_Presentation_dq6z5s.jpg",
     github: "https://github.com/vansh-nagar/Kyu-nahi-ho-rahi-padhai",
     demo: "",
     figmaFile: "",
     tech: ["JavaScript"],
     timeLine: "",
     Description: "Something mysterious is being crafted here... Stay tuned.",
-    status: "Planned",
+    status: "Completed",
   },
   {
-    id: 2,
+    name: "10x Procastination",
+    link: "",
+    image: "",
+    github: "",
+    demo: "",
+    figmaFile: "",
+    tech: ["JavaScript", "Chrome API", "OpenAI API"],
+    timeLine: "",
+    Description: "Something mysterious is being crafted here... Stay tuned.",
+    status: "Completed",
+  },
+  {
     name: "Auto Caption + Hashtag Extension",
     link: "",
     image: "",
@@ -235,7 +237,6 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 3,
     name: "Screenshot + Annotation Tool",
     link: "",
     image: "",
@@ -248,7 +249,6 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 4,
     name: "YouTube Thumbnail Replacer",
     link: "",
     image: "",
@@ -261,7 +261,6 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 5,
     name: "Canva Notes Helper",
     link: "",
     image: "",
@@ -277,7 +276,6 @@ export const ExtensionsArr = [
 
 export const AIProjectsArr = [
   {
-    id: 1,
     name: "RPG / cart ?? Game",
     link: "",
     image: "",
@@ -290,7 +288,6 @@ export const AIProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 2,
     name: "AI Table Tennis Score Tracker",
     link: "",
     image: "",
@@ -311,7 +308,6 @@ export const AIProjectsArr = [
     status: "Planned",
   },
   {
-    id: 3,
     name: "Neural Game Agent",
     link: "",
     image: "",
@@ -331,7 +327,6 @@ export const AIProjectsArr = [
     status: "In Progress",
   },
   {
-    id: 4,
     name: "DDoS Pattern Mapper",
     link: "",
     image: "",
@@ -355,7 +350,6 @@ export const AIProjectsArr = [
 
 export const IoTProjectsArr = [
   {
-    id: 1,
     name: "Smart Calculator (ESP32 + ChatGPT)",
     link: "",
     image: "",
