@@ -210,6 +210,19 @@ export const WebProjectsArr = [
 export const ExtensionsArr = [
   {
     id: 1,
+    name: "Kyu nahi ho rahi padhai extension",
+    link: "",
+    image: "",
+    github: "https://github.com/vansh-nagar/Kyu-nahi-ho-rahi-padhai",
+    demo: "",
+    figmaFile: "",
+    tech: ["JavaScript"],
+    timeLine: "",
+    Description: "Something mysterious is being crafted here... Stay tuned.",
+    status: "Planned",
+  },
+  {
+    id: 2,
     name: "Auto Caption + Hashtag Extension",
     link: "",
     image: "",
@@ -222,7 +235,7 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 2,
+    id: 3,
     name: "Screenshot + Annotation Tool",
     link: "",
     image: "",
@@ -235,7 +248,7 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 3,
+    id: 4,
     name: "YouTube Thumbnail Replacer",
     link: "",
     image: "",
@@ -248,7 +261,7 @@ export const ExtensionsArr = [
     status: "Planned",
   },
   {
-    id: 4,
+    id: 5,
     name: "Canva Notes Helper",
     link: "",
     image: "",
