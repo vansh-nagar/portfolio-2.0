@@ -6,13 +6,11 @@ import Skills from "../skills";
 import Intro from "../intro";
 import GithubActivity from "../github-activity";
 import Projects from "../projects";
-import CallDotCom from "../call-com";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import About from "../about";
 import Socials from "../socials";
 import Image from "next/image";
 import Task from "../task";
-import Butterfly from "@/components/smart-one/butterfly";
 
 const HeroContent = () => {
   return (

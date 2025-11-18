@@ -184,7 +184,7 @@ function Scene() {
 
 export const DotScreenShader = () => {
   return (
-    <div className=" inset-0 fixed z-0  pointer-events-none">
+    <div className=" inset-0 fixed z-0  pointer-events-none dark:hidden">
       <Canvas
         gl={{
           antialias: true,

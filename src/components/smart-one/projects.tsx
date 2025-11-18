@@ -6,15 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 
-const ProjectsComponent = ({
-  project,
-  index,
-}: {
-  project: any;
-  index: number;
-}) => {
+const ProjectsComponent = ({ project }: { project: any }) => {
   return (
-    <div key={index} className=" flex  flex-col justify-between gap-2 ">
+    <div className=" flex  flex-col justify-between gap-2 ">
       <div className=" flex flex-col gap-2">
         {project.image ? (
           <div>

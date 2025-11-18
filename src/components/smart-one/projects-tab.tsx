@@ -31,28 +31,28 @@ const ProjectsTabs = ({
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {WebProjectsArr.slice(num1, num2).map((project, index) => (
-                <ProjectsComponent project={project} index={index} />
+                <ProjectsComponent key={index} project={project} />
               ))}
             </div>{" "}
           </TabsContent>
           <TabsContent value="extensions">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {ExtensionsArr.slice(num1, num2).map((project, index) => (
-                <ProjectsComponent project={project} index={index} />
+                <ProjectsComponent key={index} project={project} />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="ai-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {AIProjectsArr.slice(num1, num2).map((project, index) => (
-                <ProjectsComponent project={project} index={index} />
+                <ProjectsComponent key={index} project={project} />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="iot-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {IoTProjectsArr.slice(num1, num2).map((project, index) => (
-                <ProjectsComponent project={project} index={index} />
+                <ProjectsComponent key={index} project={project} />
               ))}
             </div>
           </TabsContent>
