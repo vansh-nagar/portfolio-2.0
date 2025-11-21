@@ -22,11 +22,10 @@ const ProjectsTabs = ({
 
       <div className="flex flex-col  mt-2 items-start w-[95vw] sm:w-[50vw] my-5  ">
         <Tabs defaultValue="web-projects">
-          <TabsList>
+          <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
             <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
-            <TabsTrigger value="iot-projects">IoT & Embedded</TabsTrigger>
           </TabsList>
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
@@ -49,13 +48,13 @@ const ProjectsTabs = ({
               ))}
             </div>
           </TabsContent>
-          <TabsContent value="iot-projects">
+          {/* <TabsContent value="iot-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {IoTProjectsArr.slice(num1, num2).map((project, index) => (
                 <ProjectsComponent key={index} project={project} />
               ))}
             </div>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
 
         {num2 && (
