@@ -10,7 +10,6 @@ import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { CalendarCheckIcon, Laptop } from "lucide-react";
 import Link from "next/link";
-import { ShaderAnimation } from "@/components/shader-animation";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
