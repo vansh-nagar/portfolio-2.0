@@ -13,21 +13,21 @@ const GithubActivity = () => {
           {" "}
           <div className="hidden dark:block overflow-hidden   no-scrollbar">
             <GitHubCalendar
-              username="hkirat"
+              username="vansh-nagar"
               colorScheme="dark"
               blockSize={12}
               blockMargin={5}
               fontSize={14}
               theme={{
                 light: [
-                  "#c6d5ff", // level 0 - lightest blue
+                  "#d4dffc", // level 0 - lightest blue
                   "#8da7ff", // level 1
                   "#5f80e6", // level 2
                   "#3f5bbf", // level 3
                   "#1f3680", // level 4 - darkest blue
                 ],
                 dark: [
-                  "#d9ead3", // level 0 - lightest green
+                  "#1b261b", // level 0 - lightest green
                   "#a6c9a9", // level 1
                   "#7aa87a", // level 2
                   "#567a57", // level 3
@@ -38,7 +38,7 @@ const GithubActivity = () => {
           </div>
           <div className="dark:hidden block  overflow-hidden   no-scrollbar">
             <GitHubCalendar
-              username="hkirat"
+              username="vansh-nagar"
               // username="vansh-nagar"
               colorScheme="light"
               blockSize={12}
@@ -46,7 +46,7 @@ const GithubActivity = () => {
               fontSize={14}
               theme={{
                 light: [
-                  "#c6d5ff", // level 0 - lightest blue
+                  "#e6ecfc", // level 0 - lightest blue
                   "#8da7ff", // level 1
                   "#5f80e6", // level 2
                   "#3f5bbf", // level 3

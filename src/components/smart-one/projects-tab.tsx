@@ -1,11 +1,6 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  AIProjectsArr,
-  ExtensionsArr,
-  WebProjectsArr,
-  IoTProjectsArr,
-} from "@/data/projects";
+import { ExtensionsArr, WebProjectsArr } from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
 import { ShinyButton } from "../ui/shiny-button";
 import { useRouter } from "next/navigation";
@@ -24,7 +19,7 @@ const ProjectsTabs = ({
         <Tabs defaultValue="web-projects">
           <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
-            <TabsTrigger value="ai-projects">AI Projects</TabsTrigger>
+            {/* <TabsTrigger value="ai-projects">AI Projects</TabsTrigger> */}
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
           </TabsList>
           <TabsContent value="web-projects">
@@ -41,13 +36,13 @@ const ProjectsTabs = ({
               ))}
             </div>
           </TabsContent>
-          <TabsContent value="ai-projects">
+          {/* <TabsContent value="ai-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {AIProjectsArr.slice(num1, num2).map((project, index) => (
                 <ProjectsComponent key={index} project={project} />
               ))}
             </div>
-          </TabsContent>
+          </TabsContent> */}
           {/* <TabsContent value="iot-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {IoTProjectsArr.slice(num1, num2).map((project, index) => (
