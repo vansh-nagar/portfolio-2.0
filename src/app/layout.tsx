@@ -118,7 +118,7 @@ export default function RootLayout({
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
 
-            <ChatWithAi />
+            {/* <ChatWithAi /> */}
             <Button
               data-cal-link="vansh-nagar"
               data-cal-config='{"layout":"month_view"}'

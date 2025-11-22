@@ -12,10 +12,6 @@ const Images = [
   },
   {
     imageUrl:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1754402900/c8jxyzlqrfqmzrj0tvh3.png",
-  },
-  {
-    imageUrl:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1752239324/ascd9d6mhmrhimad1jbc.png",
   },
   {
@@ -49,6 +45,10 @@ const Images = [
   {
     imageUrl:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1753798044/tvi4jcjtowx9dokfv8v5.png",
+  },
+  {
+    imageUrl:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1754402900/c8jxyzlqrfqmzrj0tvh3.png",
   },
 ];
 
