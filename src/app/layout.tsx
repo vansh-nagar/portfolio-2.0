@@ -10,6 +10,7 @@ import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { CalendarCheckIcon, Laptop } from "lucide-react";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -111,6 +112,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {" "}
+          <Analytics />
           {children} <Footer />
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
