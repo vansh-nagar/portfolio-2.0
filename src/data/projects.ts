@@ -55,7 +55,7 @@ export const WebProjectsArr = [
     name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1763353240/Copy_of_Copy_of_Webinar_Keynote_Presentation_1_prklcu.jpg",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1765510075/Copy_of_Copy_of_Webinar_Keynote_Presentation_exlxzi.jpg",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
     demo: "https://pixel-perfect-01.vercel.app/",
     figmaFile: "",

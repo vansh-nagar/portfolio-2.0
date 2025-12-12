@@ -1,5 +1,3 @@
-import React from "react";
-
 const data = [
   {
     img: "https://res.cloudinary.com/dz12pywzs/image/upload/v1761497054/2ba609a9-59db-449a-bbae-45a8d4297f3a.png",
