@@ -4,13 +4,13 @@ import { Montserrat } from "next/font/google";
 import Footer from "@/components/landing-page/footer";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { MusicToggleButton } from "@/components/cool-stuff/music-player";
-import ChatWithAi from "@/components/cool-stuff/chat-with-ai";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
-import { CalendarCheckIcon, Laptop } from "lucide-react";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import { ModeToggle } from "@/components/cool-stuff/light-dark2.0";
+import { CalendarCheckIcon } from "@/components/ui/calendar-check";
+import { Laptop } from "lucide-react";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",

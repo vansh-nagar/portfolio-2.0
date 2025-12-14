@@ -16,7 +16,7 @@ const ProjectsTabs = ({
       <header className="font-bold text-xl">Projects</header>
 
       <div className="flex flex-col  mt-2 items-start w-[95vw] sm:w-[50vw] my-5  ">
-        <Tabs defaultValue="web-projects">
+        <Tabs defaultValue="web-projects" id="projects-tabs">
           <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
             {/* <TabsTrigger value="ai-projects">AI Projects</TabsTrigger> */}

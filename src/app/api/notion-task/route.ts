@@ -13,8 +13,6 @@ export async function GET() {
       data_source_id: process.env.NOTION_SOURCE_ID as string,
     });
 
-    console.log("Notion response:", response);
-
     const tasks = response.results
       .filter((task: any) => {
         const dateProp = task.properties.Date?.date?.start;
@@ -23,14 +21,15 @@ export async function GET() {
       })
       .map((task: any) => ({
         id: task.id,
-        name: task.properties?.Name?.title?.[0]?.plain_text ?? "",
+        name:
+          task.properties?.private?.checkbox ?? false
+            ? "Shhh… classified task :)"
+            : task.properties?.Name?.title?.[0]?.plain_text ?? "",
         status: task.properties?.Status?.status?.name ?? null,
         checked: task.properties?.check?.checkbox ?? false,
         private: task.properties?.private?.checkbox ?? false,
         date: task.properties?.Date?.date?.start ?? null,
       }));
-
-    console.log("Filtered tasks for today:", tasks);
 
     return NextResponse.json(tasks);
   } catch (error: any) {

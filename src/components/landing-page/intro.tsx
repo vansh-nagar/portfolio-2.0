@@ -1,6 +1,3 @@
-import { FileText, LinkedinIcon } from "lucide-react";
-import { SiGithub, SiInstagram, SiX } from "react-icons/si";
-
 import ArrowButton from "@/components/ui/arrow-button";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -9,6 +6,11 @@ import { useGSAP } from "@gsap/react";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import gsap from "gsap";
 import { useRef } from "react";
+import { GithubIcon } from "../ui/github";
+import { LinkedinIcon } from "../ui/linkedin";
+import { SiX } from "react-icons/si";
+import { InstagramIcon } from "../ui/instagram";
+import { FileTextIcon } from "../ui/file-text";
 
 const Intro = () => {
   gsap.registerPlugin(MotionPathPlugin);
@@ -75,7 +77,7 @@ const Intro = () => {
             {
               href: "https://github.com/vansh-nagar",
               title: "GitHub",
-              icon: SiGithub,
+              icon: GithubIcon,
             },
             {
               href: "https://www.linkedin.com/in/vansh-nagar-469648346/",
@@ -90,12 +92,12 @@ const Intro = () => {
             {
               href: "https://www.instagram.com/epitome0.0/?hl=en",
               title: "Instagram",
-              icon: SiInstagram,
+              icon: InstagramIcon,
             },
             {
               href: "https://www.arclabs.space/dashboard/generate-resume/page2/cmh6l8y3d0001i904uso7c3ux",
               title: "Resume",
-              icon: FileText,
+              icon: FileTextIcon,
             },
           ].map(({ href, title, icon: Icon }, key) => (
             <Link href={href} key={key} target="_blank">

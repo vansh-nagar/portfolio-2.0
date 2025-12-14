@@ -21,7 +21,6 @@ const Task = () => {
         const response = await fetch("/api/notion-task");
         if (response.ok) {
           const data = await response.json();
-          console.log(data);
           setTasks(Array.isArray(data) ? data : []);
         }
       } catch (error) {
@@ -69,14 +68,8 @@ const Task = () => {
                     >
                       {task.checked ? (
                         <Highlighter action="strike-through">
-                          {task.private
-                            ? "Shhh… classified task :)"
-                            : task.name}
+                          {task.name}
                         </Highlighter>
-                      ) : task.private ? (
-                        <span className=" blur-[1px] pr-1">
-                          Shhh… classified task :)
-                        </span>
                       ) : (
                         task.name
                       )}
