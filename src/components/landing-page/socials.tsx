@@ -1,7 +1,4 @@
-import { GithubIcon } from "lucide-react";
-import React from "react";
 import { FlickeringGrid } from "../ui/flickering-grid";
-import Link from "next/link";
 
 const Socials = () => {
   return (
@@ -9,7 +6,7 @@ const Socials = () => {
       <section className=" my-5  w-full  ">
         <header className="font-bold text-xl">Socials</header>
 
-        <div className=" w-full mt-2 flex  max-lg:flex-wrap  sm:gap-3 gap-2    ">
+        <div className=" w-full mt-2 flex  max-lg:flex-wrap  sm:gap-3 gap-2x    ">
           <div className=" border rounded-md border-dashed w-auto  ">
             <img
               className=" dark:hidden block   "
@@ -22,7 +19,7 @@ const Socials = () => {
           </div>
           <div
             onClick={() => window.open("https://github.com/vansh-nagar")}
-            className=" flex items-center  justify-center  shadow-inner flex-1  border-b border-dashed relative group cursor-pointer  rounded-md   "
+            className=" flex items-center max-sm:hidden  justify-center   flex-1  border border-dashed relative group cursor-pointer  rounded-md   "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -48,14 +45,9 @@ const Socials = () => {
         </div>
         <div className=" mt-3 flex   max-lg:flex-wrap sm:gap-3 gap-2 overflow-hidden  rounded-md ">
           <img
-            src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762336185/Gemini_Generated_Image_qxos2hqxos2hqxos_rlosmn.png"
-            alt=""
-            className=" aspect-square  shadow    max-lg:h-auto h-40 object-cover object-top  rounded-md"
-          />
-          <img
             src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762102619/Untitled_sur84c.png"
             alt=""
-            className=" rounded-md h-40 max-sm:h-auto shadow   object-cover object-bottom w-full "
+            className=" rounded-md  shadow   object-cover object-bottom  "
           />
         </div>
       </section>

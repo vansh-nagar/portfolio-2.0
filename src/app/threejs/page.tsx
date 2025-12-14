@@ -1,8 +1,4 @@
 "use client";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { Suspense } from "react";
-import { useGLTF } from "@react-three/drei";
 import { Badge } from "@/components/ui/badge";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import Link from "next/link";
@@ -73,10 +69,6 @@ const Projects = [
 ];
 
 const page = () => {
-  const Intro = () => {
-    const { scene } = useGLTF("/models/introModel.glb");
-    return <primitive object={scene} position={[-2, 0, 3]} />;
-  };
   return (
     <div className=" flex  justify-center py-10 p-2 ">
       <img
@@ -95,18 +87,6 @@ const page = () => {
       <Shaders />
 
       <div className="   w-[95vw] sm:w-[50vw] z-50 ">
-        <div className="  border rounded-xl  mb-3  ">
-          <Canvas>
-            {/* Add a light */}
-            <ambientLight intensity={0.7} />
-            <directionalLight position={[5, 10, 7.5]} intensity={1} />
-            <OrbitControls />
-            <Suspense fallback={null}>
-              <Intro />
-            </Suspense>
-          </Canvas>
-        </div>
-
         <div className=" grid sm:grid-cols-2   grid-cols-1 gap-3  ">
           {Projects.map((project, index) => (
             <div key={index} className="flex flex-col gap-2">
