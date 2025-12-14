@@ -36,22 +36,18 @@ const About = () => {
 
   return (
     <>
-      <section className="my-5 max-sm:hidden">
+      <section className="my-5">
         <header className="font-bold text-xl">About</header>
         <div ref={container} className=" h-full w-full ">
-          <span
-            ref={text}
-            className={`text-sm leading-relaxed text-muted-foreground flex  items-center justify-start gap-x-1.5 flex-wrap `}
-          >
+          <span ref={text} className={`text-sm leading-relaxed `}>
             I am a{" "}
             <span className="font-semibold text-foreground">
               full-stack developer
             </span>{" "}
             with a strong interest in building scalable, user-focused digital
             products. I enjoy turning ideas into reliable, well-designed
-            solutions through clean code and thoughtful architecture.
-            <br />
-            My work spans{" "}
+            solutions through clean code and thoughtful architecture. My work
+            spans{" "}
             <span className="font-semibold text-primary/90">
               full-stack web applications
             </span>

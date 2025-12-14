@@ -7,13 +7,13 @@ const Socials = () => {
         <header className="font-bold text-xl">Socials</header>
 
         <div className=" w-full mt-2 flex  max-lg:flex-wrap  sm:gap-3 gap-2x    ">
-          <div className=" border rounded-md border-dashed w-auto  ">
+          <div className=" border rounded-md border-dashed">
             <img
-              className=" dark:hidden block   "
+              className=" dark:hidden block"
               src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&bar_color=000000&bar_color_cover=false&mode=light"
             />
             <img
-              className="dark:block hidden  "
+              className="dark:block hidden"
               src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qjfkcsdkh7ehq2f36t4v2c5gl4&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=false&profanity=true&mode=dark&bar_color=ffffff&bar_color_cover=false"
             />
           </div>
