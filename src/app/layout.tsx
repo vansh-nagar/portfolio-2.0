@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { ModeToggle } from "@/components/cool-stuff/light-dark2.0";
 import { CalendarCheckIcon } from "@/components/ui/calendar-check";
 import { Laptop } from "lucide-react";
+import OnekoCat from "@/components/OnekoCat";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -138,6 +139,7 @@ export default function RootLayout({
             </Link>
             <MusicToggleButton />
           </div>
+          <OnekoCat />
         </ThemeProvider>
       </body>
     </html>
