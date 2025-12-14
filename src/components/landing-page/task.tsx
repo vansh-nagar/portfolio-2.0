@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { CheckCircle2, Circle, BadgeCheck } from "lucide-react";
-import { ShineBorder } from "../ui/shine-border";
+import { useEffect, useState } from "react";
+import { Circle } from "lucide-react";
 import { Highlighter } from "../ui/highlighter";
 import { SparklesText } from "../ui/sparkles-text";
 
@@ -9,7 +8,7 @@ interface Task {
   name: string;
   status: string;
   checked: boolean;
-  selected: string | null;
+  private: boolean;
 }
 
 const Task = () => {
@@ -66,17 +65,15 @@ const Task = () => {
                     <p
                       className={` truncate line-clamp-1 ${
                         task.checked ? " text-muted-foreground blur-[1px]" : ""
-                      } text-accent-foreground ${
-                        task.selected === "Private" ? "italic" : ""
-                      }`}
+                      } text-accent-foreground ${task.private ? "italic" : ""}`}
                     >
                       {task.checked ? (
                         <Highlighter action="strike-through">
-                          {task.selected === "Private"
+                          {task.private
                             ? "Shhh… classified task :)"
                             : task.name}
                         </Highlighter>
-                      ) : task.selected === "Private" ? (
+                      ) : task.private ? (
                         <span className=" blur-[1px] pr-1">
                           Shhh… classified task :)
                         </span>

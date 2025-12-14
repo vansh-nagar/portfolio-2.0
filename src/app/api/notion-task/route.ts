@@ -7,12 +7,13 @@ const notion = new Client({
 
 export async function GET() {
   try {
-    const dataSourceId = process.env.NOTION_PAGE_ID as string;
     const todayStr = new Date().toISOString().split("T")[0];
 
     const response = await notion.dataSources.query({
-      data_source_id: "2a83cd92-815b-8032-a151-000b75d9dece",
+      data_source_id: process.env.NOTION_SOURCE_ID as string,
     });
+
+    console.log("Notion response:", response);
 
     const tasks = response.results
       .filter((task: any) => {
@@ -22,12 +23,14 @@ export async function GET() {
       })
       .map((task: any) => ({
         id: task.id,
-        name: task.properties.Name.title[0]?.plain_text || "",
-        status: task.properties.Status.status?.name || null,
-        checked: task.properties.check.checkbox ?? false,
-        selected: task.properties.Select.select?.name || null,
-        date: task.properties.Date.date?.start || null,
+        name: task.properties?.Name?.title?.[0]?.plain_text ?? "",
+        status: task.properties?.Status?.status?.name ?? null,
+        checked: task.properties?.check?.checkbox ?? false,
+        private: task.properties?.private?.checkbox ?? false,
+        date: task.properties?.Date?.date?.start ?? null,
       }));
+
+    console.log("Filtered tasks for today:", tasks);
 
     return NextResponse.json(tasks);
   } catch (error: any) {
