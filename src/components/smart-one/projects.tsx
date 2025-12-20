@@ -22,7 +22,7 @@ const ProjectsComponent = ({ project }: { project: any }) => {
                   src={project.image}
                   alt={`${project.name} screenshot`}
                   fill
-                  className="rounded-md object-cover"
+                  className="rounded-md object-cover border border-dashed"
                   sizes="(max-width: 1024px) 95vw, 50vw"
                 />
               </div>
@@ -89,8 +89,8 @@ const ProjectsComponent = ({ project }: { project: any }) => {
         )}
         {project.github && (
           <Link href={project.github} target="_blank">
-            <Button size={"sm"}>
-              <Github />
+            <Button size={"sm"} className="text-xs">
+              <Github className=" size-4" />
               GitHub
             </Button>
           </Link>
@@ -98,7 +98,7 @@ const ProjectsComponent = ({ project }: { project: any }) => {
         {project.demo && (
           <Link href={project.demo} target="_blank">
             <RainbowButton
-              className=" rounded-md  "
+              className=" rounded-md text-xs "
               variant="outline"
               size={"sm"}
             >

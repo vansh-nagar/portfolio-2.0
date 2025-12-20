@@ -7,11 +7,8 @@ import Intro from "../intro";
 import GithubActivity from "../github-activity";
 import Projects from "../projects";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
-import About from "../about";
-import Socials from "../socials";
 import Image from "next/image";
 import Task from "../task";
-import Tools from "../tools";
 
 const HeroContent = () => {
   return (

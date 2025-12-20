@@ -133,15 +133,15 @@ const Intro = () => {
           placeholder="See my designs"
           color={false}
         />
-        <ArrowButton
+        {/* <ArrowButton
           link="/pick-your-petal"
           placeholder="Pick Your Petal"
           color={true}
-        />
+        /> */}
         <ArrowButton
           link="threejs"
           placeholder="Three.js Journey"
-          color={false}
+          color={true}
         />
       </div>
     </>

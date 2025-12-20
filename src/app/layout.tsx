@@ -128,15 +128,6 @@ export default function RootLayout({
             >
               <CalendarCheckIcon />
             </Button>
-            <Link
-              href="https://3-d-laptop-sooty.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button size={"icon"} variant={"outline"}>
-                <Laptop />
-              </Button>
-            </Link>
             <MusicToggleButton />
           </div>
           <OnekoCat />

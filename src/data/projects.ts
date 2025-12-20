@@ -55,7 +55,7 @@ export const WebProjectsArr = [
     name: "Pixel Perfect",
     link: "https://pixel-perfect-01.vercel.app/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1765510075/Copy_of_Copy_of_Webinar_Keynote_Presentation_exlxzi.jpg",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255222/Copy_of_Copy_of_Webinar_Keynote_Presentation_lqp63f.jpg",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
     demo: "https://pixel-perfect-01.vercel.app/",
     figmaFile: "",
@@ -73,17 +73,25 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    name: "Zip",
-    link: "https://example.com/zip",
-    image: "",
-    github: "https://github.com/vansh-nagar/zip",
-    demo: "",
+    name: "ONLY SERIOUS PROJECT",
+    link: "https://pixel-perfect-01.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
+    github: "https://github.com/vansh-nagar/Pixel-Perfect",
+    demo: "https://pixel-perfect-01.vercel.app/",
     figmaFile: "",
-    tech: ["Electron", "React", "TypeScript", "Tailwind CSS", "SQLite"],
-    timeLine: "Nov 2025 - Present",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "TypeScript",
+      "Shadcn UI",
+    ],
+    timeLine: "Dec 2025 - Present",
     Description:
-      "Desktop productivity app, a modern tool that makes your life easy and gets your work actually done.",
-    status: "In Progress",
+      "Build beautiful, responsive interfaces in minutes. A pixel-perfect React component library for modern web apps.",
+    status: "Planning right now",
   },
   // {
   //   name: "CanvasMeet – Auto-Summary Whiteboard Assistant",
