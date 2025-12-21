@@ -2,8 +2,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExtensionsArr, WebProjectsArr } from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
-import { ShinyButton } from "../ui/shiny-button";
 import { useRouter } from "next/navigation";
+import MorphImageMaskButton from "../pixel-perfect/morph-image-button";
 
 const ProjectsTabs = ({
   num1 = 0,
@@ -15,7 +15,11 @@ const ProjectsTabs = ({
     <div className=" z-50">
       <header className="font-bold text-xl">Projects</header>
 
-      <div className="flex flex-col  mt-2 items-start w-[95vw] sm:w-[50vw] ">
+      <div
+        className={`flex flex-col  mt-2  items-start w-[95vw] sm:w-[50vw] ${
+          num2 ? "" : "mb-10"
+        } `}
+      >
         <Tabs defaultValue="web-projects" id="projects-tabs">
           <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
@@ -54,13 +58,13 @@ const ProjectsTabs = ({
 
         {num2 && (
           <div className=" flex justify-center mt-10  w-full">
-            <ShinyButton
+            <MorphImageMaskButton
               onClick={() => {
                 router.push("/projects");
               }}
             >
-              Show all projects
-            </ShinyButton>
+              See More
+            </MorphImageMaskButton>
           </div>
         )}
       </div>
