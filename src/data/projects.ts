@@ -53,11 +53,11 @@ export const WebProjectsArr = [
   },
   {
     name: "Pixel Perfect",
-    link: "https://pixel-perfect-01.vercel.app/",
+    link: "https://www.pixel-perfect.space/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255222/Copy_of_Copy_of_Webinar_Keynote_Presentation_lqp63f.jpg",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
-    demo: "https://pixel-perfect-01.vercel.app/",
+    demo: "https://www.pixel-perfect.space/",
     figmaFile: "",
     tech: [
       "Next.js",
@@ -74,11 +74,11 @@ export const WebProjectsArr = [
   },
   {
     name: "ONLY SERIOUS PROJECT",
-    link: "https://pixel-perfect-01.vercel.app/",
+    link: "https://www.pixel-perfect.space/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
-    demo: "https://pixel-perfect-01.vercel.app/",
+    demo: "https://www.pixel-perfect.space/",
     figmaFile: "",
     tech: [
       "Next.js",
