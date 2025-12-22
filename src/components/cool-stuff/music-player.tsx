@@ -4,21 +4,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import useSound from "use-sound";
 
-const Skiper25 = () => {
-  return (
-    <div className="flex h-full w-full flex-col items-center justify-center">
-      <div className="text-foreground absolute top-[20%] grid content-start justify-items-center gap-6 py-20 text-center">
-        <span className="after:from-background after:to-foreground relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:content-['']">
-          Click to play the music
-        </span>
-      </div>
-      <MusicToggleButton />
-    </div>
-  );
-};
-
-export { Skiper25 };
-
 export const MusicToggleButton = () => {
   const bars = 5;
 
