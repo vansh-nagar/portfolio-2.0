@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="  pb-12 pt-5 flex flex-col  border-t  border-dashed  justify-between relative overflow-hidden   w-[95vw] sm:w-[50vw]">
         <img
           src="/logo/leaf.svg"
-          alt=""
+          alt="Footer decorative leaf"
           className="w-32 sm:mask-r-from-90% absolute right-0 max-sm:blur-[2px] max-sm:hidden dark:hidden block  "
           style={{ transform: "rotateX(180deg)" }}
         />

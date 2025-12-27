@@ -24,7 +24,7 @@ const WorkExperience = () => {
             <div key={index} className="flex gap-4 items-center">
               <img
                 src={experience.img}
-                alt=""
+                alt={experience.title + " company logo"}
                 className="rounded-full h-14 w-14 object-cover"
               />
               <div className="w-full">

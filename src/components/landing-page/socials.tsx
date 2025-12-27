@@ -46,7 +46,7 @@ const Socials = () => {
         <div className=" mt-3 flex   max-lg:flex-wrap sm:gap-3 gap-2 overflow-hidden  rounded-md ">
           <img
             src="https://res.cloudinary.com/dz12pywzs/image/upload/v1762102619/Untitled_sur84c.png"
-            alt=""
+            alt="Socials section decorative image"
             className=" rounded-md  shadow   object-cover object-bottom  "
           />
         </div>

@@ -48,7 +48,11 @@ const Navbar = () => {
         className="    h-[80px] flex justify-between items-center   w-[95vw] sm:w-[70vw]   transition-transform duration-300"
       >
         <div className="flex items-center mix-blend-darken ">
-          <img src="/logo/NVfOku01.svg" alt="" className="    w-10" />
+          <img
+            src="/logo/NVfOku01.svg"
+            alt="Vansh Nagar logo"
+            className="    w-10"
+          />
         </div>
         <div className="flex   gap-6 max-sm:gap-4 ">
           {[

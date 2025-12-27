@@ -1,3 +1,4 @@
+import Image from "next/image";
 const data = [
   {
     img: "https://res.cloudinary.com/dz12pywzs/image/upload/v1761495944/09efe042-cc70-4a0f-8d77-27d77f354625.png",
@@ -41,7 +42,14 @@ const Education = () => {
         <div className="mt-2 flex flex-col gap-3">
           {data.map((edu, index) => (
             <div key={index} className="flex gap-4 items-center">
-              <img src={edu.img} alt={edu.alt} className={edu.className} />
+              <Image
+                src={edu.img}
+                alt={edu.alt || edu.name + " logo"}
+                className={edu.className}
+                width={56}
+                height={56}
+                priority={false}
+              />
               <div className="w-full">
                 <div className="font-semibold line-clamp-2">{edu.name}</div>
                 <div className="text-xs line-clamp-1">{edu.degree}</div>

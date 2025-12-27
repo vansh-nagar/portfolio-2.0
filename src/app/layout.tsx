@@ -6,11 +6,9 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { MusicToggleButton } from "@/components/cool-stuff/music-player";
 import Script from "next/script";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import { ModeToggle } from "@/components/cool-stuff/light-dark2.0";
 import { CalendarCheckIcon } from "@/components/ui/calendar-check";
-import { Laptop } from "lucide-react";
 import OnekoCat from "@/components/OnekoCat";
 
 const montserrat = Montserrat({
@@ -58,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/dz12pywzs/image/upload/v1762708371/edbcd24c-e4d6-439c-81bc-5fad1872a6c6.png",
+        url: "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
         width: 1200,
         height: 630,
         alt: "Vansh Nagar Portfolio",

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import Link from "next/link";
 import Shaders from "@/components/smart-one/shaders";
+import Image from "next/image";
 
 const Projects = [
   {
@@ -71,17 +72,23 @@ const Projects = [
 const page = () => {
   return (
     <div className=" flex  justify-center py-10 p-2 ">
-      <img
+      <Image
         src="/logo/leaf.svg"
-        alt=""
+        alt="Right decorative leaf"
         className="w-[11vw] max-sm:w-[25vw] absolute top-[15%] right-0 bg-transparent z-0 "
         style={{ transform: "rotateX(180deg)" }}
+        width={120}
+        height={120}
+        priority={false}
       />
-      <img
+      <Image
         src="/logo/leaf.svg"
-        alt=""
+        alt="Left decorative leaf"
         className="w-[11vw] max-sm:w-[25vw] absolute left-0 bottom-[10%] max-sm:bottom-[-3%] bg-transparent z-0 max-sm:-z-10"
         style={{ transform: "rotateY(180deg)" }}
+        width={120}
+        height={120}
+        priority={false}
       />
 
       <Shaders />
@@ -92,10 +99,13 @@ const page = () => {
             <div key={index} className="flex flex-col gap-2">
               <div>
                 {project.image && (
-                  <img
+                  <Image
                     src={project.image}
-                    alt=""
+                    alt={project.name + " project screenshot"}
                     className=" rounded-md  aspect-video  "
+                    width={600}
+                    height={338}
+                    priority={false}
                   />
                 )}
               </div>

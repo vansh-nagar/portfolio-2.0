@@ -1,6 +1,7 @@
 import Shaders from "@/components/smart-one/shaders";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { BadgeCheck } from "lucide-react";
+import Image from "next/image";
 
 const SproutFeatures = [
   "One-page static website",
@@ -59,10 +60,13 @@ const Page = () => {
             ))}
           </div>
 
-          <img
+          <Image
             src="/plans-svg/sprout.svg"
             className="right-4 -bottom-[25%] group-hover:-bottom-0 transition-all duration-200 absolute z-0 w-48 md:w-40"
             alt="Sprout"
+            width={192}
+            height={192}
+            priority={false}
           />
         </div>
 
@@ -83,17 +87,23 @@ const Page = () => {
               </div>
             ))}
 
-            <img
+            <Image
               className="w-32 -top-20 -right-32 group-hover:-right-10 group-hover:-top-10 absolute group-hover:opacity-100 opacity-0 transition-all duration-200"
               src="/plans-svg/svg-hub-079.svg"
-              alt=""
+              alt="Decorative SVG hub"
+              width={128}
+              height={128}
+              priority={false}
             />
           </div>
 
-          <img
+          <Image
             src="/plans-svg/bud.svg"
             className="right-4 bottom-0 absolute z-0"
             alt="Bud"
+            width={128}
+            height={128}
+            priority={false}
           />
         </div>
 
@@ -132,16 +142,22 @@ const Page = () => {
             ))}
           </div>
 
-          <img
+          <Image
             src="/plans-svg/pot.svg"
-            alt=""
+            alt="Pot decorative graphic"
             className="absolute top-0 right-0 w-52 -translate-y-full group-hover:translate-y-0 transition-all duration-200"
+            width={208}
+            height={208}
+            priority={false}
           />
 
-          <img
+          <Image
             src="/plans-svg/bloom.svg"
             className="right-0 bottom-0 absolute z-0"
             alt="Bloom"
+            width={128}
+            height={128}
+            priority={false}
           />
         </div>
       </div>

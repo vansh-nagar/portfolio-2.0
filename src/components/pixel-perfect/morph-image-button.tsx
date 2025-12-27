@@ -85,7 +85,7 @@ const MorphImageMaskButton = ({
       </div>
       <img
         src="https://i.pinimg.com/736x/8f/3c/69/8f3c69cbae64cc1af6d6cc33acec50e3.jpg"
-        alt=""
+        alt="Decorative background for morph image button"
         className=" absolute object-top"
       />
       <div className=" z-40  scale-100  text text-white">{children}</div>
