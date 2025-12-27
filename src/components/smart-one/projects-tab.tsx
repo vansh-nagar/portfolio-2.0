@@ -4,6 +4,8 @@ import { ExtensionsArr, WebProjectsArr } from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
 import { useRouter } from "next/navigation";
 import MorphImageMaskButton from "../pixel-perfect/morph-image-button";
+import { Button } from "../ui/button";
+import { ShinyButton } from "../ui/shiny-button";
 
 const ProjectsTabs = ({
   num1 = 0,
@@ -58,13 +60,13 @@ const ProjectsTabs = ({
 
         {num2 && (
           <div className=" flex justify-center mt-10  w-full">
-            <MorphImageMaskButton
+            <ShinyButton
               onClick={() => {
                 router.push("/projects");
               }}
             >
               See More
-            </MorphImageMaskButton>
+            </ShinyButton>
           </div>
         )}
       </div>
