@@ -124,7 +124,12 @@ const Intro = () => {
         <span className="italic font-medium">web & app developer.</span> Driven
         by ✱
         <span className="italic font-medium">crafting tomorrow's tech,</span>✧
-        engineering systems and ꕤ sparking creative communities.
+        engineering systems and ꕤ sparking creative communities.{" "}
+        <Link target="_blank" href="https://app.cal.com/vansh-nagar">
+          <span className=" border text-sm p-1 rounded-md cursor-pointer  border-dashed hover:bg-accent transition-all duration-200 ">
+            Book A Call! ✿{" "}
+          </span>
+        </Link>
       </div>
 
       <div className="flex flex-wrap  gap-2 mt-6 z-20 mb-4">
@@ -133,11 +138,6 @@ const Intro = () => {
           placeholder="See my designs"
           color={false}
         />
-        {/* <ArrowButton
-          link="/pick-your-petal"
-          placeholder="Pick Your Petal"
-          color={true}
-        /> */}
         <ArrowButton
           link="threejs"
           placeholder="Three.js Journey"

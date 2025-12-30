@@ -22,10 +22,10 @@ export const WebProjectsArr = [
       "React Query",
       "Zod",
     ],
-    timeLine: "Jan 2025 - Present",
+    timeLine: "Jan 2025 - Dec 2025",
     Description:
       "Land your dream job with AI-powered tools for resumes, interviews, jobs and more....",
-    status: "In Progress",
+    status: "Completed",
   },
   {
     name: "Orcha",

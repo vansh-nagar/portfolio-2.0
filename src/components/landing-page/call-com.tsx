@@ -2,7 +2,6 @@
 
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import { RainbowButton } from "../ui/rainbow-button";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 

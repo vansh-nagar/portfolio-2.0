@@ -25,8 +25,11 @@ const ProjectsTabs = ({
         <Tabs defaultValue="web-projects" id="projects-tabs">
           <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
-            {/* <TabsTrigger value="ai-projects">AI Projects</TabsTrigger> */}
+            <TabsTrigger value="side-projects">Skill Forge</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
+            <TabsTrigger value="vibe-coded-projects">
+              Prototype Studio
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">

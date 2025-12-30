@@ -1,5 +1,12 @@
 import Image from "next/image";
-import { BadgeCheck, BadgeX, Figma, Github, Link2 } from "lucide-react";
+import {
+  ArrowUpRight,
+  BadgeCheck,
+  BadgeX,
+  Figma,
+  Github,
+  Link2,
+} from "lucide-react";
 import Link from "next/link";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { Badge } from "@/components/ui/badge";
@@ -102,7 +109,6 @@ const ProjectsComponent = ({ project }: { project: any }) => {
               variant="outline"
               size={"sm"}
             >
-              <Link2 />
               Live Demo
             </RainbowButton>
           </Link>
