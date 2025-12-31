@@ -125,7 +125,7 @@ const Intro = () => {
         by ✱
         <span className="italic font-medium">crafting tomorrow's tech,</span>✧
         engineering systems and ꕤ sparking creative communities.{" "}
-        <Link target="_blank" href="https://app.cal.com/vansh-nagar">
+        <Link target="_blank" href="https://cal.com/vansh-nagar-wp0ha3">
           <span className=" border text-sm p-1 rounded-md cursor-pointer  border-dashed hover:bg-accent transition-all duration-200 ">
             Book A Call! ✿{" "}
           </span>

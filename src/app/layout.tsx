@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { ModeToggle } from "@/components/cool-stuff/light-dark2.0";
 import { CalendarCheckIcon } from "@/components/ui/calendar-check";
 import OnekoCat from "@/components/OnekoCat";
+import Link from "next/link";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -116,16 +117,11 @@ export default function RootLayout({
           {children} <Footer />
           <div className=" fixed bottom-4 right-4  flex flex-col items-center gap-2 z-50 ">
             <ModeToggle />
-
-            {/* <ChatWithAi /> */}
-            <Button
-              data-cal-link="vansh-nagar"
-              data-cal-config='{"layout":"month_view"}'
-              size={"icon"}
-              variant={"outline"}
-            >
-              <CalendarCheckIcon />
-            </Button>
+            <Link href="https://cal.com/vansh-nagar-wp0ha3" target="_blank">
+              <Button size={"icon"} variant={"outline"}>
+                <CalendarCheckIcon />
+              </Button>
+            </Link>
             <MusicToggleButton />
           </div>
           <OnekoCat />
