@@ -1,6 +1,10 @@
 "use client";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ExtensionsArr, WebProjectsArr } from "@/data/projects";
+import {
+  ExtensionsArr,
+  SkillForgeProjectsArr,
+  WebProjectsArr,
+} from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
 import { useRouter } from "next/navigation";
 import MorphImageMaskButton from "../pixel-perfect/morph-image-button";
@@ -25,7 +29,7 @@ const ProjectsTabs = ({
         <Tabs defaultValue="web-projects" id="projects-tabs">
           <TabsList className="flex-wrap">
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
-            <TabsTrigger value="side-projects">Skill Forge</TabsTrigger>
+            <TabsTrigger value="skill-forge">Skill Forge</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
             <TabsTrigger value="vibe-coded-projects">
               Prototype Studio
@@ -41,6 +45,13 @@ const ProjectsTabs = ({
           <TabsContent value="extensions">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
               {ExtensionsArr.slice(num1, num2).map((project, index) => (
+                <ProjectsComponent key={index} project={project} />
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="skill-forge">
+            <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
+              {SkillForgeProjectsArr.slice(num1, num2).map((project, index) => (
                 <ProjectsComponent key={index} project={project} />
               ))}
             </div>

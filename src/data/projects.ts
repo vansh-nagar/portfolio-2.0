@@ -46,10 +46,10 @@ export const WebProjectsArr = [
       "React flow",
       "Sentry",
     ],
-    timeLine: "Oct 2025 - present",
+    timeLine: "Oct 2025 - Nov 2025",
     Description:
       "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
-    status: "In Progress",
+    status: "Completed",
   },
   {
     name: "Pixel Perfect",
@@ -77,22 +77,15 @@ export const WebProjectsArr = [
     link: "https://www.pixel-perfect.space/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
-    github: "https://github.com/vansh-nagar/Pixel-Perfect",
-    demo: "https://www.pixel-perfect.space/",
+    github: "",
+    demo: "",
     figmaFile: "",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "GSAP",
-      "TypeScript",
-      "Shadcn UI",
-    ],
-    timeLine: "Dec 2025 - Present",
-    Description:
-      "Build beautiful, responsive interfaces in minutes. A pixel-perfect React component library for modern web apps.",
-    status: "Planning right now",
+    tech: [],
+    timeLine: "Jan 2026 - Present",
+    Description: "Click on skill forge tabs to see what I'm building... ↖",
+    status: "In Progress",
   },
+
   // {
   //   name: "CanvasMeet – Auto-Summary Whiteboard Assistant",
   //   link: "",
@@ -371,3 +364,20 @@ export const ExtensionsArr = [
 //     status: "Planned",
 //   },
 // ];
+
+export const SkillForgeProjectsArr = [
+  {
+    name: "Peer Drop",
+    link: "https://www.pixel-perfect.space/",
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
+    github: "https://github.com/vansh-nagar/peer-drop",
+    demo: "",
+    figmaFile: "",
+    tech: ["Next.js", "WebRTC", "WebSockets", "Node.js", "Express"],
+    timeLine: "1st Jan 2026 - Present",
+    Description:
+      "Building a peer-to-peer file sharing app using WebRTC and WebSockets for direct file transfers without servers anonymously. mainly focused on binary transfer optimization and reliability.",
+    status: "In Progress",
+  },
+];
