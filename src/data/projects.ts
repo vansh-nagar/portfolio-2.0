@@ -73,7 +73,7 @@ export const WebProjectsArr = [
     status: "In Progress",
   },
   {
-    name: "ONLY SERIOUS PROJECT",
+    name: "SERIOUS PROJECT",
     link: "https://www.pixel-perfect.space/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",

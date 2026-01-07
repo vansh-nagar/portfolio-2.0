@@ -139,8 +139,8 @@ const Intro = () => {
           color={false}
         />
         <ArrowButton
-          link="threejs"
-          placeholder="Three.js Journey"
+          link="https://www.pixel-perfect.space/"
+          placeholder="Pixel Perfect Components"
           color={true}
         />
       </div>

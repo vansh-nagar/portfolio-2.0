@@ -31,9 +31,9 @@ const ProjectsTabs = ({
             <TabsTrigger value="web-projects">Web Apps</TabsTrigger>
             <TabsTrigger value="skill-forge">Skill Forge</TabsTrigger>
             <TabsTrigger value="extensions">Extensions</TabsTrigger>
-            <TabsTrigger value="vibe-coded-projects">
+            {/* <TabsTrigger value="vibe-coded-projects">
               Prototype Studio
-            </TabsTrigger>
+            </TabsTrigger> */}
           </TabsList>
           <TabsContent value="web-projects">
             <div className="  grid  grid-cols-1 lg:grid-cols-2    gap-3  hover:caret-white ">
