@@ -75,6 +75,11 @@ const Intro = () => {
         <div className="flex   gap-2 ">
           {[
             {
+              href: "https://www.arclabs.space/dashboard/generate-resume/page2/cmh6l8y3d0001i904uso7c3ux",
+              title: "Resume",
+              icon: FileTextIcon,
+            },
+            {
               href: "https://github.com/vansh-nagar",
               title: "GitHub",
               icon: GithubIcon,
@@ -83,21 +88,6 @@ const Intro = () => {
               href: "https://www.linkedin.com/in/vansh-nagar-469648346/",
               title: "LinkedIn",
               icon: LinkedinIcon,
-            },
-            {
-              href: "",
-              title: "Twitter/X",
-              icon: SiX,
-            },
-            {
-              href: "https://www.instagram.com/epitome0.0/?hl=en",
-              title: "Instagram",
-              icon: InstagramIcon,
-            },
-            {
-              href: "https://www.arclabs.space/dashboard/generate-resume/page2/cmh6l8y3d0001i904uso7c3ux",
-              title: "Resume",
-              icon: FileTextIcon,
             },
           ].map(({ href, title, icon: Icon }, key) => (
             <Link href={href} key={key} target="_blank">
@@ -127,7 +117,7 @@ const Intro = () => {
         engineering systems and ꕤ sparking creative communities.{" "}
         <Link target="_blank" href="https://cal.com/vansh-nagar-wp0ha3">
           <span className=" border text-sm p-1 rounded-md cursor-pointer  border-dashed hover:bg-accent transition-all duration-200 ">
-            Book A Call! ✿{" "}
+            Book A Call! <span className=" animate-spin">✿</span>{" "}
           </span>
         </Link>
       </div>
