@@ -7,9 +7,8 @@ import {
 } from "@/data/projects";
 import ProjectsComponent from "@/components/smart-one/projects";
 import { useRouter } from "next/navigation";
-import MorphImageMaskButton from "../pixel-perfect/morph-image-button";
-import { Button } from "../ui/button";
-import { ShinyButton } from "../ui/shiny-button";
+import ThreedButton from "../pixel-perfect/3d-button";
+import Link from "next/link";
 
 const ProjectsTabs = ({
   num1 = 0,
@@ -74,13 +73,9 @@ const ProjectsTabs = ({
 
         {num2 && (
           <div className=" flex justify-center mt-10  w-full">
-            <ShinyButton
-              onClick={() => {
-                router.push("/projects");
-              }}
-            >
-              See More
-            </ShinyButton>
+            <Link href="/projects">
+              <ThreedButton>See More</ThreedButton>
+            </Link>
           </div>
         )}
       </div>

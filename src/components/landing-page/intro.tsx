@@ -40,7 +40,7 @@ const Intro = () => {
 
   return (
     <>
-      <div className="  bg-background  flex justify-between items-center  w-full ">
+      <div className="flex justify-between items-center  w-full ">
         <svg
           className="block dark:hidden"
           width="50"
@@ -99,17 +99,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="text-4xl mt-10">
-        Hi, I'm{" "}
-        <span className=" group relative">
-          <span className=" group-hover:cursor-pointer">Vansh Nagar </span>
-          <img
-            src="https://res.cloudinary.com/dz12pywzs/image/upload/v1765694568/WhatsApp_Image_2025-12-01_at_1.59.38_PM_hy33p1.jpg"
-            alt="Vansh Nagar profile hover image"
-            className=" w-20  object-cover  absolute -top-20 right-0 rotate-6 rounded-md pointer-events-none opacity-0 group-hover:opacity-100 transition-all duration-300  group-hover:-translate-y-5"
-          />
-        </span>{" "}
-      </div>
+      <div className="text-4xl mt-10">Hi, I'm Vansh Nagar</div>
       <div className=" text-xl  mt-4 ">
         <span className="italic font-medium">web & app developer.</span> Driven
         by ✱

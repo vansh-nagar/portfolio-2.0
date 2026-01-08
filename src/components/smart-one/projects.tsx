@@ -1,12 +1,5 @@
 import Image from "next/image";
-import {
-  ArrowUpRight,
-  BadgeCheck,
-  BadgeX,
-  Figma,
-  Github,
-  Link2,
-} from "lucide-react";
+import { BadgeCheck, BadgeX, Figma, Github } from "lucide-react";
 import Link from "next/link";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { Badge } from "@/components/ui/badge";

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SparklesText } from "../ui/sparkles-text";
 import { BlogsArr } from "@/data/blogs";
 import { BadgeCheck, BadgeX } from "lucide-react";
+import ThreedButton from "../pixel-perfect/3d-button";
 
 const Blogs = () => {
   return (
@@ -15,7 +16,7 @@ const Blogs = () => {
               <div className=" flex w-full flex-col justify-between gap-2">
                 <div className=" flex flex-col gap-2">
                   {true ? (
-                    <div className="">
+                    <div>
                       <a
                         className=" hover:cursor-crosshair"
                         href="https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png"
@@ -26,7 +27,7 @@ const Blogs = () => {
                             src={blog.image}
                             alt="Blog"
                             fill
-                            className="rounded-md object-cover border-dashed"
+                            className="rounded-md border object-cover border-dashed"
                             sizes="(max-width: 1024px) 95vw, 50vw"
                           />
                         </div>
@@ -77,6 +78,9 @@ const Blogs = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center">
+          <ThreedButton className="mt-10">See More</ThreedButton>
         </div>
       </section>
     </>
