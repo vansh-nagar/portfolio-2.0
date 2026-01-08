@@ -9,6 +9,7 @@ import Projects from "../projects";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import Image from "next/image";
 import Task from "../task";
+import Blogs from "../blogs";
 
 const HeroContent = () => {
   return (
@@ -43,6 +44,8 @@ const HeroContent = () => {
       <WorkExperience />
       <Education />
       {/* <Socials /> */}
+
+      <Blogs />
 
       <Task />
       {/* <Tools /> */}
