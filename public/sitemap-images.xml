@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://vanshnagar.me/</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png</image:loc>
+      <image:title>Vansh Nagar Portfolio</image:title>
+      <image:caption>Official portfolio of Vansh Nagar - Full Stack Developer and UI/UX Designer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://vanshnagar.me/leaf.svg</image:loc>
+      <image:title>Vansh Nagar Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vanshnagar.me/projects</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dz12pywzs/image/upload/v1761476312/Webinar_Keynote_Presentation_1_ebl6mk.png</image:loc>
+      <image:title>Arc Labs - AI Career Tools</image:title>
+      <image:caption>AI-powered tools for resumes, interviews, and job hunting by Vansh Nagar</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dz12pywzs/image/upload/v1762450441/Copy_of_Webinar_Keynote_Presentation_2_wfovb1.jpg</image:loc>
+      <image:title>Orcha - Workflow Automation</image:title>
+      <image:caption>Workflow automation platform built by Vansh Nagar</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://vanshnagar.me/designs</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dz12pywzs/image/upload/v1752239310/jj2oous2pgonqcwxz5yd.png</image:loc>
+      <image:title>UI/UX Design by Vansh Nagar</image:title>
+      <image:caption>Web design showcase by Vansh Nagar</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dz12pywzs/image/upload/v1767794413/screencapture-pixel-perfect-space-2026-01-07-19_21_09_ya5u5v.png</image:loc>
+      <image:title>Pixel Perfect Design</image:title>
+      <image:caption>Creative web interface design by Vansh Nagar</image:caption>
+    </image:image>
+  </url>
+</urlset>

@@ -1,5 +1,49 @@
 import Shaders from "@/components/smart-one/shaders";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Designs | Vansh Nagar - UI/UX Designer",
+  description:
+    "Browse Vansh Nagar's UI/UX design portfolio. View web designs, interface designs, and creative visual work. Modern, clean, and user-focused design solutions.",
+  keywords: [
+    "Vansh Nagar designs",
+    "Vansh UI designs",
+    "UI/UX portfolio",
+    "Web design portfolio",
+    "Interface design",
+    "Vansh designer",
+    "Creative designs",
+    "Modern web designs",
+    "Vansh Nagar UI/UX",
+  ],
+  alternates: {
+    canonical: "https://vanshnagar.me/designs",
+  },
+  openGraph: {
+    title: "Designs | Vansh Nagar - UI/UX Designer",
+    description:
+      "Explore my UI/UX design portfolio featuring modern web interfaces and creative visual designs.",
+    url: "https://vanshnagar.me/designs",
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+        width: 1200,
+        height: 630,
+        alt: "Vansh Nagar Design Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Designs | Vansh Nagar",
+    description: "View my UI/UX design portfolio and creative work.",
+    images: [
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+    ],
+  },
+};
 
 const Images = [
   {

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>Vansh Nagar - Full Stack Developer & Designer</title>
+  <subtitle>Latest projects, designs, and updates from Vansh Nagar</subtitle>
+  <link href="https://vanshnagar.me/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://vanshnagar.me/" rel="alternate" type="text/html"/>
+  <id>https://vanshnagar.me/</id>
+  <updated>2026-01-11T00:00:00Z</updated>
+  <author>
+    <name>Vansh Nagar</name>
+    <uri>https://vanshnagar.me</uri>
+  </author>
+  <rights>© 2026 Vansh Nagar. All rights reserved.</rights>
+  <generator>Next.js</generator>
+  <icon>https://vanshnagar.me/leaf.svg</icon>
+  <logo>https://vanshnagar.me/leaf.svg</logo>
+  
+  <entry>
+    <title>Arc Labs - AI-Powered Career Tools</title>
+    <link href="https://www.arclabs.space/" rel="alternate" type="text/html"/>
+    <id>https://vanshnagar.me/projects/arc-labs</id>
+    <published>2025-01-01T00:00:00Z</published>
+    <updated>2025-12-01T00:00:00Z</updated>
+    <summary>Land your dream job with AI-powered tools for resumes, interviews, jobs and more. Built with Next.js, TypeScript, Prisma, and Three.js.</summary>
+    <author>
+      <name>Vansh Nagar</name>
+    </author>
+    <category term="project"/>
+    <category term="nextjs"/>
+    <category term="ai"/>
+  </entry>
+  
+  <entry>
+    <title>Orcha - Workflow Automation Platform</title>
+    <link href="http://orcha.site/" rel="alternate" type="text/html"/>
+    <id>https://vanshnagar.me/projects/orcha</id>
+    <published>2025-10-01T00:00:00Z</published>
+    <updated>2025-11-01T00:00:00Z</updated>
+    <summary>Powerful workflow automation platform built with Next.js, TypeScript, tRPC, and React Flow.</summary>
+    <author>
+      <name>Vansh Nagar</name>
+    </author>
+    <category term="project"/>
+    <category term="automation"/>
+    <category term="workflow"/>
+  </entry>
+</feed>

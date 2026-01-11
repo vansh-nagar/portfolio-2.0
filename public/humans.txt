@@ -1,0 +1,29 @@
+/* TEAM */
+Developer & Designer: Vansh Nagar
+Role: Full Stack Developer & UI/UX Designer
+Location: India
+Twitter: @vansh1029
+GitHub: github.com/vansh1029
+LinkedIn: linkedin.com/in/vansh-nagar
+Website: vanshnagar.me
+
+/* SITE */
+Last update: 2026/01/11
+Language: English
+Standards: HTML5, CSS3, ES6+
+Framework: Next.js 15
+Styling: Tailwind CSS
+Animations: GSAP, Framer Motion
+3D: Three.js, React Three Fiber
+Hosting: Vercel
+Analytics: Vercel Analytics
+
+/* SKILLS */
+Frontend: React, Next.js, TypeScript, JavaScript, Tailwind CSS
+Backend: Node.js, Express, tRPC, Prisma
+Databases: PostgreSQL, MongoDB, Redis
+Tools: Git, Docker, Figma, VS Code
+Cloud: Vercel, AWS, Cloudinary
+
+/* THANKS */
+Shoutout to the open-source community!

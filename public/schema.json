@@ -1,0 +1,155 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://vanshnagar.me/#website",
+      "url": "https://vanshnagar.me/",
+      "name": "Vansh Nagar Portfolio",
+      "description": "Official portfolio of Vansh Nagar — Full Stack Developer and UI/UX Designer",
+      "publisher": {
+        "@id": "https://vanshnagar.me/#person"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://vanshnagar.me/?s={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://vanshnagar.me/#person",
+      "name": "Vansh Nagar",
+      "givenName": "Vansh",
+      "familyName": "Nagar",
+      "alternateName": ["vansh", "vansh nagar", "vanshnagar"],
+      "url": "https://vanshnagar.me",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer based in India. Passionate about building modern web applications with cutting-edge technologies.",
+      "jobTitle": "Full Stack Developer & UI/UX Designer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "email": "contact@vanshnagar.me",
+      "sameAs": [
+        "https://github.com/vansh1029",
+        "https://www.linkedin.com/in/vansh-nagar/",
+        "https://twitter.com/vansh1029",
+        "https://vanshnagar.me"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Node.js",
+        "MERN Stack",
+        "Full Stack Development",
+        "UI/UX Design",
+        "Web Development",
+        "Frontend Development",
+        "Backend Development",
+        "Tailwind CSS",
+        "Prisma",
+        "PostgreSQL",
+        "MongoDB",
+        "Three.js",
+        "Framer Motion",
+        "GSAP"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Full Stack Developer",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "skills": "JavaScript, TypeScript, React, Next.js, Node.js, MERN Stack, UI/UX Design"
+      }
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://vanshnagar.me/#profilepage",
+      "url": "https://vanshnagar.me/",
+      "name": "Vansh Nagar - Full Stack Developer & Designer",
+      "isPartOf": {
+        "@id": "https://vanshnagar.me/#website"
+      },
+      "about": {
+        "@id": "https://vanshnagar.me/#person"
+      },
+      "mainEntity": {
+        "@id": "https://vanshnagar.me/#person"
+      },
+      "inLanguage": "en-US",
+      "datePublished": "2024-01-01",
+      "dateModified": "2026-01-11"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://vanshnagar.me/#portfolio",
+      "name": "Vansh Nagar's Projects",
+      "description": "Collection of web development and design projects by Vansh Nagar",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "WebApplication",
+            "name": "Arc Labs",
+            "url": "https://www.arclabs.space/",
+            "description": "AI-powered tools for resumes, interviews, jobs and more",
+            "applicationCategory": "BusinessApplication",
+            "creator": {
+              "@id": "https://vanshnagar.me/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "WebApplication",
+            "name": "Orcha",
+            "url": "http://orcha.site/",
+            "description": "Workflow automation platform",
+            "applicationCategory": "BusinessApplication",
+            "creator": {
+              "@id": "https://vanshnagar.me/#person"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vanshnagar.me/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vanshnagar.me/"
+        }
+      ]
+    }
+  ]
+}

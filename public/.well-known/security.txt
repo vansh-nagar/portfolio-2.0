@@ -1,0 +1,9 @@
+# Security Policy for vanshnagar.me
+# Contact Vansh Nagar for security concerns
+
+Contact: https://vanshnagar.me
+Contact: https://github.com/vansh1029
+Contact: https://linkedin.com/in/vansh-nagar
+Preferred-Languages: en
+Canonical: https://vanshnagar.me/.well-known/security.txt
+Expires: 2027-01-11T00:00:00.000Z

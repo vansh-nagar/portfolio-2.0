@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Vansh Nagar</ShortName>
+  <Description>Search Vansh Nagar's Portfolio - Full Stack Developer & Designer</Description>
+  <Tags>vansh nagar portfolio developer designer projects</Tags>
+  <Contact>contact@vanshnagar.me</Contact>
+  <Url type="text/html" method="get" template="https://vanshnagar.me/?q={searchTerms}"/>
+  <LongName>Vansh Nagar - Full Stack Developer & UI/UX Designer Portfolio</LongName>
+  <Image height="16" width="16" type="image/x-icon">https://vanshnagar.me/leaf.svg</Image>
+  <Developer>Vansh Nagar</Developer>
+  <Attribution>© 2026 Vansh Nagar. All rights reserved.</Attribution>
+  <SyndicationRight>open</SyndicationRight>
+  <Language>en-us</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

@@ -1,0 +1,67 @@
+{
+  "name": "Vansh Nagar - Full Stack Developer & Designer",
+  "short_name": "Vansh Nagar",
+  "description": "Official portfolio of Vansh Nagar — Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer. Explore projects, skills, and contact details.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "developer", "design", "technology"],
+  "icons": [
+    {
+      "src": "/leaf.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vansh Nagar Portfolio Homepage"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View Vansh Nagar's projects",
+      "url": "/projects",
+      "icons": [{ "src": "/leaf.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Designs",
+      "short_name": "Designs",
+      "description": "View Vansh Nagar's designs",
+      "url": "/designs",
+      "icons": [{ "src": "/leaf.svg", "sizes": "any" }]
+    }
+  ]
+}

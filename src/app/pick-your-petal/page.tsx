@@ -2,6 +2,50 @@ import Shaders from "@/components/smart-one/shaders";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing Plans | Vansh Nagar - Hire a Developer",
+  description:
+    "Affordable web development pricing packages by Vansh Nagar. From simple landing pages to full-stack web applications. Hire a professional full stack developer for your project.",
+  keywords: [
+    "Vansh Nagar pricing",
+    "hire Vansh Nagar",
+    "web development pricing",
+    "freelance developer rates",
+    "hire full stack developer",
+    "website development cost",
+    "Next.js developer hire",
+    "React developer for hire",
+    "affordable web development",
+  ],
+  alternates: {
+    canonical: "https://vanshnagar.me/pick-your-petal",
+  },
+  openGraph: {
+    title: "Pricing Plans | Vansh Nagar",
+    description:
+      "View my web development pricing packages. From simple sites to complex full-stack applications.",
+    url: "https://vanshnagar.me/pick-your-petal",
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+        width: 1200,
+        height: 630,
+        alt: "Vansh Nagar Pricing Plans",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing Plans | Vansh Nagar",
+    description: "Affordable web development packages for every need.",
+    images: [
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+    ],
+  },
+};
 
 const SproutFeatures = [
   "One-page static website",

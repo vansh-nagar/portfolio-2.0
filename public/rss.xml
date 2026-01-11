@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Vansh Nagar - Full Stack Developer & Designer</title>
+    <description>Latest projects, designs, and updates from Vansh Nagar - Full Stack Developer (MERN, Next.js, TypeScript) and UI/UX Designer based in India.</description>
+    <link>https://vanshnagar.me</link>
+    <atom:link href="https://vanshnagar.me/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <pubDate>Sat, 11 Jan 2026 00:00:00 GMT</pubDate>
+    <managingEditor>contact@vanshnagar.me (Vansh Nagar)</managingEditor>
+    <webMaster>contact@vanshnagar.me (Vansh Nagar)</webMaster>
+    <copyright>© 2026 Vansh Nagar. All rights reserved.</copyright>
+    <generator>Next.js</generator>
+    <image>
+      <url>https://vanshnagar.me/leaf.svg</url>
+      <title>Vansh Nagar</title>
+      <link>https://vanshnagar.me</link>
+    </image>
+    <category>Technology</category>
+    <category>Web Development</category>
+    <category>Portfolio</category>
+    <ttl>60</ttl>
+    
+    <item>
+      <title>Arc Labs - AI-Powered Career Tools</title>
+      <link>https://www.arclabs.space/</link>
+      <description>Land your dream job with AI-powered tools for resumes, interviews, jobs and more. Built with Next.js, TypeScript, Prisma, and Three.js.</description>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.arclabs.space/</guid>
+      <dc:creator>Vansh Nagar</dc:creator>
+      <category>Project</category>
+      <category>Next.js</category>
+      <category>AI</category>
+      <media:content url="https://res.cloudinary.com/dz12pywzs/image/upload/v1761476312/Webinar_Keynote_Presentation_1_ebl6mk.png" medium="image"/>
+    </item>
+    
+    <item>
+      <title>Orcha - Workflow Automation Platform</title>
+      <link>http://orcha.site/</link>
+      <description>Powerful workflow automation platform built with Next.js, TypeScript, tRPC, and React Flow.</description>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">http://orcha.site/</guid>
+      <dc:creator>Vansh Nagar</dc:creator>
+      <category>Project</category>
+      <category>Automation</category>
+      <category>Workflow</category>
+      <media:content url="https://res.cloudinary.com/dz12pywzs/image/upload/v1762450441/Copy_of_Webinar_Keynote_Presentation_2_wfovb1.jpg" medium="image"/>
+    </item>
+  </channel>
+</rss>
