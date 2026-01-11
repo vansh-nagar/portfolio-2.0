@@ -377,7 +377,7 @@ export const SkillForgeProjectsArr = [
     tech: ["Next.js", "WebRTC", "WebSockets", "Node.js", "Express"],
     timeLine: "1st Jan 2026 - Present",
     Description:
-      "Building a peer-to-peer file sharing app using WebRTC and WebSockets for direct file transfers without servers anonymously. mainly focused on binary transfer optimization and reliability.",
+      "Built encrypted browser-to-browser file sharing system with WebRTC, custom TCP-style transport, resume support, and horizontally scaled signaling backend on AWS.",
     status: "In Progress",
   },
 ];

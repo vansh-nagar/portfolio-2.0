@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vanshnagar.me/",
   },
+
   openGraph: {
     title: "Vansh Nagar | Full Stack Developer & Designer",
     description:
@@ -64,13 +65,16 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Vansh Nagar | Full Stack Developer & Designer",
     description:
       "Explore the portfolio of Vansh Nagar — projects, UI/UX, and dev tools.",
-    creator: "@vansh1029", // replace or remove
-    images: ["/og.jpg"],
+    creator: "@vansh1029",
+    images: [
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766822250/aab6cca4-e667-44b4-9ca6-2670ce8d095c.png",
+    ],
   },
 };
 
