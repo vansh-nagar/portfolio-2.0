@@ -91,9 +91,6 @@ const Blogs = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center">
-          <ThreedButton className="mt-10">See More</ThreedButton>
-        </div>
       </section>
     </>
   );
