@@ -1,0 +1,19 @@
+---
+title: "I Built TCP Inside the Browser Using WebRTC"
+date: "2026-01-15"
+description: "How I implemented chunking, ACKs, backpressure and crash-safe file transfer to stop browsers from freezing."
+---
+
+## Why WebRTC alone is not enough
+
+WebRTC gives you a fast encrypted pipe.  
+But when you try to send large files, browsers crash, tabs freeze, and memory explodes.
+
+I learned this the hard way.
+
+## The real problem — browser memory
+
+`RTCDataChannel.bufferedAmount` is not receiver memory.  
+It is **sender-side browser RAM** waiting to be flushed to the network.
+
+When the receiver is slow:

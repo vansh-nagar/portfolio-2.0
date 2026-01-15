@@ -3,6 +3,9 @@ import { SparklesText } from "../ui/sparkles-text";
 import { BlogsArr } from "@/data/blogs";
 import { BadgeCheck, BadgeX } from "lucide-react";
 import ThreedButton from "../pixel-perfect/3d-button";
+import { Button } from "../ui/button";
+import { RainbowButton } from "../ui/rainbow-button";
+import Link from "next/link";
 
 const Blogs = () => {
   return (
@@ -19,7 +22,7 @@ const Blogs = () => {
                     <div>
                       <a
                         className=" hover:cursor-crosshair"
-                        href="https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png"
+                        href={blog.link}
                         target="_blank"
                       >
                         <div className="relative w-full aspect-video">
@@ -74,6 +77,15 @@ const Blogs = () => {
                   <div className="  text-sm text-muted-foreground   ">
                     {blog.Description}
                   </div>
+                  <Link href={blog.link} target="_blank" className="mt-2">
+                    <RainbowButton
+                      className=" rounded-md text-xs "
+                      variant="outline"
+                      size={"sm"}
+                    >
+                      Read Blog
+                    </RainbowButton>
+                  </Link>
                 </div>
               </div>
             </div>

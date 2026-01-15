@@ -13,4 +13,13 @@ const nextConfig: NextConfig = {
   devIndicators: false,
 };
 
-export default nextConfig;
+import mdx from "@next/mdx";
+
+const withMDX = mdx({
+  extension: /\.mdx?$/,
+});
+
+export default withMDX({
+  ...nextConfig,
+  pageExtensions: ["js", "ts", "tsx", "md", "mdx"],
+});
