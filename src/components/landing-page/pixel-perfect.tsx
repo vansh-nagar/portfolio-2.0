@@ -5,7 +5,7 @@ const PixelPerfect = () => {
     <>
       <section className=" my-5  w-full ">
         <header className="font-bold text-xl">Pixel Perfect</header>
-        <div className="w-full mt-5 rounded-lg border border-dashed overflow-hidden relative">
+        <div className="w-full mt-3 rounded-lg border border-dashed overflow-hidden relative">
           <PixelPerfectIso />
           <video
             autoPlay
