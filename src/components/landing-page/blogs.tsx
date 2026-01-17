@@ -13,7 +13,7 @@ const Blogs = () => {
       <section className=" my-5  w-full ">
         <header className="font-bold text-xl">Blogs</header>
 
-        <div className="grid  grid-cols-1 lg:grid-cols-2 gap-3">
+        <div className="grid  grid-cols-1 lg:grid-cols-2 gap-3 blur-[5px] pointer-events-none">
           {BlogsArr.map((blog, i) => (
             <div key={i} className=" flex mt-2">
               <div className=" flex w-full flex-col justify-between gap-2">

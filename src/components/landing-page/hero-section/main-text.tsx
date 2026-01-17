@@ -11,6 +11,7 @@ import Image from "next/image";
 import Task from "../task";
 import Blogs from "../blogs";
 import PixelPerfect from "../pixel-perfect";
+import Socials from "../socials";
 
 const HeroContent = () => {
   return (
@@ -42,14 +43,13 @@ const HeroContent = () => {
       <Projects />
 
       <GithubActivity />
+      <PixelPerfect />
+      <Blogs />
       <WorkExperience />
       <Education />
-      {/* <Socials /> */}
-      <PixelPerfect />
-
-      {/* <Blogs /> */}
 
       <Task />
+      {/* <Socials /> */}
       {/* <Tools /> */}
 
       <ScrollProgress />
