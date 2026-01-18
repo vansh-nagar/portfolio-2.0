@@ -4,8 +4,8 @@ import { DotScreenShader } from "../dot-shader-background";
 const Shaders = () => {
   return (
     <>
-      {/* <DotScreenShader /> */}
-      <IconFall />
+      <DotScreenShader />
+      {/* <IconFall /> */}
     </>
   );
 };

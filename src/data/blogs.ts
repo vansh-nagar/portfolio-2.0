@@ -2,8 +2,9 @@ export const BlogsArr = [
   {
     name: "Peer Drop",
     link: "/blog/webrtc-tcp",
-    image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
+    image: "",
+    video:
+      "https://res.cloudinary.com/dz12pywzs/video/upload/v1768638799/Timeline_1_tykewr.mov",
     timeLine: "Jan 2026",
     Description:
       "Built a TCP-like file transfer system over WebRTC with chunking, ACKs, backpressure, memory safety, encryption, and crash-safe resume to prevent browser freezes.",
@@ -12,8 +13,9 @@ export const BlogsArr = [
   {
     name: "Peer Drop",
     link: "/blog/webrtc-tcp",
-    image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
+    image: "",
+    video:
+      "https://res.cloudinary.com/dz12pywzs/video/upload/v1768638799/Timeline_1_tykewr.mov",
     timeLine: "Jan 2026",
     Description:
       "Built a TCP-like file transfer system over WebRTC with chunking, ACKs, backpressure, memory safety, encryption, and crash-safe resume to prevent browser freezes.",

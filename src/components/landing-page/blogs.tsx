@@ -2,8 +2,6 @@ import Image from "next/image";
 import { SparklesText } from "../ui/sparkles-text";
 import { BlogsArr } from "@/data/blogs";
 import { BadgeCheck, BadgeX } from "lucide-react";
-import ThreedButton from "../pixel-perfect/3d-button";
-import { Button } from "../ui/button";
 import { RainbowButton } from "../ui/rainbow-button";
 import Link from "next/link";
 
@@ -18,7 +16,24 @@ const Blogs = () => {
             <div key={i} className=" flex mt-2">
               <div className=" flex w-full flex-col justify-between gap-2">
                 <div className=" flex flex-col gap-2">
-                  {true ? (
+                  {blog.video ? (
+                    <div>
+                      <a
+                        className="hover:cursor-crosshair"
+                        href={blog.link}
+                        target="_blank"
+                      >
+                        <div className="relative w-full aspect-video">
+                          <video
+                            autoPlay
+                            src={blog.video}
+                            muted
+                            className="rounded-md object-cover border border-dashed w-full h-full"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  ) : blog.image ? (
                     <div>
                       <a
                         className=" hover:cursor-crosshair"

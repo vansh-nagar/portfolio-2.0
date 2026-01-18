@@ -10,7 +10,24 @@ const ProjectsComponent = ({ project }: { project: any }) => {
   return (
     <div className=" flex  flex-col justify-between gap-2 ">
       <div className=" flex flex-col gap-2">
-        {project.image ? (
+        {project.video ? (
+          <div>
+            <a
+              className="hover:cursor-crosshair"
+              href={project.link}
+              target="_blank"
+            >
+              <div className="relative w-full aspect-video">
+                <video
+                  src={project.video}
+                  poster={project.image || undefined}
+                  controls
+                  className="rounded-md object-cover border border-dashed w-full h-full"
+                />
+              </div>
+            </a>
+          </div>
+        ) : project.image ? (
           <div>
             <a
               className=" hover:cursor-crosshair"
