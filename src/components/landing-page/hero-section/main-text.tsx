@@ -9,7 +9,6 @@ import Projects from "../projects";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import Image from "next/image";
 import Task from "../task";
-import Blogs from "../blogs";
 import PixelPerfect from "../pixel-perfect";
 
 const HeroContent = () => {
@@ -42,7 +41,7 @@ const HeroContent = () => {
       <Projects />
       <GithubActivity />
 
-      <PixelPerfect />
+      {/* <PixelPerfect /> */}
       {/* <Blogs /> */}
       <WorkExperience />
       <Education />

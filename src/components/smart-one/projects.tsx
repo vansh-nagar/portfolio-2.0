@@ -10,40 +10,44 @@ const ProjectsComponent = ({ project }: { project: any }) => {
   return (
     <div className=" flex  flex-col justify-between gap-2 ">
       <div className=" flex flex-col gap-2">
-        {project.video ? (
-          <div>
-            <a
-              className="hover:cursor-crosshair"
-              href={project.link}
-              target="_blank"
-            >
-              <div className="relative w-full aspect-video">
-                <video
-                  src={project.video}
-                  poster={project.image || undefined}
-                  controls
-                  className="rounded-md object-cover border border-dashed w-full h-full"
-                />
-              </div>
-            </a>
+        {/* Media display logic: image+video (hover), video only, image only, or placeholder */}
+        {project.image && project.video ? (
+          <div className="relative w-full aspect-video group">
+            {/* Image shown by default */}
+            <Image
+              src={project.image}
+              alt={`${project.name} screenshot`}
+              fill
+              className="rounded-md object-cover border border-dashed transition-opacity duration-300 group-hover:opacity-0"
+              sizes="(max-width: 1024px) 95vw, 50vw"
+            />
+            {/* Video shown on hover, overlays image */}
+            <video
+              src={project.video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-md object-cover border border-dashed w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
+        ) : project.video ? (
+          <div className="relative w-full aspect-video">
+            <video
+              src={project.video}
+              controls
+              className="rounded-md object-cover border border-dashed w-full h-full"
+            />
           </div>
         ) : project.image ? (
-          <div>
-            <a
-              className=" hover:cursor-crosshair"
-              href={project.link}
-              target="_blank"
-            >
-              <div className="relative w-full aspect-video">
-                <Image
-                  src={project.image}
-                  alt={`${project.name} screenshot`}
-                  fill
-                  className="rounded-md object-cover border border-dashed"
-                  sizes="(max-width: 1024px) 95vw, 50vw"
-                />
-              </div>
-            </a>
+          <div className="relative w-full aspect-video">
+            <Image
+              src={project.image}
+              alt={`${project.name} screenshot`}
+              fill
+              className="rounded-md object-cover border border-dashed"
+              sizes="(max-width: 1024px) 95vw, 50vw"
+            />
           </div>
         ) : (
           <div className=" w-full  aspect-video  bg-muted rounded-md flex items-center justify-center ">

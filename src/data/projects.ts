@@ -56,6 +56,8 @@ export const WebProjectsArr = [
     link: "https://www.pixel-perfect.space/",
     image:
       "https://res.cloudinary.com/dz12pywzs/image/upload/v1766372535/Copy_of_Copy_of_Webinar_Keynote_Presentation_1_ljemzi.jpg",
+    video:
+      "https://res.cloudinary.com/dz12pywzs/video/upload/v1768638799/Timeline_1_tykewr.mov",
     github: "https://github.com/vansh-nagar/Pixel-Perfect",
     demo: "https://www.pixel-perfect.space/",
     figmaFile: "",
@@ -82,7 +84,7 @@ export const WebProjectsArr = [
     figmaFile: "",
     tech: [],
     timeLine: "Jan 2026 - Present",
-    Description: "Click on skill forge tabs to see what I'm building... ↖",
+    Description: "Click on  ge tabs to see what I'm building... ↖",
     status: "In Progress",
   },
 
@@ -370,14 +372,16 @@ export const SkillForgeProjectsArr = [
     name: "Peer Drop",
     link: "https://www.pixel-perfect.space/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1766255489/Untitled_kexjvb.png",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1768805356/Webinar_Keynote_Presentation_2_ruami7.jpg",
+    video:
+      "https://res.cloudinary.com/dz12pywzs/video/upload/v1768802875/Screen_Recording_2026-01-18_185113_online-video-cutter.com_slah3a.mp4",
     github: "https://github.com/vansh-nagar/peer-drop",
     demo: "",
     figmaFile: "",
     tech: ["Next.js", "WebRTC", "WebSockets", "Node.js", "Express"],
-    timeLine: "1st Jan 2026 - Present",
+    timeLine: "1 - 4 Jan 2026",
     Description:
       "Built encrypted browser-to-browser file sharing system with WebRTC, custom TCP-style transport, resume support, and horizontally scaled signaling backend on AWS.",
-    status: "In Progress",
+    status: "Completed",
   },
 ];
