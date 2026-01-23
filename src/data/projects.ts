@@ -28,28 +28,31 @@ export const WebProjectsArr = [
     status: "Completed",
   },
   {
-    name: "Orcha",
-    link: "http://orcha.site/",
+    name: "Cocursor",
+    Description:
+      "A collaborative, AI-powered coding workspace with real-time multi-user editing, shared cursors, live previews, and in-browser code execution.",
+
+    link: "http://cocursor.xyz/",
     image:
-      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762450441/Copy_of_Webinar_Keynote_Presentation_2_wfovb1.jpg",
-    github: "https://github.com/vansh-nagar/orcha",
-    demo: "http://orcha.site/",
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1769194715/Untitled_jotjz8.png",
+    github: "https://github.com/vansh-nagar/cocursor",
+    // demo: "http://cocursor.xyz/",
     figmaFile: "",
     tech: [
-      "Next.js",
+      "Next.js (Turborepo)",
       "TypeScript",
-      "Tailwind CSS",
-      "Trpc",
-      "Prisma",
-      "Better auth",
-      "Inngest",
-      "React flow",
-      "Sentry",
+      "CodeMirror 6",
+      "WebSockets",
+      "Redis (Pub/Sub)",
+      "WebRTC",
+      "Convex",
+      "Drizzle ORM",
+      "AI SDK v6",
+      "WebContainer API",
+      "xterm.js",
     ],
-    timeLine: "Oct 2025 - Nov 2025",
-    Description:
-      "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
-    status: "Completed",
+    timeLine: "Jan 2026 - Feb 2026",
+    status: "In Progress",
   },
   {
     name: "Pixel Perfect",
@@ -72,6 +75,29 @@ export const WebProjectsArr = [
     timeLine: "Nov 2025 - Present",
     Description:
       "Build beautiful, responsive interfaces in minutes. A pixel-perfect React component library for modern web apps.",
+    status: "In Progress",
+  },
+  {
+    name: "Orcha",
+    link: "https://orcha.site/",
+    image:
+      "https://res.cloudinary.com/dz12pywzs/image/upload/v1762450441/Copy_of_Webinar_Keynote_Presentation_2_wfovb1.jpg",
+    github: "https://github.com/vansh-nagar/orcha",
+    demo: "https://orcha.site/",
+    figmaFile: "",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Trpc",
+      "Prisma",
+      "Better auth",
+      "Inngest",
+      "React flow",
+      "Sentry",
+    ],
+    timeLine: "Oct 2025 - Nov 2025",
+    Description:
+      "A workflow automation platform I built to connect various apps and services for creating automated workflows, streamlining tasks.",
     status: "In Progress",
   },
   {
